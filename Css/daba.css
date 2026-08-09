@@ -1,0 +1,19 @@
+.row {
+    height: 100px;
+    width: 100%;
+
+
+    .one {
+        float: left;
+        width: 10%;
+        height: 100px;
+        background-color: white;
+    }
+
+    .two {
+        float: left;
+        width: 10%;
+        height: 100px;
+        background-color: black;
+    }
+}
