@@ -1,0 +1,23 @@
+HTML full name is Hyper Text Markup Language.
+
+Why we learn Html?
+1.To create Website/Webpages
+2.Carrer as a Web Designer
+3.Mobile Application Development(Phonegap/Ionic)
+
+Which HTML version we learn?
+HTML5 and HTML4
+
+Software Recuirement:-
+1.Notepad
+2.Notepad++
+3.Vs code
+4.Sublime
+
+Which browser we use to run the code?
+1.Chrome
+2.Firefox
+3.Internet Explorer
+4.Microsoft Edge
+5.Safari
+6.Opera
