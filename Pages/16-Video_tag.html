@@ -1,0 +1,60 @@
+<!-- This file demonstrates the Video Tag in HTML -->
+<!-- The video tag is used to display videos on a web page -->
+
+<!-- Supported Video Formats:
+     1. MP4
+     2. WebM
+     3. OGG
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tag</title>
+</head>
+<body>
+
+    <!-- Video Player -->
+    <video
+        controls
+        autoplay
+        loop
+        muted
+        width="100%"
+        height="100%"
+        poster="../Assest/Images/Image1.JPG"
+    >
+
+        <!-- Video Source File -->
+        <source
+            src="../Assest/Video/video_1.mp4"
+            type="video/mp4"
+        />
+
+        <!-- Fallback Message -->
+        Your browser does not support the video tag.
+
+    </video>
+<!-- controls: Displays video controls such as Play, Pause, Volume, and Fullscreen -->
+
+<!-- autoplay: Automatically starts playing the video when the page loads -->
+
+<!-- loop: Repeats the video continuously after it ends -->
+
+<!-- muted: Starts the video in muted mode -->
+
+<!-- width="100%": Sets the video width to 100% of its parent container -->
+
+<!-- height="100%": Sets the video height to 100% of its parent container -->
+
+<!-- poster="../Assest/Images/Image1.JPG": Displays this image before the video starts playing -->
+
+<!-- Video Source File -->
+
+<!-- src="../Assest/Video/video_1.mp4": Specifies the path of the video file -->
+
+<!-- type="video/mp4": Specifies that the video format is MP4 -->
+</body>
+</html>
