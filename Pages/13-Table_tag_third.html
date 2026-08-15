@@ -1,0 +1,102 @@
+<!-- In this file we know about advanced table tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in browser tab -->
+    <title>Table with thead tbody tfoot</title>
+</head>
+<body>
+
+    <!-- Table Start -->
+    <table border="1" width="700" cellpadding="10" cellspacing="5" align="center" bgcolor="pink">
+
+        <!-- thead = Groups the table header section -->
+        <thead bgcolor="lightblue">
+
+            <!-- tr = Table Row -->
+            <tr>
+
+                <!-- th = Table Heading Cell -->
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Gender</th>
+                <th>Percentage</th>
+
+            </tr>
+
+        </thead>
+
+        <!-- tbody = Groups the main table data -->
+        <tbody>
+
+            <!-- Data Row 1 -->
+            <tr>
+                <!-- td = Table Data Cell -->
+                <td>101</td>
+                <td>John</td>
+                <td>12th</td>
+                <td>Male</td>
+                <td>80%</td>
+            </tr>
+
+            <!-- Data Row 2 -->
+            <tr>
+                <td>102</td>
+                <td>Emma</td>
+                <td>11th</td>
+                <td>Female</td>
+                <td>85%</td>
+            </tr>
+
+            <!-- Data Row 3 -->
+            <tr>
+                <td>103</td>
+                <td>David</td>
+                <td>10th</td>
+                <td>Male</td>
+                <td>78%</td>
+            </tr>
+
+            <!-- Data Row 4 -->
+            <tr>
+                <td>104</td>
+                <td>Sophia</td>
+                <td>12th</td>
+                <td>Female</td>
+                <td>92%</td>
+            </tr>
+
+        </tbody>
+
+        <!-- tfoot = Groups the table footer section -->
+        <tfoot bgcolor="lightgreen">
+
+            <!-- Footer Row -->
+            <tr>
+
+                <!-- colspan = Merge multiple columns -->
+                <th colspan="4">
+                    Average Percentage
+                </th>
+
+                <th>
+                    83.75%
+                </th>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+    <!-- Table End -->
+
+</body>
+</html>
