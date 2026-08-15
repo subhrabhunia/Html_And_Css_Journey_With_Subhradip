@@ -1,0 +1,111 @@
+<!-- In this file we know about colspan and rowspan -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rowspan and Colspan Table</title>
+</head>
+<body>
+
+    <table border="2" align="center" width="400">
+        <caption>ROWSPAN&COLLUMNSPAN</caption>  <!--Use for table heading-->
+        
+        <tr>
+            <th colspan="2">EXAMPLE OF COLLUMMNSPAN</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+  <Br>
+  </Br>
+
+  <table border="2" align="center" width="400">
+       
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">EXAMPLE OF ROWSPAN</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>F</td>
+        </tr>
+    </table>
+  <Br>
+  </Br>
+    <!-- Table with rowspan and colspan -->
+    <table border="1" width="600" cellpadding="10" cellspacing="5" align="center">
+
+        <!-- Main Heading -->
+        <tr bgcolor="lightblue">
+            <th colspan="4">STUDENT REPORT</th>
+        </tr>
+
+        <!-- Column Headings -->
+        <tr bgcolor="lightgreen">
+            <th>Roll No</th>
+            <th>Name</th>
+            <th colspan="2">Marks</th>
+        </tr>
+
+        <!-- Sub Headings -->
+        <tr bgcolor="lightyellow">
+            <th colspan="2"></th>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+
+        <!-- Row 1 -->
+        <tr align="center">
+            <td>101</td>
+            <td>John</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr align="center">
+            <td>102</td>
+            <td>Emma</td>
+            <td>88</td>
+            <td>92</td>
+        </tr>
+
+        <!-- Rowspan Example -->
+        <tr bgcolor="lightgray">
+            <td rowspan="2" valign="middle">103</td>
+            <td>David</td>
+            <td>75</td>
+            <td>80</td>
+        </tr>
+
+        <tr bgcolor="lightgray">
+            <td>David (Practical)</td>
+            <td>20</td>
+            <td>18</td>
+        </tr>
+
+        <!-- Footer -->
+        <tr bgcolor="pink">
+            <td colspan="4" align="center">
+                End of Report
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
