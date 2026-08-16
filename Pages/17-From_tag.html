@@ -1,0 +1,166 @@
+<!-- In this file we learn about the Form Tag -->
+<!-- Form tag is used to collect user information such as name, password, gender, hobbies, and messages. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown on browser tab -->
+    <title>Form Tag Part 1</title>
+</head>
+<body>
+
+    <!--
+        <form> Tag
+
+        action=""
+        -> Specifies where form data will be sent.
+
+        method="get"
+        -> Sends form data through the URL.
+        -> Data is visible in the browser address bar.
+        -> Commonly used for search forms and filters.
+
+        Example:
+        page.html?firstname=Subhradip&gender=Male
+
+        method="post"
+        -> Sends form data in the request body.
+        -> Data is not displayed in the URL.
+        -> Commonly used for login, registration,
+           feedback, and payment forms.
+    -->
+    <form action="" method="post">
+
+        <!-- First Name -->
+        <label for="firstname">First Name</label>
+
+        <!--
+            <input> Tag
+            type="text" -> Creates a text input box.
+            name="firstname" -> Name of the field sent to the server.
+            id="firstname" -> Connects input with label.
+            placeholder -> Displays a hint inside the input field.
+        -->
+        <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Enter Your First Name"
+        >
+
+        <br>
+        <br>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+
+        <!--
+            type="password" -> Hides entered characters.
+            name="password" -> Field name sent to the server.
+        -->
+        <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Your Password"
+        >
+
+        <br>
+        <br>
+
+        <!-- Gender -->
+        <label>Gender</label>
+
+        <br>
+
+        <!--
+            type="radio" -> Allows only one option to be selected.
+            value -> Value sent to the server when selected.
+        -->
+        <input type="radio" name="gender" value="Male" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="Female" id="female">
+        <label for="female">Female</label>
+
+        <br>
+        <br>
+
+        <!-- Hobbies -->
+        <label>Hobbies</label>
+
+        <br>
+
+        <!--
+            type="checkbox" -> Allows multiple options to be selected.
+        -->
+        <input type="checkbox" name="hobbies" value="Reading" id="reading">
+        <label for="reading">Reading</label>
+
+        <br>
+
+        <input type="checkbox" name="hobbies" value="Music" id="music">
+        <label for="music">Music</label>
+
+        <br>
+
+        <input type="checkbox" name="hobbies" value="Sports" id="sports">
+        <label for="sports">Sports</label>
+
+        <br>
+        <br>
+
+        <!-- Message Field -->
+        <label for="message">Message</label>
+
+        <br>
+
+        <!--
+            <textarea> Tag
+            Used to create a multi-line text input area.
+
+            rows -> Number of visible rows.
+            cols -> Number of visible columns.
+            placeholder -> Displays a hint message.
+
+            Commonly used for:
+            - Messages
+            - Feedback
+            - Comments
+            - Suggestions
+            - Descriptions
+        -->
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="30"
+            placeholder="Write your message here..."
+        ></textarea>
+
+        <br>
+        <br>
+
+        <!--
+            type="submit"
+            -> Creates a submit button.
+            -> Sends form data to the server.
+        -->
+        <input type="submit" value="Submit">
+
+        <!--
+            type="reset"
+            -> Clears all form fields.
+        -->
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
