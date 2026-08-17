@@ -1,0 +1,226 @@
+<!-- In this file we learn about HTML5 New Input Types -->
+
+<!--
+    HTML5 Input Types
+
+    1. color
+    2. number
+    3. range
+    4. date
+    5. datetime-local
+    6. month
+    7. week
+    8. time
+    9. email
+    10. search
+    11. tel
+    12. url
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Web Page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Tab Title -->
+    <title>Form Tag Input Types</title>
+
+</head>
+<body>
+
+    <!--
+        type="color"
+
+        -> Opens a color picker.
+        -> Allows users to select a color.
+    -->
+    <label for="color">Select Your Color</label>
+    <input type="color" id="color" name="color">
+
+    <br><br>
+
+    <!--
+        type="number"
+
+        -> Accepts only numeric values.
+
+        min
+        -> Minimum value.
+
+        max
+        -> Maximum value.
+
+        step
+        -> Increment/decrement value.
+    -->
+    <label for="number">Select Number</label>
+    <input
+        type="number"
+        id="number"
+        name="number"
+        min="1"
+        max="100"
+        step="1"
+    >
+
+    <br><br>
+
+    <!--
+        type="range"
+
+        -> Creates a slider control.
+
+        min
+        -> Minimum value.
+
+        max
+        -> Maximum value.
+    -->
+    <label for="range">Select Your Range</label>
+    <input
+        type="range"
+        id="range"
+        name="range"
+        min="0"
+        max="100"
+    >
+
+    <br><br>
+
+    <!--
+        type="date"
+
+        -> Allows users to select a date.
+    -->
+    <label for="date">Select Your DOB</label>
+    <input type="date" id="date" name="date">
+
+    <br><br>
+
+    <!--
+        type="datetime-local"
+
+        -> Allows users to select date and time.
+    -->
+    <label for="datetime">Select Date & Time</label>
+    <input
+        type="datetime-local"
+        id="datetime"
+        name="datetime"
+    >
+
+    <br><br>
+
+    <!--
+        type="month"
+
+        -> Allows users to select a month and year.
+    -->
+    <label for="month">Select Month</label>
+    <input type="month" id="month" name="month">
+
+    <br><br>
+
+    <!--
+        type="week"
+
+        -> Allows users to select a week and year.
+    -->
+    <label for="week">Select Week</label>
+    <input type="week" id="week" name="week">
+
+    <br><br>
+
+    <!--
+        type="time"
+
+        -> Allows users to select a time.
+    -->
+    <label for="time">Select Time</label>
+    <input type="time" id="time" name="time">
+
+    <br><br>
+
+    <!--
+        type="email"
+
+        -> Accepts only valid email addresses.
+
+        Example:
+        abc@gmail.com
+    -->
+    <label for="email">Enter Your Email</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Your Email"
+    >
+
+    <br><br>
+
+    <!--
+        type="url"
+
+        -> Accepts only valid URLs.
+
+        Example:
+        https://www.google.com
+    -->
+    <label for="url">Website URL</label>
+    <input
+        type="url"
+        id="url"
+        name="url"
+        placeholder="https://example.com"
+    >
+
+    <br><br>
+
+    <!--
+        type="search"
+
+        -> Used for search boxes.
+    -->
+    <label for="search">Search</label>
+    <input
+        type="search"
+        id="search"
+        name="search"
+        placeholder="Search Here"
+    >
+
+    <br><br>
+
+    <!--
+        type="tel"
+
+        -> Used for telephone numbers.
+
+        Example:
+        +91 9876543210
+    -->
+    <label for="phone">Phone Number</label>
+    <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter Phone Number"
+    >
+
+    <br><br>
+
+    <!--
+        type="submit"
+
+        -> Submits the form data.
+    -->
+    <input type="submit" value="Submit">
+
+</body>
+</html>
