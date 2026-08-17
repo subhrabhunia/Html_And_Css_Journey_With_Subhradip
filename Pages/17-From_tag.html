@@ -1,19 +1,20 @@
 <!-- In this file we learn about the Form Tag -->
-<!-- Form tag is used to collect user information such as name, password, gender, hobbies, messages, city selection, and datalist. -->
+<!-- Form tag is used to collect user information such as name, password, gender, hobbies, messages, city selection, and file upload. -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Character encoding -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
     <!-- Makes the webpage responsive on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title shown on browser tab -->
     <title>Form Tag Part 1</title>
-  </head>
-  <body>
+</head>
+<body>
+
     <!--
         <form> Tag
 
@@ -27,185 +28,271 @@
         -> Sends form data in the request body.
     -->
     <form action="" method="post">
-      <!-- First Name -->
-      <label for="firstname">First Name</label>
 
-      <input
-        type="text"
-        name="firstname"
-        id="firstname"
-        placeholder="Enter Your First Name"
-      />
+        <!--
+            <fieldset> Tag
 
-      <br /><br />
+            -> Groups related form elements together.
+            -> Creates a border around the grouped elements.
 
-      <!-- Password -->
-      <label for="password">Password</label>
+            <legend> Tag
 
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Enter Your Password"
-      />
-
-      <br /><br />
-
-      <!-- Gender -->
-      <label>Gender</label>
-
-      <br />
-
-      <input type="radio" name="gender" value="Male" id="male" />
-      <label for="male">Male</label>
-
-      <input type="radio" name="gender" value="Female" id="female" />
-      <label for="female">Female</label>
-
-      <br /><br />
-
-      <!-- Hobbies -->
-      <label>Hobbies</label>
-
-      <br />
-
-      <input type="checkbox" name="hobbies" value="Reading" id="reading" />
-      <label for="reading">Reading</label>
-
-      <br />
-
-      <input type="checkbox" name="hobbies" value="Music" id="music" />
-      <label for="music">Music</label>
-
-      <br />
-
-      <input type="checkbox" name="hobbies" value="Sports" id="sports" />
-      <label for="sports">Sports</label>
-
-      <br /><br />
-
-      <!-- Message Field -->
-      <label for="message">Message</label>
-
-      <br />
-
-      <textarea
-        id="message"
-        name="message"
-        rows="5"
-        cols="30"
-        placeholder="Write your message here..."
-      ></textarea>
-
-      <br /><br />
-
-      <!-- City Selection -->
-      <label for="city">Select Your City</label>
-
-      <br />
-
-      <!--
-            <select> Tag
-            -> Creates a dropdown list.
-
-            <option> Tag
-            -> Creates options inside the dropdown.
-
-            <optgroup> Tag
-            -> Groups related options together.
+            -> Defines a title/caption for the fieldset.
         -->
-      <select name="city" id="city">
-        <option value="" selected>--Select City--</option>
+        <fieldset>
 
-        <optgroup label="East India">
-          <option value="Kolkata">Kolkata</option>
-          <option value="Bhubaneswar">Bhubaneswar</option>
-          <option value="Patna">Patna</option>
-        </optgroup>
+            <legend>User Registration Form</legend>
 
-        <optgroup label="North India">
-          <option value="Delhi">Delhi</option>
-          <option value="Lucknow">Lucknow</option>
-          <option value="Chandigarh">Chandigarh</option>
-        </optgroup>
+            <!-- First Name -->
+            <label for="firstname">First Name</label>
 
-        <optgroup label="South India">
-          <option value="Chennai">Chennai</option>
-          <option value="Bangalore">Bangalore</option>
-          <option value="Hyderabad">Hyderabad</option>
-        </optgroup>
-      </select>
+            <!--
+                type="text"
+                -> Creates a text input box.
 
-      <br /><br />
+                placeholder
+                -> Displays a hint inside the input field.
+            -->
+            <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Enter Your First Name"
+            >
 
-      <!--
-            <datalist> Tag
-            -> Provides predefined suggestions for an input field.
+            <br><br>
 
-            list
-            -> Connects input with datalist.
+            <!-- Password -->
+            <label for="password">Password</label>
 
-            <option>
-            -> Defines suggested values.
+            <!--
+                type="password"
+                -> Hides entered characters.
+            -->
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Your Password"
+            >
 
-            Users can select a suggestion
-            or type their own value.
-        -->
-      <label for="course">Select Course</label>
+            <br><br>
 
-      <br />
+            <!-- Gender -->
+            <label>Gender</label>
 
-      <input
-        type="text"
-        name="course"
-        id="course"
-        list="courses"
-        placeholder="Choose or Type a Course"
-      />
+            <br>
 
-      <!-- Datalist -->
-      <datalist id="courses">
-        <option value="BCA"></option>
-        <option value="B.Tech"></option>
-        <option value="B.Sc"></option>
-        <option value="B.Com"></option>
-        <option value="MCA"></option>
-        <option value="MBA"></option>
-      </datalist>
+            <!--
+                type="radio"
+                -> Allows only one option to be selected.
+            -->
+            <input type="radio" name="gender" value="Male" id="male">
+            <label for="male">Male</label>
 
-      <br /><br />
-      <!--
-    File Upload Section
+            <input type="radio" name="gender" value="Female" id="female">
+            <label for="female">Female</label>
 
-    <input type="file">
-    -> Allows users to upload files.
+            <br><br>
 
-    accept
-    -> Specifies allowed file types.
+            <!-- Hobbies -->
+            <label>Hobbies</label>
 
-    multiple
-    -> Allows multiple file selection.
--->
-      <label for="resume">Upload Resume</label>
+            <br>
 
-      <br />
+            <!--
+                type="checkbox"
+                -> Allows multiple options to be selected.
+            -->
+            <input type="checkbox" name="hobbies" value="Reading" id="reading">
+            <label for="reading">Reading</label>
 
-      <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" />
+            <br>
 
-      <br />
-      <br />
+            <input type="checkbox" name="hobbies" value="Music" id="music">
+            <label for="music">Music</label>
 
-      <!--
-            type="submit"
-            -> Creates a submit button.
-        -->
-      <input type="submit" value="Submit" />
+            <br>
 
-      <!--
-            type="reset"
-            -> Clears all form fields.
-        -->
-      <input type="reset" value="Reset" />
+            <input type="checkbox" name="hobbies" value="Sports" id="sports">
+            <label for="sports">Sports</label>
+
+            <br><br>
+
+            <!-- Message -->
+            <label for="message">Message</label>
+
+            <br>
+
+            <!--
+                <textarea> Tag
+
+                -> Creates a multi-line text input area.
+
+                rows
+                -> Number of visible rows.
+
+                cols
+                -> Number of visible columns.
+            -->
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="30"
+                placeholder="Write your message here..."
+            ></textarea>
+
+            <br><br>
+
+            <!-- City Selection -->
+            <label for="city">Select Your City</label>
+
+            <br>
+
+            <!--
+                <select> Tag
+                -> Creates a dropdown list.
+
+                <option> Tag
+                -> Creates options inside the dropdown.
+
+                <optgroup> Tag
+                -> Groups related options together.
+            -->
+            <select name="city" id="city">
+
+                <option value="" selected>
+                    --Select City--
+                </option>
+
+                <optgroup label="East India">
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Bhubaneswar">Bhubaneswar</option>
+                    <option value="Patna">Patna</option>
+                </optgroup>
+
+                <optgroup label="North India">
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                </optgroup>
+
+                <optgroup label="South India">
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <!-- Course Selection Using Datalist -->
+            <label for="course">Select Course</label>
+
+            <br>
+
+            <!--
+                <datalist> Tag
+
+                -> Provides predefined suggestions.
+
+                list
+                -> Connects input with datalist.
+            -->
+            <input
+                type="text"
+                name="course"
+                id="course"
+                list="courses"
+                placeholder="Choose or Type a Course"
+            >
+
+            <datalist id="courses">
+                <option value="BCA">
+                <option value="B.Tech">
+                <option value="B.Sc">
+                <option value="B.Com">
+                <option value="MCA">
+                <option value="MBA">
+            </datalist>
+
+            <br><br>
+
+            <!-- File Upload -->
+            <label for="resume">Upload Resume</label>
+
+            <br>
+
+            <!--
+                type="file"
+                -> Allows users to upload files.
+
+                accept
+                -> Restricts allowed file types.
+            -->
+            <input
+                type="file"
+                name="resume"
+                id="resume"
+                accept=".pdf,.doc,.docx"
+            >
+
+            <br><br>
+
+            <!-- Buttons -->
+
+            <!--
+                type="submit"
+                -> Submits the form.
+            -->
+            <input type="submit" value="Submit">
+
+            <!--
+                type="reset"
+                -> Resets all form fields.
+            -->
+            <input type="reset" value="Reset">
+
+            <!--
+                type="button"
+                -> Creates a normal button.
+            -->
+            <button type="button">Click Me</button>
+
+            <br><br>
+
+            <!-- Image Button -->
+
+            <!--
+                type="image"
+
+                -> Displays an image as a submit button.
+
+                src
+                -> Specifies image path.
+
+                alt
+                -> Alternative text.
+
+                width
+                -> Sets image width.
+
+                height
+                -> Sets image height.
+            -->
+            <input
+                type="image"
+                src="../Assest/Images/Image1.JPG"
+                alt="Submit"
+                width="120"
+                height="50"
+            >
+
+        </fieldset>
+
     </form>
-  </body>
+
+</body>
 </html>
