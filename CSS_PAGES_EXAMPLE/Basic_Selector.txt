@@ -1,0 +1,62 @@
+In HTML and web development, a selector is used in CSS (Cascading Style Sheets) and JavaScript to target and pick specific elements on a web page so you can style them or change how they behave.
+
+3 Types Of Basic Selectors:-
+1.Tag Name Selector:-A Tag Name Selector (also called an Element Selector) matches and selects HTML elements based directly on their HTML tag name. It applies styles or changes to every instance of that tag on the entire web page.If you want all paragraphs to have blue text, you use the p tag name selector:
+p {
+  color: blue;
+  font-size:15px;
+}
+
+table{
+
+}
+
+div{
+
+}
+
+2.Class selector:-A Class Selector matches and selects HTML elements that have a specific class attribute. Unlike tag selectors, classes let you style only the specific elements you choose, and you can reuse the same class on multiple elements across your page.In CSS, a class selector always starts with a dot (.) followed by the class name.If you want to make specific text bold and green, you create a class named .highlight:
+.highlight {
+  color: green;
+  font-weight: bold;
+}
+In html file:-
+<p class="highlight">This paragraph will be green and bold.</p>
+<p>This paragraph will look completely normal.</p>
+<span class="highlight">This small text will also be green and bold!</span>
+
+Class Selector Name Specification:-
+.header{
+
+}
+.list-menu{
+
+}
+.side_text{
+
+}
+.footerHeading{
+
+}
+
+3.Id Selector:-An ID Selector matches and selects a single, unique HTML element that has a specific id attribute. Because an ID must be completely unique on a web page, you can only use a specific ID name once per page.In CSS, an ID selector always starts with a hashtag (#) followed by the ID name.
+#sidebar {
+  background-color: lightgray;
+  padding: 20px;
+}
+In html:-
+<aside id="sidebar">This is the unique sidebar.</aside>
+<aside>This is another sidebar, but it won't get the styles.</aside>
+
+Descendant Selector:-A Descendant Selector matches and selects elements that are contained inside another specific element. It targets items regardless of how deeply nested they are in the HTML structure (children, grandchildren, great-grandchildren, etc.).In CSS, you create a descendant selector by writing two or more selectors separated by a single space.If you want to style only the links (<a>) that live inside a navigation bar (<nav>), you space them out like this:
+nav a {
+  color: red;
+  font-weight: bold;
+}
+
+Universal Selectors:-The CSS universal selector (*) matches and selects every single element within an HTML document. It is represented by an asterisk symbol (*) and targets all tags—such as <html>, <body>, <div>, <p>, and <h1>—simultaneously.
+* {
+  /* Styles applied here will target every element */
+  margin: 0;
+  padding: 0;
+}
