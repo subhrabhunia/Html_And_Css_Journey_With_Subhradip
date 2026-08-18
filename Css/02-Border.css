@@ -1,0 +1,130 @@
+/* Solid Border */
+.One {
+  border-width: 2px;
+
+  border-style: solid;
+
+  border-color: brown;
+}
+
+/* Dotted Border */
+.two {
+  border-width: 2px;
+
+  border-style: dotted;
+
+  border-color: brown;
+}
+
+/* Dashed Border */
+.three {
+  border-width: 2px;
+
+  border-style: dashed;
+
+  border-color: brown;
+}
+
+/* Double Border */
+.four {
+  border-width: 2px;
+
+  border-style: double;
+
+  border-color: brown;
+}
+
+/* Groove Border */
+.five {
+  border-width: 2px;
+
+  border-style: groove;
+
+  border-color: brown;
+}
+
+/* Ridge Border */
+.six {
+  border-width: 2px;
+
+  border-style: ridge;
+
+  border-color: brown;
+}
+
+/* Inset Border */
+.seven {
+  border-width: 2px;
+
+  border-style: inset;
+
+  border-color: brown;
+}
+
+/* Outset Border */
+.eight {
+  border-width: 2px;
+
+  border-style: outset;
+
+  border-color: brown;
+}
+
+/* None Border */
+.nine {
+  border-width: 2px;
+
+  border-style: none;
+
+  border-color: brown;
+}
+
+/* Border Shorthand */
+.ten {
+  border: 3px solid pink;
+}
+
+/* Border Side */
+
+/* Border Top */
+.eleven {
+  border-top: 4px solid red;
+}
+
+/* Border Right */
+.twelve {
+  border-right: 4px dotted blue;
+}
+
+/* Border Bottom */
+.thirteen {
+  border-bottom: 4px dashed green;
+}
+
+/* Border Left */
+.fourteen {
+  border-left: 4px double purple;
+}
+
+/* Common Style 
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen{
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+} */
