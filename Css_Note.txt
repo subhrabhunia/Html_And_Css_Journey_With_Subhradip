@@ -1,0 +1,18 @@
+CSS Full form is Cascading Style Sheet.
+
+Why Learn CSS?
+1.Styling the HTML tags.
+2.Responsive website.
+3.Animation on webpage.
+4.2D and 3D Transformation of HTML Elements.
+5.Website development process fast.
+
+Software Requirment:-
+1.CSS Editor.
+Browser.
+
+CSS Editor:-
+1.Notepad
+2.Notepad++
+3.Vs code
+4.Sublime
