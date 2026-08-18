@@ -1,0 +1,12 @@
+h1{
+    color: aquamarine; /* The colors we use rgb,and hexa-decimal code */
+    background-color: red;
+}
+
+p{
+    color: blueviolet;
+}
+
+span{
+    color: pink;
+}
