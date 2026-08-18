@@ -16,3 +16,66 @@ CSS Editor:-
 2.Notepad++
 3.Vs code
 4.Sublime
+5.Dreamweaver
+
+3 ways to implement CSS:-
+1.Inline Style:-An inline style is a method of applying CSS directly to a single HTML element using the style attribute. It allows you to quickly add unique formatting without using an external stylesheet or an internal <style> block.To write an inline style, insert the style attribute inside the opening HTML tag and define your CSS property-value pairs inside quotes:
+<p style="color: blue; font-size: 16px; font-weight: bold;">
+  This is a blue, bold paragraph styled inline.
+</p>
+
+2.Inpage Style Tag:-An internal style (or in-page style) is a method of embedding CSS directly inside an HTML document using the <style> tag. It applies styling rules to the entire page from a single location, rather than targeting individual elements.The <style> block is placed within the <head> section of your HTML document:
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+    .highlight {
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Page</h1>
+  <p class="highlight">This paragraph is styled using an in-page style tag.</p>
+</body>
+</html>
+
+3.External Style Sheet:-An external style sheet is a standalone .css file that contains all your design rules. You link this file to one or multiple HTML documents using the <link> tag. It is the gold standard method for web development.Create a separate file and save it with a .css extension (e.g., style.css). Do not include HTML tags like <style> in this file.
+/* style.css */
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333333;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+Link it in HTMLPlace the <link> tag inside the <head> section of every HTML page where you want to apply these styles:
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <button class="button">Click Me</button>
+</body>
+</html>
