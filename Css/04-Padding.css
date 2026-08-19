@@ -1,0 +1,80 @@
+/* Common Style */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight{
+
+    border: 2px solid brown;
+
+    margin-bottom: 10px;
+
+}
+
+/* Padding All Sides */
+
+.One{
+
+    padding: 20px;
+
+}
+
+/* Padding Top Bottom & Left Right */
+
+.two{
+
+    padding: 10px 20px;
+
+}
+
+/* Padding Top Left-Right Bottom */
+
+.three{
+
+    padding: 10px 20px 30px;
+
+}
+
+/* Padding Top Right Bottom Left */
+
+.four{
+
+    padding: 10px 20px 30px 40px;
+
+}
+
+/* Padding Top */
+
+.five{
+
+    padding-top: 30px;
+
+}
+
+/* Padding Right */
+
+.six{
+
+    padding-right: 30px;
+
+}
+
+/* Padding Bottom */
+
+.seven{
+
+    padding-bottom: 30px;
+
+}
+
+/* Padding Left */
+
+.eight{
+
+    padding-left: 30px;
+
+}
