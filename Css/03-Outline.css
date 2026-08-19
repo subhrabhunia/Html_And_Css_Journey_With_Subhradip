@@ -1,0 +1,144 @@
+/* Common Style */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten{
+
+    border: 2px solid black;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+/* Solid Outline */
+.One{
+
+    outline-width: 2px;
+
+    outline-style: solid;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* Dotted Outline */
+.two{
+
+    outline-width: 2px;
+
+    outline-style: dotted;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* Dashed Outline */
+.three{
+
+    outline-width: 2px;
+
+    outline-style: dashed;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* Double Outline */
+.four{
+
+    outline-width: 2px;
+
+    outline-style: double;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* Groove Outline */
+.five{
+
+    outline-width: 2px;
+
+    outline-style: groove;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* Ridge Outline */
+.six{
+
+    outline-width: 2px;
+
+    outline-style: ridge;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* Inset Outline */
+.seven{
+
+    outline-width: 2px;
+
+    outline-style: inset;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* Outset Outline */
+.eight{
+
+    outline-width: 2px;
+
+    outline-style: outset;
+
+    outline-color: brown;
+
+    outline-offset: 5px;
+
+}
+
+/* None Outline */
+.nine{
+
+    outline-width: 2px;
+
+    outline-style: none;
+
+    outline-color: brown;
+
+}
+
+/* Outline Shorthand */
+.ten{
+
+    outline: 3px solid pink;
+
+    outline-offset: 10px;
+
+}
