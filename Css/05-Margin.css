@@ -1,0 +1,98 @@
+/* Common Style */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight{
+
+    border: 2px solid brown;
+
+}
+
+
+/* Margin All Sides */
+
+.One{
+
+    margin: 20px;
+
+}
+
+
+/* Margin Top-Bottom & Left-Right */
+
+.two{
+
+    margin: 10px 20px;
+
+}
+
+
+/* Margin Top Left-Right Bottom */
+
+.three{
+
+    margin: 10px 20px 30px;
+
+}
+
+
+/* Margin Top Right Bottom Left */
+
+.four{
+
+    margin: 10px 20px 30px 40px;
+
+}
+
+
+/* Margin Top */
+
+.five{
+
+    margin-top: 30px;
+
+}
+
+
+/* Margin Right */
+
+.six{
+
+    margin-right: 30px;
+
+}
+
+
+/* Margin Bottom */
+
+.seven{
+
+    margin-bottom: 30px;
+
+}
+
+
+/* Margin Left */
+
+.eight{
+
+    margin-left: 30px;
+
+}
+
+/* Margin Auto */
+
+.nine{
+
+    width: 500px;
+
+    margin: auto;
+
+    border: 2px solid brown;
+
+}
