@@ -1,0 +1,94 @@
+/* Common Style */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven{
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* Height */
+
+.One{
+
+    height: 100px;
+
+}
+
+
+/* Width */
+
+.two{
+
+    width: 500px;
+
+}
+
+
+/* Height and Width */
+
+.three{
+
+    height: 150px;
+
+    width: 500px;
+
+}
+
+
+/* Minimum Height */
+
+.four{
+
+    min-height: 100px;
+
+}
+
+
+/* Maximum Height */
+
+.five{
+
+    height: 300px;
+
+    max-height: 200px;
+
+}
+
+
+/* Minimum Width */
+
+.six{
+
+    min-width: 300px;
+
+}
+
+
+/* Maximum Width */
+
+.seven{
+
+    width: 800px;
+
+    max-width: 600px;
+
+}
+
+.eight{
+
+    width: 50%;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
