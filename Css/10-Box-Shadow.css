@@ -4,81 +4,61 @@
 .two,
 .three,
 .four,
-.five{
+.five {
+  width: 300px;
 
-    width: 300px;
+  height: 100px;
 
-    height: 100px;
+  border: 2px solid brown;
 
-    border: 2px solid brown;
-
-    padding: 10px;
-
+  padding: 10px;
 }
-
 
 /* ==================== BOX SHADOW ==================== */
 
-
 /* Basic Box Shadow */
 
-.One{
-
-    box-shadow: 5px 5px black;
-
+.One {
+  box-shadow: 5px 5px black;
 }
-
 
 /* Shadow with Blur */
 
-.two{
-
-    box-shadow: 5px 5px 10px black;
-
+.two {
+  box-shadow: 5px 5px 10px black;
 }
-
 
 /* Shadow with Spread */
 
-.three{
-
-    box-shadow: 5px 5px 10px 5px black;
-
+.three {
+  box-shadow: 5px 5px 10px 5px black;
 }
-
 
 /* Inset Shadow */
 
-.four{
-
-    box-shadow: inset 5px 5px 10px black;
-
+.four {
+  box-shadow: inset 5px 5px 10px black;
 }
-
 
 /* Multiple Shadow */
 
-.five{
-
-    box-shadow:
-        5px 5px 10px black,
-        -5px -5px 10px rgb(239, 2, 2),
-        5px 6px 10px rgb(2, 112, 255);
-
+.five {
+  box-shadow:
+    5px 5px 10px black,
+    -5px -5px 10px rgb(239, 2, 2),
+    5px 6px 10px rgb(2, 112, 255);
 }
 
 /* Negative Values */
 
-.six{
+.six {
+  width: 300px;
 
-    width: 300px;
+  height: 100px;
 
-    height: 100px;
+  border: 2px solid brown;
 
-    border: 2px solid brown;
+  padding: 10px;
 
-    padding: 10px;
-
-    box-shadow: -5px -5px 10px black;
-
+  box-shadow: -5px -5px 10px black;
 }
