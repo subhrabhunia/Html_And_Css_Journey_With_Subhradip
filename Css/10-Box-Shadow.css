@@ -1,0 +1,84 @@
+/* ==================== COMMON STYLE ==================== */
+
+.One,
+.two,
+.three,
+.four,
+.five{
+
+    width: 300px;
+
+    height: 100px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ==================== BOX SHADOW ==================== */
+
+
+/* Basic Box Shadow */
+
+.One{
+
+    box-shadow: 5px 5px black;
+
+}
+
+
+/* Shadow with Blur */
+
+.two{
+
+    box-shadow: 5px 5px 10px black;
+
+}
+
+
+/* Shadow with Spread */
+
+.three{
+
+    box-shadow: 5px 5px 10px 5px black;
+
+}
+
+
+/* Inset Shadow */
+
+.four{
+
+    box-shadow: inset 5px 5px 10px black;
+
+}
+
+
+/* Multiple Shadow */
+
+.five{
+
+    box-shadow:
+        5px 5px 10px black,
+        -5px -5px 10px rgb(239, 2, 2),
+        5px 6px 10px rgb(2, 112, 255);
+
+}
+
+/* Negative Values */
+
+.six{
+
+    width: 300px;
+
+    height: 100px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+    box-shadow: -5px -5px 10px black;
+
+}
