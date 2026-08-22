@@ -1,0 +1,147 @@
+/* ==================== COMMON STYLE ==================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve{
+
+    width: 300px;
+
+    height: 100px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ====================================================== */
+/*                    OVERFLOW PROPERTY                   */
+/* ====================================================== */
+
+
+/* Overflow Visible */
+
+.One{
+
+    overflow: visible;
+
+}
+
+
+/* Overflow Hidden */
+
+.two{
+
+    overflow: hidden;
+
+}
+
+
+/* Overflow Scroll */
+
+.three{
+
+    overflow: scroll;
+
+}
+
+
+/* Overflow Auto */
+
+.four{
+
+    overflow: auto;
+
+}
+
+
+/* ====================================================== */
+/*                   OVERFLOW-X PROPERTY                  */
+/* ====================================================== */
+
+
+/* Overflow-X Visible */
+
+.five{
+
+    overflow-x: visible;
+
+}
+
+
+/* Overflow-X Hidden */
+
+.six{
+
+    overflow-x: hidden;
+
+}
+
+
+/* Overflow-X Scroll */
+
+.seven{
+
+    overflow-x: scroll;
+
+}
+
+
+/* Overflow-X Auto */
+
+.eight{
+
+    overflow-x: auto;
+
+}
+
+
+/* ====================================================== */
+/*                   OVERFLOW-Y PROPERTY                  */
+/* ====================================================== */
+
+
+/* Overflow-Y Visible */
+
+.nine{
+
+    overflow-y: visible;
+
+}
+
+
+/* Overflow-Y Hidden */
+
+.ten{
+
+    overflow-y: hidden;
+
+}
+
+
+/* Overflow-Y Scroll */
+
+.eleven{
+
+    overflow-y: scroll;
+
+}
+
+
+/* Overflow-Y Auto */
+
+.twelve{
+
+    overflow-y: auto;
+
+}
