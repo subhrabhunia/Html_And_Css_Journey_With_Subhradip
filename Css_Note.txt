@@ -79,3 +79,23 @@ Link it in HTMLPlace the <link> tag inside the <head> section of every HTML page
   <button class="button">Click Me</button>
 </body>
 </html>
+
+
+What is a Prefix?
+
+A prefix is a group of letters or symbols placed before a word to change or indicate its meaning.
+
+In CSS
+
+A CSS vendor prefix is added before a CSS property to support specific browsers or experimental features.
+
+-webkit-
+-moz-
+-ms-
+-o-
+
+-webkit- → Chrome, Safari, older Edge
+-moz- → Firefox
+-ms- → Internet Explorer
+-o- → Older Opera
+border-radius → Standard CSS property

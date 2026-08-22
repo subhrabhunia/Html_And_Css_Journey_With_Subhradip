@@ -1,0 +1,118 @@
+/* ==================== COMMON STYLE ==================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine{
+
+    width: 300px;
+
+    height: 100px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ==================== BORDER-RADIUS SHORTHAND ==================== */
+
+
+/* One Value
+   All four corners */
+
+.One{
+
+    border-radius: 20px;
+
+}
+
+
+/* Two Values
+   Top-Left & Bottom-Right = 10px
+   Top-Right & Bottom-Left = 20px */
+
+.two{
+
+    border-radius: 10px 20px;
+
+}
+
+
+/* Three Values
+   Top-Left = 10px
+   Top-Right & Bottom-Left = 20px
+   Bottom-Right = 30px */
+
+.three{
+
+    border-radius: 10px 20px 30px;
+
+}
+
+
+/* Four Values
+   Top-Left = 10px
+   Top-Right = 20px
+   Bottom-Right = 30px
+   Bottom-Left = 40px */
+
+.four{
+
+    border-radius: 10px 20px 30px 40px;
+
+}
+
+
+/* 50% */
+
+.five{
+
+    border-radius: 50%;
+
+}
+
+
+/* ==================== INDIVIDUAL CORNERS ==================== */
+
+
+/* Top Left */
+
+.six{
+
+    border-top-left-radius: 30px;
+
+}
+
+
+/* Top Right */
+
+.seven{
+
+    border-top-right-radius: 30px;
+
+}
+
+
+/* Bottom Right */
+
+.eight{
+
+    border-bottom-right-radius: 30px;
+
+}
+
+
+/* Bottom Left */
+
+.nine{
+
+    border-bottom-left-radius: 30px;
+
+}
