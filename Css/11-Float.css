@@ -1,0 +1,56 @@
+/* ==================== COMMON STYLE ==================== */
+
+.One,
+.two,
+.three{
+
+    width: 500px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+    overflow-y: hidden;
+
+}
+
+
+/* Image Common Style */
+
+img{
+
+    width: 150px;
+
+    height: 100px;
+
+}
+
+
+/* ==================== FLOAT LEFT ==================== */
+
+.One img{
+
+    float: left;
+
+    margin-right: 15px;
+
+}
+
+
+/* ==================== FLOAT RIGHT ==================== */
+
+.two img{
+
+    float: right;
+
+    margin-left: 15px;
+
+}
+
+
+/* ==================== FLOAT NONE ==================== */
+
+.three img{
+
+    float: none;
+
+}
