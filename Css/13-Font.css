@@ -1,0 +1,140 @@
+/* ==================== FONT FAMILY ==================== */
+
+/* Font Family: Arial */
+
+.One{
+
+    font-family: Arial;
+
+}
+
+
+/* Font Family: Georgia */
+
+.two{
+
+    font-family: Georgia;
+
+}
+
+
+/* Font Family: Courier New */
+
+.three{
+
+    font-family: "Courier New";
+
+}
+
+
+/* Font Family: Times New Roman */
+
+.four{
+
+    font-family: "Times New Roman";
+
+}
+
+
+/* Font Family: Verdana */
+
+.five{
+
+    font-family: Verdana;
+
+}
+
+
+/* ==================== FONT SIZE ==================== */
+
+/* Font Size: Pixel */
+
+.six{
+
+    font-size: 20px;
+
+}
+
+
+/* Font Size: EM */
+
+.seven{
+
+    font-size: 2em;
+
+}
+
+
+/* Font Size: REM */
+
+.eight{
+
+    font-size: 2rem;
+
+}
+
+
+/* Font Size: Percentage */
+
+.nine{
+
+    font-size: 120%;
+
+}
+
+
+/* ==================== FONT STYLE ==================== */
+
+/* Font Style: Normal */
+
+.ten{
+
+    font-style: normal;
+
+}
+
+
+/* Font Style: Italic */
+
+.eleven{
+
+    font-style: italic;
+
+}
+
+
+/* Font Style: Oblique */
+
+.twelve{
+
+    font-style: oblique;
+
+}
+
+
+/* ==================== FONT VARIANT ==================== */
+
+/* Font Variant: Normal */
+
+.thirteen{
+
+    font-variant: normal;
+
+}
+
+
+/* Font Variant: Small Caps */
+
+.fourteen{
+
+    font-variant: small-caps;
+
+}
+
+/* ==================== FONT SHORTHAND ==================== */
+
+.fifteen{
+
+    font: italic small-caps bold 25px Arial;
+
+}
