@@ -1,0 +1,83 @@
+/* ==================== COMMON STYLE ==================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six{
+
+    width: 300px;
+
+    height: 100px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* Image Style */
+
+img{
+
+    width: 100px;
+
+    height: 80px;
+
+}
+
+
+/* ==================== FLOAT LEFT ==================== */
+
+.One img{
+
+    float: left;
+
+}
+
+
+/* ==================== CLEAR LEFT ==================== */
+
+.two{
+
+    clear: left;
+
+}
+
+
+/* ==================== FLOAT RIGHT ==================== */
+
+.three img{
+
+    float: right;
+
+}
+
+
+/* ==================== CLEAR RIGHT ==================== */
+
+.four{
+
+    clear: right;
+
+}
+
+
+/* ==================== CLEAR BOTH ==================== */
+
+.five{
+
+    clear: both;
+
+}
+
+
+/* ==================== CLEAR NONE ==================== */
+
+.six{
+
+    clear: none;
+
+}
