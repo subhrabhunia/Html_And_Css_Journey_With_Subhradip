@@ -1,0 +1,74 @@
+/* ===================================================== */
+/*                  COMMON STYLE                          */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six{
+
+    width: 250px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+/* ===================================================== */
+/*                    WORD-WRAP                           */
+/* ===================================================== */
+
+/* Normal */
+
+.One{
+
+    word-wrap: normal;
+
+}
+
+/* Break Word */
+
+.two{
+
+    word-wrap: break-word;
+
+}
+
+/* ===================================================== */
+/*                    WORD-BREAK                          */
+/* ===================================================== */
+
+/* Normal */
+
+.three{
+
+    word-break: normal;
+
+}
+
+/* Break All */
+
+.four{
+
+    word-break: break-all;
+
+}
+
+/* Keep All */
+
+.five{
+
+    word-break: keep-all;
+
+}
+
+/* Break Word */
+
+.six{
+
+    word-break: break-word;
+
+}
