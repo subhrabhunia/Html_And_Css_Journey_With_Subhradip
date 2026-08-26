@@ -1,0 +1,67 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five{
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                  TEXT-SHADOW                           */
+/* ===================================================== */
+
+
+/* Normal Shadow */
+
+.One{
+
+    text-shadow: 5px 5px black;
+
+}
+
+
+/* Shadow with Blur */
+
+.two{
+
+    text-shadow: 5px 5px 5px black;
+
+}
+
+
+/* Negative Value */
+
+.three{
+
+    text-shadow: -5px -5px 5px black;
+
+}
+
+
+/* Multiple Shadow */
+
+.four{
+
+    text-shadow:
+        3px 3px 2px red,
+        -3px -3px 2px blue;
+
+}
+
+
+/* No Shadow */
+
+.five{
+
+    text-shadow: none;
+
+}
