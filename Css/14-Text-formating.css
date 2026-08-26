@@ -1,0 +1,334 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
+.fifteen,
+.sixteen,
+.seventeen,
+.eighteen,
+.nineteen,
+.twenty,
+.twentyone,
+.twentytwo,
+.twentythree,
+.twentyfour,
+.twentyfive,
+.twentysix,
+.twentyseven,
+.twentyeight{
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                    TEXT-ALIGN                         */
+/* ===================================================== */
+
+
+/* Left */
+
+.One{
+
+    text-align: left;
+
+}
+
+
+/* Right */
+
+.two{
+
+    text-align: right;
+
+}
+
+
+/* Center */
+
+.three{
+
+    text-align: center;
+
+}
+
+
+/* Justify */
+
+.four{
+
+    text-align: justify;
+
+}
+
+
+/* Start */
+
+.five{
+
+    text-align: start;
+
+}
+
+
+/* End */
+
+.six{
+
+    text-align: end;
+
+}
+
+
+/* Match Parent */
+
+.seven{
+
+    text-align: match-parent;
+
+}
+
+
+/* Justify All */
+
+.eight{
+
+    text-align: justify-all;
+
+}
+
+
+/* ===================================================== */
+/*                  TEXT-ALIGN-LAST                      */
+/* ===================================================== */
+
+
+/* Auto */
+
+.nine{
+
+    text-align: justify;
+
+    text-align-last: auto;
+
+}
+
+
+/* Left */
+
+.ten{
+
+    text-align: justify;
+
+    text-align-last: left;
+
+}
+
+
+/* Right */
+
+.eleven{
+
+    text-align: justify;
+
+    text-align-last: right;
+
+}
+
+
+/* Center */
+
+.twelve{
+
+    text-align: justify;
+
+    text-align-last: center;
+
+}
+
+
+/* Justify */
+
+.thirteen{
+
+    text-align: justify;
+
+    text-align-last: justify;
+
+}
+
+
+/* Start */
+
+.fourteen{
+
+    text-align: justify;
+
+    text-align-last: start;
+
+}
+
+
+/* End */
+
+.fifteen{
+
+    text-align: justify;
+
+    text-align-last: end;
+
+}
+
+
+/* ===================================================== */
+/*                   TEXT-TRANSFORM                      */
+/* ===================================================== */
+
+
+/* None */
+
+.sixteen{
+
+    text-transform: none;
+
+}
+
+
+/* Uppercase */
+
+.seventeen{
+
+    text-transform: uppercase;
+
+}
+
+
+/* Lowercase */
+
+.eighteen{
+
+    text-transform: lowercase;
+
+}
+
+
+/* Capitalize */
+
+.nineteen{
+
+    text-transform: capitalize;
+
+}
+
+
+/* Full Width */
+
+.twenty{
+
+    text-transform: full-width;
+
+}
+
+
+/* ===================================================== */
+/*                    TEXT-INDENT                        */
+/* ===================================================== */
+
+
+/* Pixel */
+
+.twentyone{
+
+    text-indent: 50px;
+
+}
+
+
+/* Percentage */
+
+.twentytwo{
+
+    text-indent: 10%;
+
+}
+
+
+/* ===================================================== */
+/*                   WORD-SPACING                        */
+/* ===================================================== */
+
+
+/* Normal */
+
+.twentythree{
+
+    word-spacing: normal;
+
+}
+
+
+/* Positive Value */
+
+.twentyfour{
+
+    word-spacing: 20px;
+
+}
+
+
+/* Negative Value */
+
+.twentyfive{
+
+    word-spacing: -5px;
+
+}
+
+
+/* ===================================================== */
+/*                  LETTER-SPACING                       */
+/* ===================================================== */
+
+
+/* Normal */
+
+.twentysix{
+
+    letter-spacing: normal;
+
+}
+
+
+/* Positive Value */
+
+.twentyseven{
+
+    letter-spacing: 5px;
+
+}
+
+
+/* Negative Value */
+
+.twentyeight{
+
+    letter-spacing: -2px;
+
+}
