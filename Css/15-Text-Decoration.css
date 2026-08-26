@@ -1,0 +1,160 @@
+/* ===================================================== */
+/*                    COMMON STYLE                       */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve{
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*              TEXT-DECORATION-LINE                     */
+/* ===================================================== */
+
+
+/* None */
+
+.One{
+
+    text-decoration-line: none;
+
+}
+
+
+/* Underline */
+
+.two{
+
+    text-decoration-line: underline;
+
+}
+
+
+/* Overline */
+
+.three{
+
+    text-decoration-line: overline;
+
+}
+
+
+/* Line Through */
+
+.four{
+
+    text-decoration-line: line-through;
+
+}
+
+
+/* ===================================================== */
+/*              TEXT-DECORATION-STYLE                    */
+/* ===================================================== */
+
+
+/* Solid */
+
+.five{
+
+    text-decoration-line: underline;
+
+    text-decoration-style: solid;
+
+}
+
+
+/* Double */
+
+.six{
+
+    text-decoration-line: underline;
+
+    text-decoration-style: double;
+
+}
+
+
+/* Dotted */
+
+.seven{
+
+    text-decoration-line: underline;
+
+    text-decoration-style: dotted;
+
+}
+
+
+/* Dashed */
+
+.eight{
+
+    text-decoration-line: underline;
+
+    text-decoration-style: dashed;
+
+}
+
+
+/* Wavy */
+
+.nine{
+
+    text-decoration-line: underline;
+
+    text-decoration-style: wavy;
+
+}
+
+
+/* ===================================================== */
+/*              TEXT-DECORATION-COLOR                    */
+/* ===================================================== */
+
+.ten{
+
+    text-decoration-line: underline;
+
+    text-decoration-color: brown;
+
+}
+
+
+/* ===================================================== */
+/*            TEXT-DECORATION-THICKNESS                  */
+/* ===================================================== */
+
+.eleven{
+
+    text-decoration-line: underline;
+
+    text-decoration-thickness: 5px;
+
+}
+
+
+/* ===================================================== */
+/*              TEXT-DECORATION SHORTHAND                */
+/* ===================================================== */
+
+.twelve{
+
+    text-decoration: underline brown wavy 3px;
+
+}
