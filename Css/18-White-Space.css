@@ -1,0 +1,77 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six{
+
+    width: 300px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                    WHITE-SPACE                        */
+/* ===================================================== */
+
+
+/* Normal */
+
+.One{
+
+    white-space: normal;
+
+}
+
+
+/* No Wrap */
+
+.two{
+
+    white-space: nowrap;
+
+}
+
+
+/* Pre */
+
+.three{
+
+    white-space: pre;
+
+}
+
+
+/* Pre Wrap */
+
+.four{
+
+    white-space: pre-wrap;
+
+}
+
+
+/* Pre Line */
+
+.five{
+
+    white-space: pre-line;
+
+}
+
+
+/* Break Spaces */
+
+.six{
+
+    white-space: break-spaces;
+
+}
