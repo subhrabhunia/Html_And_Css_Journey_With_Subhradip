@@ -1,0 +1,69 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five{
+
+    width: 250px;
+
+    height: 100px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                  WRITING-MODE                         */
+/* ===================================================== */
+
+
+/* Horizontal Top to Bottom */
+
+.One{
+
+    writing-mode: horizontal-tb;
+
+}
+
+
+/* Vertical Right to Left */
+
+.two{
+
+    writing-mode: vertical-rl;
+
+}
+
+
+/* Vertical Left to Right */
+
+.three{
+
+    writing-mode: vertical-lr;
+
+}
+
+
+/* Sideways Right to Left */
+
+.four{
+
+    writing-mode: sideways-rl;
+
+}
+
+
+/* Sideways Left to Right */
+
+.five{
+
+    writing-mode: sideways-lr;
+
+}
