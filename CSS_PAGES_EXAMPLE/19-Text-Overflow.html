@@ -1,0 +1,95 @@
+<!-- In this file we know about text-overflow property. -->
+
+<!-- CSS TEXT-OVERFLOW:-
+
+1. clip
+2. ellipsis
+3. string
+
+TEXT-OVERFLOW requires:-
+
+1. width
+2. white-space: nowrap
+3. overflow: hidden
+4. text-overflow
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Text Overflow</title>
+
+    <!-- Link with CSS File -->
+    <link rel="stylesheet" href="../Css/19-Text-Overflow.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== TEXT-OVERFLOW ==================== -->
+
+    <h2>TEXT-OVERFLOW</h2>
+
+
+    <!-- Clip -->
+
+    <div class="One">
+
+        <p>
+            This is a very very very very very long text
+            which will be clipped at the end.
+        </p>
+
+    </div>
+
+    <br>
+
+
+    <!-- Ellipsis -->
+
+    <div class="two">
+
+        <p>
+            This is a very very very very very long text
+            which will show three dots at the end.
+        </p>
+
+    </div>
+
+    <br>
+
+
+    <!-- String -->
+
+    <div class="three">
+
+        <p>
+            This is a very very very very very long text
+            which uses a custom string at the end.
+        </p>
+
+    </div>
+
+    <br>
+
+
+    <!-- Custom String -->
+
+    <div class="four">
+
+        <p>
+            This is another very very very very very long
+            text with a custom string.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
