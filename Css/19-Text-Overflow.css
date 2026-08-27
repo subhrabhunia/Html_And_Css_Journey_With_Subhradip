@@ -1,0 +1,73 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four{
+
+    width: 250px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                  TEXT-OVERFLOW                        */
+/* ===================================================== */
+
+
+/* Clip */
+
+.One{
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: clip;
+
+}
+
+
+/* Ellipsis */
+
+.two{
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* String */
+
+.three{
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: "...";
+
+}
+
+
+/* Custom String */
+
+.four{
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ">>>";
+
+}
