@@ -1,0 +1,93 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five{
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*              TEXT-STROKE-WIDTH                        */
+/* ===================================================== */
+
+
+/* Text Stroke Width */
+
+.One{
+
+    -webkit-text-stroke-width: 2px;
+
+}
+
+
+/* ===================================================== */
+/*              TEXT-STROKE-COLOR                        */
+/* ===================================================== */
+
+
+/* Text Stroke Color */
+
+.two{
+
+    -webkit-text-stroke-width: 2px;
+
+    -webkit-text-stroke-color: brown;
+
+}
+
+
+/* ===================================================== */
+/*              TEXT-STROKE SHORTHAND                    */
+/* ===================================================== */
+
+
+/* Text Stroke Shorthand */
+
+.three{
+
+    -webkit-text-stroke: 2px brown;
+
+}
+
+
+/* ===================================================== */
+/*       TEXT-STROKE + TEXT-FILL-COLOR                   */
+/* ===================================================== */
+
+
+/* Text Stroke with Fill Color */
+
+.four{
+
+    -webkit-text-fill-color: yellow;
+
+    -webkit-text-stroke: 2px brown;
+
+}
+
+
+/* ===================================================== */
+/*   TEXT-STROKE + TEXT-FILL-COLOR + TEXT-SHADOW         */
+/* ===================================================== */
+
+
+/* Text Stroke with Fill and Shadow */
+
+.five{
+
+    -webkit-text-fill-color: white;
+
+    -webkit-text-stroke: 2px brown;
+
+    text-shadow: 3px 3px 3px gray;
+
+}
