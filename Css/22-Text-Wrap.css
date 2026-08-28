@@ -1,0 +1,57 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four{
+
+    width: 250px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                    TEXT-WRAP                          */
+/* ===================================================== */
+
+
+/* Text Wrap: Wrap */
+
+.One{
+
+    text-wrap: wrap;
+
+}
+
+
+/* Text Wrap: No Wrap */
+
+.two{
+
+    text-wrap: nowrap;
+
+}
+
+
+/* Text Wrap: Balance */
+
+.three{
+
+    text-wrap: balance;
+
+}
+
+
+/* Text Wrap: Balance */
+
+.four{
+
+    text-wrap: balance;
+
+}
