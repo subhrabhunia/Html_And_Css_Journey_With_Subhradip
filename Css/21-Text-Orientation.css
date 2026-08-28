@@ -1,0 +1,55 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three{
+
+    width: 150px;
+
+    height: 200px;
+
+    border: 2px solid brown;
+
+    padding: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                 TEXT-ORIENTATION                      */
+/* ===================================================== */
+
+
+/* Mixed */
+
+.One{
+
+    writing-mode: vertical-rl;
+
+    text-orientation: mixed;
+
+}
+
+
+/* Upright */
+
+.two{
+
+    writing-mode: vertical-rl;
+
+    text-orientation: upright;
+
+}
+
+
+/* Sideways */
+
+.three{
+
+    writing-mode: vertical-rl;
+
+    text-orientation: sideways;
+
+}
