@@ -1,0 +1,382 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten{
+
+    width: 800px;
+
+    border: 2px solid brown;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* ===================================================== */
+/*                  COLUMN-COUNT                         */
+/* ===================================================== */
+
+
+/* Auto */
+
+.One{
+
+    column-count: auto;
+
+}
+
+
+/* Number */
+
+.two{
+
+    column-count: 3;
+
+}
+
+
+/* ===================================================== */
+/*                  COLUMN-WIDTH                          */
+/* ===================================================== */
+
+
+/* Auto */
+
+.three{
+
+    column-count: 3;
+
+    column-width: auto;
+
+}
+
+
+/* Length */
+
+.four{
+
+    column-width: 200px;
+
+}
+
+
+/* ===================================================== */
+/*                   COLUMN-GAP                           */
+/* ===================================================== */
+
+
+/* Normal */
+
+.five{
+
+    column-count: 3;
+
+    column-gap: normal;
+
+}
+
+
+/* Length */
+
+.six{
+
+    column-count: 3;
+
+    column-gap: 50px;
+
+}
+
+
+/* Percentage */
+
+.seven{
+
+    column-count: 3;
+
+    column-gap: 10%;
+
+}
+
+
+/* ===================================================== */
+/*                COLUMN-RULE-STYLE                      */
+/* ===================================================== */
+
+
+/* None */
+
+.eight{
+
+    column-count: 3;
+
+    column-rule-style: none;
+
+}
+
+
+/* Hidden */
+
+.eight{
+
+    column-rule-style: hidden;
+
+}
+
+
+/* Dotted */
+
+.eight{
+
+    column-rule-style: dotted;
+
+}
+
+
+/* Dashed */
+
+.eight{
+
+    column-rule-style: dashed;
+
+}
+
+
+/* Solid */
+
+.eight{
+
+    column-rule-style: solid;
+
+}
+
+
+/* Double */
+
+.eight{
+
+    column-rule-style: double;
+
+}
+
+
+/* Groove */
+
+.eight{
+
+    column-rule-style: groove;
+
+}
+
+
+/* Ridge */
+
+.eight{
+
+    column-rule-style: ridge;
+
+}
+
+
+/* Inset */
+
+.eight{
+
+    column-rule-style: inset;
+
+}
+
+
+/* Outset */
+
+.eight{
+
+    column-rule-style: outset;
+
+}
+
+
+/* ===================================================== */
+/*                COLUMN-RULE-WIDTH                      */
+/* ===================================================== */
+
+
+/* Thin */
+
+.nine{
+
+    column-count: 3;
+
+    column-rule-style: solid;
+
+    column-rule-width: thin;
+
+}
+
+
+/* Medium */
+
+.nine{
+
+    column-rule-width: medium;
+
+}
+
+
+/* Thick */
+
+.nine{
+
+    column-rule-width: thick;
+
+}
+
+
+/* Length */
+
+.nine{
+
+    column-rule-width: 5px;
+
+}
+
+
+/* ===================================================== */
+/*                COLUMN-RULE-COLOR                      */
+/* ===================================================== */
+
+
+/* Color */
+
+.ten{
+
+    column-count: 3;
+
+    column-rule-style: solid;
+
+    column-rule-width: 3px;
+
+    column-rule-color: brown;
+
+}
+
+
+/* ===================================================== */
+/*                    COLUMN-RULE                         */
+/* ===================================================== */
+
+
+/* Shorthand */
+
+.ten{
+
+    column-rule: 3px solid brown;
+
+}
+
+
+/* ===================================================== */
+/*                    COLUMN-SPAN                         */
+/* ===================================================== */
+
+
+/* None */
+
+.ten h3{
+
+    column-span: none;
+
+}
+
+
+/* All */
+
+.ten h3{
+
+    column-span: all;
+
+}
+
+
+/* ===================================================== */
+/*                    COLUMN-FILL                         */
+/* ===================================================== */
+
+
+/* Auto */
+
+.ten{
+
+    column-fill: auto;
+
+}
+
+
+/* Balance */
+
+.ten{
+
+    column-fill: balance;
+
+}
+
+
+/* Balance All */
+
+.ten{
+
+    column-fill: balance-all;
+
+}
+
+
+/* ===================================================== */
+/*                      COLUMNS                           */
+/* ===================================================== */
+
+
+/* Auto */
+
+.ten{
+
+    columns: auto;
+
+}
+
+
+/* Column Count */
+
+.ten{
+
+    columns: 3;
+
+}
+
+
+/* Column Width */
+
+.ten{
+
+    columns: 200px;
+
+}
+
+
+/* Count + Width */
+
+.ten{
+
+    columns: 3 200px;
+
+}
