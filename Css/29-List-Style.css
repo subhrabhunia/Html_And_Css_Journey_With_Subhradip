@@ -1,0 +1,213 @@
+/* ===================================================== */
+/*                  LIST-STYLE-TYPE                      */
+/* ===================================================== */
+
+
+/* None */
+
+.One{
+
+    list-style-type: none;
+
+}
+
+
+/* Disc */
+
+.two{
+
+    list-style-type: disc;
+
+}
+
+
+/* Circle */
+
+.three{
+
+    list-style-type: circle;
+
+}
+
+
+/* Square */
+
+.four{
+
+    list-style-type: square;
+
+}
+
+
+/* Decimal */
+
+.five{
+
+    list-style-type: decimal;
+
+}
+
+
+/* Decimal Leading Zero */
+
+.six{
+
+    list-style-type: decimal-leading-zero;
+
+}
+
+
+/* Lower Alpha */
+
+.seven{
+
+    list-style-type: lower-alpha;
+
+}
+
+
+/* Upper Alpha */
+
+.eight{
+
+    list-style-type: upper-alpha;
+
+}
+
+
+/* Lower Roman */
+
+.nine{
+
+    list-style-type: lower-roman;
+
+}
+
+
+/* Upper Roman */
+
+.ten{
+
+    list-style-type: upper-roman;
+
+}
+
+
+/* Lower Greek */
+
+.eleven{
+
+    list-style-type: lower-greek;
+
+}
+
+
+/* Lower Latin */
+
+.twelve{
+
+    list-style-type: lower-latin;
+
+}
+
+
+/* Upper Latin */
+
+.thirteen{
+
+    list-style-type: upper-latin;
+
+}
+
+
+/* Armenian */
+
+.fourteen{
+
+    list-style-type: armenian;
+
+}
+
+
+/* Georgian */
+
+.fifteen{
+
+    list-style-type: georgian;
+
+}
+
+
+/* ===================================================== */
+/*                LIST-STYLE-POSITION                    */
+/* ===================================================== */
+
+
+/* Inside */
+
+.sixteen{
+
+    list-style-position: inside;
+
+}
+
+
+/* Outside */
+
+.seventeen{
+
+    list-style-position: outside;
+
+}
+
+
+/* ===================================================== */
+/*                 LIST-STYLE-IMAGE                      */
+/* ===================================================== */
+
+
+/* None */
+
+.eighteen{
+
+    list-style-image: none;
+
+}
+
+
+/* Image */
+
+.nineteen{
+
+    list-style-image: url("../Assest/Icons/instagram.png");
+
+}
+
+
+/* ===================================================== */
+/*                    LIST-STYLE                         */
+/* ===================================================== */
+
+
+/* Shorthand */
+
+.twenty{
+
+    list-style: square inside;
+
+}
+
+
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.box{
+
+    width: 600px;
+
+    border: 2px solid brown;
+
+    padding: 20px;
+
+}
