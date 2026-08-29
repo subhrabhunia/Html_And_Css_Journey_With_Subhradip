@@ -1,0 +1,94 @@
+/* ===================================================== */
+/*                  COMMON STYLE                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six{
+
+    width: 400px;
+
+    border-block: 2px solid brown;
+
+    padding: 20px;
+
+}
+
+
+/* ===================================================== */
+/*                  TEXT-BOX-TRIM                        */
+/* ===================================================== */
+
+
+/* Trim None */
+
+.One{
+
+    text-box-trim: none;
+
+    text-box-edge: auto;
+
+}
+
+
+/* Trim Start */
+
+.two{
+
+    text-box-trim: trim-start;
+
+    text-box-edge: text;
+
+}
+
+
+/* Trim End */
+
+.three{
+
+    text-box-trim: trim-end;
+
+    text-box-edge: text;
+
+}
+
+
+/* Trim Both */
+
+.four{
+
+    text-box-trim: trim-both;
+
+    text-box-edge: text;
+
+}
+
+
+/* ===================================================== */
+/*                  TEXT-BOX-EDGE                        */
+/* ===================================================== */
+
+
+/* Text Edge */
+
+.five{
+
+    text-box-trim: trim-both;
+
+    text-box-edge: text;
+
+}
+
+
+/* Cap Edge */
+
+.six{
+
+    text-box-trim: trim-both;
+
+    text-box-edge: cap;
+
+}
