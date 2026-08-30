@@ -1,0 +1,899 @@
+/* ===================================================== */
+/*                    COMMON STYLE                       */
+/* ===================================================== */
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+
+    background-color: #eeeeee;
+
+}
+
+h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+h2{
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+.box{
+
+    width: 600px;
+
+    height: 180px;
+
+    border: 5px solid brown;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* ===================================================== */
+/*                  BACKGROUND COLOR                     */
+/* ===================================================== */
+
+
+/* Transparent */
+
+.bg-color-transparent{
+
+    background-color: transparent;
+
+}
+
+
+/* Color Name */
+
+.bg-color-name{
+
+    background-color: lightblue;
+
+}
+
+
+/* HEX */
+
+.bg-color-hex{
+
+    background-color: #EA7B7B;
+
+}
+
+
+/* RGB */
+
+.bg-color-rgb{
+
+    background-color: rgb(234, 123, 123);
+
+}
+
+
+/* RGBA */
+
+.bg-color-rgba{
+
+    background-color: rgba(234, 123, 123, 0.5);
+
+}
+
+
+/* ===================================================== */
+/*                  BACKGROUND IMAGE                     */
+/* ===================================================== */
+
+
+/* None */
+
+.image-none{
+
+    background-image: none;
+
+}
+
+
+/* URL */
+
+.image-url{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+/* ===================================================== */
+/*                  BACKGROUND REPEAT                    */
+/* ===================================================== */
+
+.repeat{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: repeat;
+
+}
+
+.no-repeat{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: 150px;
+
+}
+
+.repeat-x{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: repeat-x;
+
+    background-size: 150px;
+
+}
+
+.repeat-y{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: repeat-y;
+
+    background-size: 150px;
+
+}
+
+.space{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: space;
+
+    background-size: 150px;
+
+}
+
+.round{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: round;
+
+    background-size: 150px;
+
+}
+
+
+/* ===================================================== */
+/*                 BACKGROUND POSITION                   */
+/* ===================================================== */
+
+.position-left{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: left;
+
+    background-size: 200px;
+
+}
+
+.position-center{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: 200px;
+
+}
+
+.position-right{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: right;
+
+    background-size: 200px;
+
+}
+
+.position-top{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: top;
+
+    background-size: 200px;
+
+}
+
+.position-bottom{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: bottom;
+
+    background-size: 200px;
+
+}
+
+.position-left-top{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: left top;
+
+    background-size: 200px;
+
+}
+
+.position-center-top{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: center top;
+
+    background-size: 200px;
+
+}
+
+.position-right-top{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: right top;
+
+    background-size: 200px;
+
+}
+
+.position-left-center{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: left center;
+
+    background-size: 200px;
+
+}
+
+.position-right-center{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: right center;
+
+    background-size: 200px;
+
+}
+
+.position-left-bottom{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: left bottom;
+
+    background-size: 200px;
+
+}
+
+.position-center-bottom{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: center bottom;
+
+    background-size: 200px;
+
+}
+
+.position-right-bottom{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: right bottom;
+
+    background-size: 200px;
+
+}
+
+.position-length{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: 50px 100px;
+
+    background-size: 200px;
+
+}
+
+.position-percentage{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: 50% 50%;
+
+    background-size: 200px;
+
+}
+
+
+/* ===================================================== */
+/*                   BACKGROUND SIZE                     */
+/* ===================================================== */
+
+.size-auto{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: auto;
+
+}
+
+.size-cover{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+.size-contain{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: contain;
+
+}
+
+.size-length{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: 300px 200px;
+
+}
+
+.size-percentage{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: 50% 50%;
+
+}
+
+
+/* ===================================================== */
+/*                BACKGROUND ATTACHMENT                  */
+/* ===================================================== */
+
+.attachment-scroll{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: scroll;
+
+}
+
+.attachment-fixed{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+}
+
+.attachment-local{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: local;
+
+}
+
+
+/* ===================================================== */
+/*                  BACKGROUND ORIGIN                    */
+/* ===================================================== */
+
+.origin-border{
+
+    border: 20px solid rgba(165, 42, 42, 0.5);
+
+    padding: 30px;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-origin: border-box;
+
+}
+
+.origin-padding{
+
+    border: 20px solid rgba(165, 42, 42, 0.5);
+
+    padding: 30px;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-origin: padding-box;
+
+}
+
+.origin-content{
+
+    border: 20px solid rgba(165, 42, 42, 0.5);
+
+    padding: 30px;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-origin: content-box;
+
+}
+
+
+/* ===================================================== */
+/*                   BACKGROUND CLIP                     */
+/* ===================================================== */
+
+.clip-border{
+
+    border: 20px solid rgba(165, 42, 42, 0.5);
+
+    padding: 30px;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-clip: border-box;
+
+}
+
+.clip-padding{
+
+    border: 20px solid rgba(165, 42, 42, 0.5);
+
+    padding: 30px;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-clip: padding-box;
+
+}
+
+.clip-content{
+
+    border: 20px solid rgba(165, 42, 42, 0.5);
+
+    padding: 30px;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-clip: content-box;
+
+}
+
+.clip-text{
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    font-size: 50px;
+
+}
+
+
+/* ===================================================== */
+/*                 BACKGROUND BLEND MODE                 */
+/* ===================================================== */
+
+.blend-normal{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: normal;
+
+}
+
+.blend-multiply{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: multiply;
+
+}
+
+.blend-screen{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: screen;
+
+}
+
+.blend-overlay{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: overlay;
+
+}
+
+.blend-darken{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: darken;
+
+}
+
+.blend-lighten{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: lighten;
+
+}
+
+.blend-color-dodge{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: color-dodge;
+
+}
+
+.blend-color-burn{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: color-burn;
+
+}
+
+.blend-hard-light{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: hard-light;
+
+}
+
+.blend-soft-light{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: soft-light;
+
+}
+
+.blend-difference{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: difference;
+
+}
+
+.blend-exclusion{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: exclusion;
+
+}
+
+.blend-hue{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: hue;
+
+}
+
+.blend-saturation{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: saturation;
+
+}
+
+.blend-color{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: color;
+
+}
+
+.blend-luminosity{
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+    background-blend-mode: luminosity;
+
+}
+
+
+/* ===================================================== */
+/*                  BACKGROUND SHORTHAND                 */
+/* ===================================================== */
+
+.shorthand-color{
+
+    background: lightblue;
+
+}
+
+.shorthand-image{
+
+    background: lightblue url("../Assest/Images/Image1.JPG");
+
+    background-size: cover;
+
+}
+
+.shorthand-repeat{
+
+    background: lightblue url("../Assest/Images/Image1.JPG") no-repeat;
+
+    background-size: cover;
+
+}
+
+.shorthand-position{
+
+    background: lightblue url("../Assest/Images/Image1.JPG") no-repeat center;
+
+    background-size: cover;
+
+}
+
+.shorthand-size{
+
+    background: lightblue url("../Assest/Images/Image1.JPG") no-repeat center / cover;
+
+}
+
+
+/* ===================================================== */
+/*                  FULL SCREEN BACKGROUND               */
+/* ===================================================== */
+
+.full-screen{
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: lightblue;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+}
+
+.full-screen h1{
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+}
+
+.full-screen p{
+
+    font-size: 25px;
+
+    margin: 5px;
+
+}
