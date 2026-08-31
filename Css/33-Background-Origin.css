@@ -1,0 +1,104 @@
+/* ===================================================== */
+/*                    COMMON STYLE                       */
+/* ===================================================== */
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body{
+
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+
+    background-color: #eeeeee;
+
+}
+
+
+h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+h2{
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ===================================================== */
+/*                    COMMON BOX                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three{
+
+    width: 600px;
+
+    height: 300px;
+
+    border: 20px solid rgba(139, 69, 19, 0.6);
+
+    padding: 40px;
+
+    margin-bottom: 30px;
+
+    background-image: url("../Assest/Images/Image1.JPG");
+
+    background-repeat: no-repeat;
+
+    background-size: 250px;
+
+    background-position: left top;
+
+}
+
+
+/* ===================================================== */
+/*                   BORDER-BOX                          */
+/* ===================================================== */
+
+.One{
+
+    background-origin: border-box;
+
+}
+
+
+/* ===================================================== */
+/*                   PADDING-BOX                         */
+/* ===================================================== */
+
+.two{
+
+    background-origin: padding-box;
+
+}
+
+
+/* ===================================================== */
+/*                   CONTENT-BOX                        */
+/* ===================================================== */
+
+.three{
+
+    background-origin: content-box;
+
+}
