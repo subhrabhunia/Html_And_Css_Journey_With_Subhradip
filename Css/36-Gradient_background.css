@@ -1,0 +1,255 @@
+/* ===================================================== */
+/*                    COMMON STYLE                       */
+/* ===================================================== */
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body{
+
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+
+    background-color: #eeeeee;
+
+}
+
+
+h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+h2{
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ===================================================== */
+/*                    COMMON BOX                         */
+/* ===================================================== */
+
+.One,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten{
+
+    width: 600px;
+
+    height: 250px;
+
+    border: 5px solid brown;
+
+    margin-bottom: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
+/* ===================================================== */
+/*                 1. LINEAR GRADIENT                    */
+/* ===================================================== */
+
+.One{
+
+    background: linear-gradient(
+        red,
+        yellow
+    );
+
+}
+
+
+/* ===================================================== */
+/*             2. LINEAR GRADIENT DIRECTION             */
+/* ===================================================== */
+
+.two{
+
+    background: linear-gradient(
+        to right,
+        blue,
+        green
+    );
+
+}
+
+
+/* ===================================================== */
+/*                  3. RADIAL GRADIENT                   */
+/* ===================================================== */
+
+.three{
+
+    background: radial-gradient(
+        red,
+        yellow,
+        green
+    );
+
+}
+
+
+/* ===================================================== */
+/*             4. RADIAL GRADIENT CIRCLE                */
+/* ===================================================== */
+
+.four{
+
+    background: radial-gradient(
+        circle,
+        red,
+        yellow,
+        blue
+    );
+
+}
+
+
+/* ===================================================== */
+/*                   5. CONIC GRADIENT                  */
+/* ===================================================== */
+
+.five{
+
+    background: conic-gradient(
+        red,
+        yellow,
+        green,
+        blue,
+        red
+    );
+
+}
+
+
+/* ===================================================== */
+/*              6. REPEATING LINEAR GRADIENT            */
+/* ===================================================== */
+
+.six{
+
+    background: repeating-linear-gradient(
+        45deg,
+        red 0px,
+        red 20px,
+        yellow 20px,
+        yellow 40px
+    );
+
+}
+
+
+/* ===================================================== */
+/*              7. REPEATING RADIAL GRADIENT            */
+/* ===================================================== */
+
+.seven{
+
+    background: repeating-radial-gradient(
+        circle,
+        red 0px,
+        red 20px,
+        yellow 20px,
+        yellow 40px
+    );
+
+}
+
+
+/* ===================================================== */
+/*              8. REPEATING CONIC GRADIENT             */
+/* ===================================================== */
+
+.eight{
+
+    background: repeating-conic-gradient(
+        red 0deg 20deg,
+        yellow 20deg 40deg
+    );
+
+}
+
+
+/* ===================================================== */
+/*                 9. MULTIPLE COLORS                   */
+/* ===================================================== */
+
+.nine{
+
+    background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    );
+
+}
+
+
+/* ===================================================== */
+/*                   10. GRADIENT TEXT                  */
+/* ===================================================== */
+
+.ten{
+
+    background-color: white;
+
+}
+
+
+.ten h1{
+
+    font-size: 60px;
+
+    background: linear-gradient(
+        to right,
+        red,
+        blue
+    );
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+}
