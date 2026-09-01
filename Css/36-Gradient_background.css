@@ -55,7 +55,11 @@ h2{
 .seven,
 .eight,
 .nine,
-.ten{
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen{
 
     width: 600px;
 
@@ -95,7 +99,7 @@ h2{
 
 
 /* ===================================================== */
-/*             2. LINEAR GRADIENT DIRECTION             */
+/*             2. LINEAR GRADIENT RIGHT                 */
 /* ===================================================== */
 
 .two{
@@ -125,7 +129,7 @@ h2{
 
 
 /* ===================================================== */
-/*             4. RADIAL GRADIENT CIRCLE                */
+/*              4. RADIAL GRADIENT CIRCLE               */
 /* ===================================================== */
 
 .four{
@@ -141,10 +145,74 @@ h2{
 
 
 /* ===================================================== */
-/*                   5. CONIC GRADIENT                  */
+/*                  5. CLOSEST CORNER                   */
 /* ===================================================== */
 
 .five{
+
+    background: radial-gradient(
+        closest-corner,
+        red,
+        yellow,
+        blue
+    );
+
+}
+
+
+/* ===================================================== */
+/*                   6. CLOSEST SIDE                    */
+/* ===================================================== */
+
+.six{
+
+    background: radial-gradient(
+        closest-side,
+        red,
+        yellow,
+        blue
+    );
+
+}
+
+
+/* ===================================================== */
+/*                 7. FARTHEST CORNER                   */
+/* ===================================================== */
+
+.seven{
+
+    background: radial-gradient(
+        farthest-corner,
+        red,
+        yellow,
+        blue
+    );
+
+}
+
+
+/* ===================================================== */
+/*                  8. FARTHEST SIDE                    */
+/* ===================================================== */
+
+.eight{
+
+    background: radial-gradient(
+        farthest-side,
+        red,
+        yellow,
+        blue
+    );
+
+}
+
+
+/* ===================================================== */
+/*                  9. CONIC GRADIENT                   */
+/* ===================================================== */
+
+.nine{
 
     background: conic-gradient(
         red,
@@ -158,10 +226,10 @@ h2{
 
 
 /* ===================================================== */
-/*              6. REPEATING LINEAR GRADIENT            */
+/*             10. REPEATING LINEAR GRADIENT            */
 /* ===================================================== */
 
-.six{
+.ten{
 
     background: repeating-linear-gradient(
         45deg,
@@ -175,10 +243,10 @@ h2{
 
 
 /* ===================================================== */
-/*              7. REPEATING RADIAL GRADIENT            */
+/*             11. REPEATING RADIAL GRADIENT            */
 /* ===================================================== */
 
-.seven{
+.eleven{
 
     background: repeating-radial-gradient(
         circle,
@@ -192,10 +260,10 @@ h2{
 
 
 /* ===================================================== */
-/*              8. REPEATING CONIC GRADIENT             */
+/*             12. REPEATING CONIC GRADIENT             */
 /* ===================================================== */
 
-.eight{
+.twelve{
 
     background: repeating-conic-gradient(
         red 0deg 20deg,
@@ -206,10 +274,10 @@ h2{
 
 
 /* ===================================================== */
-/*                 9. MULTIPLE COLORS                   */
+/*                 13. MULTIPLE COLORS                  */
 /* ===================================================== */
 
-.nine{
+.thirteen{
 
     background: linear-gradient(
         to right,
@@ -226,17 +294,17 @@ h2{
 
 
 /* ===================================================== */
-/*                   10. GRADIENT TEXT                  */
+/*                   14. GRADIENT TEXT                  */
 /* ===================================================== */
 
-.ten{
+.fourteen{
 
     background-color: white;
 
 }
 
 
-.ten h1{
+.fourteen h1{
 
     font-size: 60px;
 
