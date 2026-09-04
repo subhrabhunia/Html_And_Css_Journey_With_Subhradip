@@ -1,0 +1,379 @@
+/* ===================================================== */
+/*                    COMMON STYLE                       */
+/* ===================================================== */
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body{
+
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+
+    background-color: #eeeeee;
+
+}
+
+
+h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+h2{
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ===================================================== */
+/*                      BLOCK                            */
+/* ===================================================== */
+
+.One{
+
+    display: block;
+
+    width: 300px;
+
+    height: 80px;
+
+    padding: 20px;
+
+    margin-bottom: 10px;
+
+    border: 3px solid brown;
+
+    background-color: lightblue;
+
+}
+
+
+/* ===================================================== */
+/*                      INLINE                           */
+/* ===================================================== */
+
+.two{
+
+    display: inline;
+
+    width: 300px;
+
+    height: 80px;
+
+    padding: 20px;
+
+    border: 3px solid brown;
+
+    background-color: lightgreen;
+
+}
+
+
+/* ===================================================== */
+/*                   INLINE-BLOCK                        */
+/* ===================================================== */
+
+.three{
+
+    display: inline-block;
+
+    width: 250px;
+
+    height: 80px;
+
+    padding: 20px;
+
+    margin-right: 10px;
+
+    border: 3px solid brown;
+
+    background-color: lightyellow;
+
+}
+
+
+/* ===================================================== */
+/*                       NONE                            */
+/* ===================================================== */
+
+.four{
+
+    display: none;
+
+    width: 300px;
+
+    height: 80px;
+
+    padding: 20px;
+
+    border: 3px solid brown;
+
+}
+
+
+/* ===================================================== */
+/*                       FLEX                            */
+/* ===================================================== */
+
+.five{
+
+    display: flex;
+
+    width: 600px;
+
+    padding: 20px;
+
+    gap: 20px;
+
+    border: 3px solid brown;
+
+    background-color: white;
+
+}
+
+
+.five div{
+
+    width: 150px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: lightblue;
+
+}
+
+
+/* ===================================================== */
+/*                    INLINE-FLEX                        */
+/* ===================================================== */
+
+.six{
+
+    display: inline-flex;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    border: 3px solid brown;
+
+    background-color: white;
+
+}
+
+
+.six div{
+
+    padding: 30px;
+
+    background-color: lightgreen;
+
+}
+
+
+/* ===================================================== */
+/*                       GRID                            */
+/* ===================================================== */
+
+.seven{
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 150px);
+
+    gap: 20px;
+
+    width: 350px;
+
+    padding: 20px;
+
+    border: 3px solid brown;
+
+    background-color: white;
+
+}
+
+
+.seven div{
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: lightblue;
+
+}
+
+
+/* ===================================================== */
+/*                    INLINE-GRID                        */
+/* ===================================================== */
+
+.eight{
+
+    display: inline-grid;
+
+    grid-template-columns: repeat(3, 120px);
+
+    gap: 10px;
+
+    padding: 20px;
+
+    border: 3px solid brown;
+
+    background-color: white;
+
+}
+
+
+.eight div{
+
+    padding: 20px;
+
+    background-color: lightgreen;
+
+}
+
+
+/* ===================================================== */
+/*                       TABLE                           */
+/* ===================================================== */
+
+.nine{
+
+    display: table;
+
+    border: 3px solid brown;
+
+    background-color: white;
+
+}
+
+
+.table-row{
+
+    display: table-row;
+
+}
+
+
+.table-cell{
+
+    display: table-cell;
+
+    padding: 20px;
+
+    border: 1px solid black;
+
+}
+
+
+/* ===================================================== */
+/*                    INLINE-TABLE                       */
+/* ===================================================== */
+
+.ten{
+
+    display: inline-table;
+
+    border: 3px solid brown;
+
+    background-color: white;
+
+}
+
+
+/* ===================================================== */
+/*                    LIST-ITEM                          */
+/* ===================================================== */
+
+.eleven{
+
+    display: list-item;
+
+    list-style-type: square;
+
+    margin-left: 30px;
+
+    padding: 20px;
+
+    width: 200px;
+
+    border: 3px solid brown;
+
+    background-color: lightblue;
+
+}
+
+
+/* ===================================================== */
+/*                     FLOW-ROOT                         */
+/* ===================================================== */
+
+.twelve{
+
+    display: flow-root;
+
+    width: 300px;
+
+    padding: 20px;
+
+    border: 3px solid brown;
+
+    background-color: lightgreen;
+
+}
+
+
+.twelve div{
+
+    float: left;
+
+    padding: 30px;
+
+    background-color: yellow;
+
+}
+
+
+/* ===================================================== */
+/*                     CONTENTS                          */
+/* ===================================================== */
+
+.thirteen{
+
+    display: contents;
+
+}
+
+
+.thirteen div{
+
+    width: 300px;
+
+    padding: 30px;
+
+    border: 3px solid brown;
+
+    background-color: lightblue;
+
+}
