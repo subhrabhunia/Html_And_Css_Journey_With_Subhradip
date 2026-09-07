@@ -1,0 +1,60 @@
+<!-- In this file we know about CSS z-index property. -->
+
+<!-- CSS Z-INDEX:-
+
+1. z-index: auto;
+2. z-index: 1;
+3. z-index: 2;
+4. z-index: 3;
+5. z-index: -1;
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-Index</title>
+    <link rel="stylesheet" href="../Css/44-CSS-Zindex.css">
+</head>
+<body>
+
+    <h1>CSS Z-INDEX</h1>
+
+    <h2>1. z-index: auto;</h2>
+
+    <div class="container auto-container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+    </div>
+
+
+    <h2>2. z-index: 1;</h2>
+
+    <div class="container">
+        <div class="box red">Z-Index 1</div>
+        <div class="box blue">Z-Index 2</div>
+    </div>
+
+
+    <h2>3. z-index: 3;</h2>
+
+    <div class="container">
+        <div class="box first">Z-Index 1</div>
+        <div class="box second">Z-Index 2</div>
+        <div class="box third">Z-Index 3</div>
+    </div>
+
+
+    <h2>4. z-index: -1;</h2>
+
+    <div class="negative-container">
+        <div class="negative-box">
+            z-index: -1
+        </div>
+        <p>This text is above the negative z-index element.</p>
+    </div>
+
+</body>
+</html>
