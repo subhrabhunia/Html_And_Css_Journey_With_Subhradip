@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+header{
+    padding: 30px;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 36px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 18px;
+    background-color: #444444;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main{
+    padding: 30px 20px;
+}
+
+section{
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 250px;
+    padding: 30px 20px;
+    border: 2px solid black;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.box h3{
+    margin-bottom: 15px;
+}
+
+.screen-size{
+    text-align: center;
+}
+
+.screen-size p{
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+
+.large{
+    background-color: lightgreen;
+}
+
+.desktop{
+    background-color: lightblue;
+}
+
+.tablet{
+    background-color: lightyellow;
+}
+
+.mobile{
+    background-color: lightcoral;
+}
+
+.small-mobile{
+    background-color: lightpink;
+}
+
+.dark-mode{
+    text-align: center;
+}
+
+footer{
+    padding: 25px;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+
+/* ALL */
+
+@media all{
+
+    .box{
+        border-radius: 10px;
+    }
+
+}
+
+
+/* SCREEN */
+
+@media screen{
+
+    body{
+        background-color: #eeeeee;
+    }
+
+}
+
+
+/* PRINT */
+
+@media print{
+
+    nav{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+    section{
+        border: 1px solid black;
+    }
+
+    body{
+        background-color: white;
+        color: black;
+    }
+
+}
+
+
+/* SPEECH 
+
+@media speech{
+
+    header{
+        speak: always;
+    }
+
+} */
+
+
+/* MIN WIDTH */
+
+@media screen and (min-width: 768px){
+
+    .box{
+        width: 250px;
+    }
+
+}
+
+
+/* MAX WIDTH */
+
+@media screen and (max-width: 600px){
+
+    .box{
+        width: 100%;
+    }
+
+}
+
+
+/* MIN WIDTH AND MAX WIDTH */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    .box{
+        width: 45%;
+    }
+
+}
+
+
+/* OR OPERATOR */
+
+@media screen and (max-width: 600px), screen and (orientation: portrait){
+
+    .intro{
+        border: 4px solid black;
+    }
+
+}
+
+
+/* NOT OPERATOR */
+
+@media not print{
+
+    .intro{
+        display: block;
+    }
+
+}
+
+
+/* ONLY OPERATOR */
+
+@media only screen and (max-width: 575px){
+
+    header h1{
+        font-size: 25px;
+    }
+
+}
+
+
+/* WIDTH */
+
+@media screen and (width: 600px){
+
+    .intro{
+        background-color: lightgreen;
+    }
+
+}
+
+
+/* HEIGHT */
+
+@media screen and (height: 600px){
+
+    .intro{
+        background-color: lightyellow;
+    }
+
+}
+
+
+/* MIN HEIGHT */
+
+@media screen and (min-height: 700px){
+
+    main{
+        min-height: 600px;
+    }
+
+}
+
+
+/* MAX HEIGHT */
+
+@media screen and (max-height: 600px){
+
+    header{
+        padding: 15px;
+    }
+
+}
+
+
+/* ORIENTATION */
+
+@media screen and (orientation: landscape){
+
+    .intro{
+        background-color: lightblue;
+    }
+
+}
+
+@media screen and (orientation: portrait){
+
+    .intro{
+        background-color: lightpink;
+    }
+
+}
+
+
+/* RESOLUTION */
+
+@media screen and (min-resolution: 2dppx){
+
+    .box{
+        border-width: 3px;
+    }
+
+}
+
+
+/* ASPECT RATIO */
+
+@media screen and (min-aspect-ratio: 16/9){
+
+    .container{
+        gap: 30px;
+    }
+
+}
+
+
+/* HOVER */
+
+@media (hover: hover){
+
+    .box:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+
+/* POINTER */
+
+@media (pointer: fine){
+
+    nav a{
+        cursor: pointer;
+    }
+
+}
+
+
+/* COLOR */
+
+@media (color){
+
+    .box{
+        border-radius: 10px;
+    }
+
+}
+
+
+/* MONOCHROME */
+
+@media (monochrome){
+
+    body{
+        background-color: white;
+    }
+
+}
+
+
+/* PREFERRED COLOR SCHEME */
+
+@media (prefers-color-scheme: dark){
+
+    body{
+        background-color: #222222;
+        color: white;
+    }
+
+    section{
+        background-color: #333333;
+        color: white;
+    }
+
+    .dark-mode{
+        background-color: #444444;
+    }
+
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+        scroll-behavior: auto;
+    }
+
+}
