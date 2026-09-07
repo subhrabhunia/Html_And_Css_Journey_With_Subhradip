@@ -1,0 +1,127 @@
+<!-- In this file we know about CSS media query. -->
+
+<!-- CSS MEDIA TYPES:-
+
+1. all
+2. screen
+3. print
+4. speech
+
+CSS LOGICAL OPERATORS:-
+
+1. and
+2. ,
+3. not
+4. only
+
+CSS MEDIA FEATURES:-
+
+1. width
+2. min-width
+3. max-width
+4. height
+5. min-height
+6. max-height
+7. orientation
+8. resolution
+9. aspect-ratio
+10. hover
+11. pointer
+12. color
+13. monochrome
+14. prefers-color-scheme
+15. prefers-reduced-motion
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <link rel="stylesheet" href="../Css/45-Css-Media-Query.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS MEDIA QUERY</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <section class="intro">
+            <h2>Responsive Web Design</h2>
+            <p>
+                Resize the browser window to see the effect of media queries.
+            </p>
+        </section>
+
+        <section>
+            <h2>Media Features</h2>
+
+            <div class="container">
+
+                <div class="box">
+                    <h3>Width</h3>
+                    <p>Viewport width</p>
+                </div>
+
+                <div class="box">
+                    <h3>Height</h3>
+                    <p>Viewport height</p>
+                </div>
+
+                <div class="box">
+                    <h3>Orientation</h3>
+                    <p>Portrait or Landscape</p>
+                </div>
+
+                <div class="box">
+                    <h3>Hover</h3>
+                    <p>Hover support</p>
+                </div>
+
+                <div class="box">
+                    <h3>Pointer</h3>
+                    <p>Pointer accuracy</p>
+                </div>
+
+                <div class="box">
+                    <h3>Aspect Ratio</h3>
+                    <p>Width and height ratio</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="screen-size">
+            <h2>Screen Size</h2>
+            <p class="large">Large Desktop: 1200px and above</p>
+            <p class="desktop">Desktop / Laptop: 992px - 1199px</p>
+            <p class="tablet">Tablet: 768px - 991px</p>
+            <p class="mobile">Mobile: 576px - 767px</p>
+            <p class="small-mobile">Small Mobile: Below 576px</p>
+        </section>
+
+        <section class="dark-mode">
+            <h2>Preferred Color Scheme</h2>
+            <p>Dark mode is detected using prefers-color-scheme.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 CSS Media Query</p>
+    </footer>
+
+</body>
+</html>
