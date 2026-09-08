@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+table{
+    width: 700px;
+    max-width: 100%;
+    background-color: white;
+}
+
+th,
+td{
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* BORDER */
+
+.border-table{
+    border: 4px solid black;
+}
+
+.border-table th,
+.border-table td{
+    border: 2px solid black;
+}
+
+
+/* BORDER COLLAPSE */
+
+.collapse-table{
+    border: 4px solid black;
+    border-collapse: collapse;
+}
+
+.collapse-table th,
+.collapse-table td{
+    border: 2px solid black;
+}
+
+
+/* BORDER SPACING */
+
+.spacing-table{
+    border: 3px solid black;
+    border-spacing: 15px;
+}
+
+.spacing-table th,
+.spacing-table td{
+    border: 2px solid black;
+}
+
+
+/* CAPTION SIDE */
+
+.caption-table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+.caption-table th,
+.caption-table td{
+    border: 2px solid black;
+}
+
+.caption-table caption{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* EMPTY CELLS */
+
+.empty-table{
+    border: 3px solid black;
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+.empty-table th,
+.empty-table td{
+    border: 2px solid black;
+}
+
+
+/* TABLE LAYOUT */
+
+.layout-table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.layout-table th,
+.layout-table td{
+    width: 33.33%;
+    border: 2px solid black;
+    word-break: break-word;
+}
+
+
+/* VERTICAL ALIGN */
+
+.vertical-table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: 200px;
+}
+
+.vertical-table th,
+.vertical-table td{
+    border: 2px solid black;
+}
+
+.vertical-table td{
+    vertical-align: middle;
+}
+
+.vertical-table th{
+    vertical-align: top;
+}
