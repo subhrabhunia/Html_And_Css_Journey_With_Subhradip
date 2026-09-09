@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box{
+    width: 220px;
+    min-height: 130px;
+    padding: 30px 15px;
+    border: 3px solid black;
+    background-color: white;
+    text-align: center;
+}
+
+.box h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.box p{
+    font-size: 16px;
+}
+
+
+/* BASIC CURSORS */
+
+.auto{
+    cursor: auto;
+}
+
+.default{
+    cursor: default;
+}
+
+.none{
+    cursor: none;
+}
+
+.context-menu{
+    cursor: context-menu;
+}
+
+.help{
+    cursor: help;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.progress{
+    cursor: progress;
+}
+
+.wait{
+    cursor: wait;
+}
+
+
+/* SELECTION CURSORS */
+
+.cell{
+    cursor: cell;
+}
+
+.crosshair{
+    cursor: crosshair;
+}
+
+.text{
+    cursor: text;
+}
+
+.vertical-text{
+    cursor: vertical-text;
+}
+
+
+/* DRAG AND DROP CURSORS */
+
+.alias{
+    cursor: alias;
+}
+
+.copy{
+    cursor: copy;
+}
+
+.move{
+    cursor: move;
+}
+
+.no-drop{
+    cursor: no-drop;
+}
+
+.not-allowed{
+    cursor: not-allowed;
+}
+
+.grab{
+    cursor: grab;
+}
+
+.grabbing{
+    cursor: grabbing;
+}
+
+
+/* RESIZE CURSORS */
+
+.e-resize{
+    cursor: e-resize;
+}
+
+.n-resize{
+    cursor: n-resize;
+}
+
+.ne-resize{
+    cursor: ne-resize;
+}
+
+.nw-resize{
+    cursor: nw-resize;
+}
+
+.s-resize{
+    cursor: s-resize;
+}
+
+.se-resize{
+    cursor: se-resize;
+}
+
+.sw-resize{
+    cursor: sw-resize;
+}
+
+.w-resize{
+    cursor: w-resize;
+}
+
+.ew-resize{
+    cursor: ew-resize;
+}
+
+.ns-resize{
+    cursor: ns-resize;
+}
+
+.nesw-resize{
+    cursor: nesw-resize;
+}
+
+.nwse-resize{
+    cursor: nwse-resize;
+}
+
+
+/* OTHER CURSORS */
+
+.col-resize{
+    cursor: col-resize;
+}
+
+.row-resize{
+    cursor: row-resize;
+}
+
+.all-scroll{
+    cursor: all-scroll;
+}
+
+.zoom-in{
+    cursor: zoom-in;
+}
+
+.zoom-out{
+    cursor: zoom-out;
+}
+
+
+/* GLOBAL VALUES */
+
+.unset{
+    cursor: unset;
+}
+
+.initial{
+    cursor: initial;
+}
+
+.inherit{
+    cursor: inherit;
+}
