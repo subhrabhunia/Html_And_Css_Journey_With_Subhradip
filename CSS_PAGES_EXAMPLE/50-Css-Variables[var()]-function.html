@@ -1,0 +1,136 @@
+<!-- In this file we know about CSS Variables and var() function. -->
+
+<!-- CSS VARIABLES:-
+
+1. Creating a variable
+2. Using a variable with var()
+3. Global variable
+4. Local variable
+5. Fallback value
+6. Multiple variables
+7. Variable for color
+8. Variable for font-size
+9. Variable for spacing
+10. Variable for border
+11. Variable for box-shadow
+12. Changing variable value
+13. Inheriting variables
+14. var() with calculations
+
+SYNTAX:-
+
+:root {
+    --variable-name: value;
+}
+
+element {
+    property: var(--variable-name);
+}
+We use CSS Variables with var() to store a value once and reuse it many times.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Variables</title>
+
+    <link rel="stylesheet" href="../Css/50-Css-Variables[var()]-function.css">
+
+</head>
+
+<body>
+
+    <h1>CSS VARIABLES & var() FUNCTION</h1>
+
+    <div class="container">
+
+        <!-- Global Variables -->
+
+        <div class="box global">
+            <h2>Global Variable</h2>
+            <p>Using variables created inside :root.</p>
+        </div>
+
+
+        <!-- Color Variable -->
+
+        <div class="box color">
+            <h2>Color Variable</h2>
+            <p>Using a variable for background color.</p>
+        </div>
+
+
+        <!-- Font Size Variable -->
+
+        <div class="box font">
+            <h2>Font Size Variable</h2>
+            <p>Using a variable for font size.</p>
+        </div>
+
+
+        <!-- Spacing Variable -->
+
+        <div class="box spacing">
+            <h2>Spacing Variable</h2>
+            <p>Using a variable for padding and margin.</p>
+        </div>
+
+
+        <!-- Border Variable -->
+
+        <div class="box border">
+            <h2>Border Variable</h2>
+            <p>Using a variable for border.</p>
+        </div>
+
+
+        <!-- Shadow Variable -->
+
+        <div class="box shadow">
+            <h2>Shadow Variable</h2>
+            <p>Using a variable for box-shadow.</p>
+        </div>
+
+
+        <!-- Local Variable -->
+
+        <div class="box local">
+            <h2>Local Variable</h2>
+            <p>This variable is defined inside this element.</p>
+        </div>
+
+
+        <!-- Fallback Value -->
+
+        <div class="box fallback">
+            <h2>Fallback Value</h2>
+            <p>Using fallback value with var().</p>
+        </div>
+
+
+        <!-- Multiple Variables -->
+
+        <div class="box multiple">
+            <h2>Multiple Variables</h2>
+            <p>Using multiple CSS variables together.</p>
+        </div>
+
+
+        <!-- Calculation -->
+
+        <div class="box calculation">
+            <h2>Calculation</h2>
+            <p>Using var() with calc().</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
