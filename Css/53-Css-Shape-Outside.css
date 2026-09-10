@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.example {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    overflow: auto;
+}
+
+.example h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.example p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* Circle */
+
+.circle-shape {
+    width: 220px;
+    height: 220px;
+
+    background-color: #3498db;
+
+    border-radius: 50%;
+
+    float: left;
+
+    margin: 0 25px 15px 0;
+
+    shape-outside: circle(50%);
+}
+
+
+/* Ellipse */
+
+.ellipse-shape {
+    width: 280px;
+    height: 180px;
+
+    background-color: #2ecc71;
+
+    border-radius: 50%;
+
+    float: left;
+
+    margin: 0 25px 15px 0;
+
+    shape-outside: ellipse(50% 50%);
+}
+
+
+/* Polygon */
+
+.polygon-shape {
+    width: 250px;
+    height: 220px;
+
+    background-color: #9b59b6;
+
+    float: left;
+
+    margin: 0 25px 15px 0;
+
+    clip-path: polygon(
+        50% 0%,
+        100% 50%,
+        50% 100%,
+        0% 50%
+    );
+
+    shape-outside: polygon(
+        50% 0%,
+        100% 50%,
+        50% 100%,
+        0% 50%
+    );
+}
+
+
+/* None */
+
+.none-shape {
+    width: 220px;
+    height: 180px;
+
+    background-color: #e67e22;
+
+    float: left;
+
+    margin: 0 25px 15px 0;
+
+    shape-outside: none;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .circle-shape,
+    .ellipse-shape,
+    .polygon-shape,
+    .none-shape {
+        float: none;
+
+        margin: 0 auto 20px;
+
+        shape-outside: none;
+    }
+
+}
