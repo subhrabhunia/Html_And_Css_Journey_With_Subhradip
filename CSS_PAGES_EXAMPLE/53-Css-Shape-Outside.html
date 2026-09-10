@@ -1,0 +1,125 @@
+<!-- In this file we know about CSS shape-outside property. -->
+
+<!-- CSS SHAPE-OUTSIDE VALUES:-
+
+1. none
+2. margin-box
+3. border-box
+4. padding-box
+5. content-box
+6. circle()
+7. ellipse()
+8. polygon()
+9. url()
+
+The shape-outside property is used to control how text flows around a floated element.
+SYNTAX:-
+
+shape-outside: none;
+
+shape-outside: circle();
+
+shape-outside: ellipse();
+
+shape-outside: polygon();
+
+shape-outside: url();
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Shape Outside</title>
+
+    <link rel="stylesheet" href="../Css/53-CSS-Shape-Outside.css">
+
+</head>
+
+<body>
+
+    <h1>CSS SHAPE-OUTSIDE</h1>
+
+    <div class="container">
+
+        <section class="example">
+
+            <h2>Circle Shape</h2>
+
+            <div class="circle-shape"></div>
+
+            <p>
+                CSS is a powerful language used to style and design
+                web pages. The shape-outside property allows text to
+                flow around the shape of a floated element. Instead of
+                text following only the rectangular boundary, it can
+                follow a circle, ellipse, polygon, or image shape.
+                This is useful for creating attractive magazine-style
+                layouts and modern web designs.
+            </p>
+
+        </section>
+
+
+        <section class="example">
+
+            <h2>Ellipse Shape</h2>
+
+            <div class="ellipse-shape"></div>
+
+            <p>
+                The shape-outside property defines the shape around
+                which inline content should wrap. It works with
+                floated elements and can create interesting text
+                layouts. The ellipse function can be used when the
+                text needs to flow around an oval-shaped element.
+                This technique is useful for articles, blogs,
+                magazines, and creative landing pages.
+            </p>
+
+        </section>
+
+
+        <section class="example">
+
+            <h2>Polygon Shape</h2>
+
+            <div class="polygon-shape"></div>
+
+            <p>
+                Polygon shapes allow developers to create custom
+                boundaries for text wrapping. Multiple points can
+                be provided to create triangles, diamonds, hexagons,
+                or other shapes. The text automatically flows around
+                the defined shape when the element is floated.
+            </p>
+
+        </section>
+
+
+        <section class="example">
+
+            <h2>None</h2>
+
+            <div class="none-shape"></div>
+
+            <p>
+                When shape-outside is set to none, the content flows
+                around the normal rectangular box of the floated
+                element. No special shape is applied to the element.
+                This is the default behavior of shape-outside.
+            </p>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
