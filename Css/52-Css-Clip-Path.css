@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    width: 220px;
+    height: 180px;
+
+    background-color: white;
+
+    border: 3px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+
+/* None */
+
+.none {
+    clip-path: none;
+}
+
+
+/* Circle */
+
+.circle {
+    background-color: #3498db;
+
+    color: white;
+
+    border: none;
+
+    clip-path: circle(50%);
+}
+
+
+/* Ellipse */
+
+.ellipse {
+    background-color: #2ecc71;
+
+    color: white;
+
+    border: none;
+
+    clip-path: ellipse(50% 40%);
+}
+
+
+/* Inset */
+
+.inset {
+    background-color: #e67e22;
+
+    color: white;
+
+    border: none;
+
+    clip-path: inset(20px 30px 20px 30px);
+}
+
+
+/* Triangle */
+
+.triangle {
+    background-color: #9b59b6;
+
+    color: white;
+
+    border: none;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+}
+
+
+/* Diamond */
+
+.diamond {
+    background-color: #e74c3c;
+
+    color: white;
+
+    border: none;
+
+    clip-path: polygon(
+        50% 0%,
+        100% 50%,
+        50% 100%,
+        0% 50%
+    );
+}
+
+
+/* Pentagon */
+
+.pentagon {
+    background-color: #1abc9c;
+
+    color: white;
+
+    border: none;
+
+    clip-path: polygon(
+        50% 0%,
+        100% 38%,
+        82% 100%,
+        18% 100%,
+        0% 38%
+    );
+}
+
+
+/* Hexagon */
+
+.hexagon {
+    background-color: #34495e;
+
+    color: white;
+
+    border: none;
+
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+    );
+}
+
+
+/* Trapezoid */
+
+.trapezoid {
+    background-color: #f39c12;
+
+    color: white;
+
+    border: none;
+
+    clip-path: polygon(
+        20% 0%,
+        80% 0%,
+        100% 100%,
+        0% 100%
+    );
+}
+
+
+/* Parallelogram */
+
+.parallelogram {
+    background-color: #16a085;
+
+    color: white;
+
+    border: none;
+
+    clip-path: polygon(
+        20% 0%,
+        100% 0%,
+        80% 100%,
+        0% 100%
+    );
+}
+
+
+/* Slanted */
+
+.slanted {
+    background-color: #2c3e50;
+
+    color: white;
+
+    border: none;
+
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        90% 100%,
+        0% 100%
+    );
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .box {
+        width: 90%;
+    }
+
+}
