@@ -9,7 +9,7 @@
 <body>
 
     <!--
-    CSS TRANSITION PROPERTIES
+    CSS TRANSITION
 
     1. transition
     2. transition-property
@@ -19,22 +19,28 @@
 
     TIMING FUNCTIONS
 
-    1. ease=Slow stert,then fast,then end slowly
-    2. linear=same speed from start to end
-    3. ease-in=slow start
-    4. ease-out=slow end
-    5. ease-in-out=slow start and end
+    1. ease
+    2. linear
+    3. ease-in
+    4. ease-out
+    5. ease-in-out
     6. step-start
     7. step-end
-    8. steps(4,end)
-    9. cubic-bezier()=lets you define your own values(We use website https://cubic-bezier.com/#0,.98,.83,.67)
+    8. steps()
+    9. cubic-bezier()
+
+    PSEUDO-CLASSES
+
+    1. :hover
+    2. :active
+    3. :focus
     -->
 
     <h1>CSS Transition</h1>
 
     <div class="container">
 
-        <div class="box">
+        <div class="box basic">
             <h2>Basic Transition</h2>
             <p>Hover Me</p>
         </div>
@@ -95,6 +101,54 @@
         </div>
 
     </div>
+
+
+    <section class="pseudo-section">
+
+        <h1>:hover :active :focus</h1>
+
+        <div class="pseudo-container">
+
+            <div class="pseudo-box">
+                <h2>:hover</h2>
+                <button class="hover-btn">Hover Me</button>
+            </div>
+
+            <div class="pseudo-box">
+                <h2>:active</h2>
+                <button class="active-btn">Click Me</button>
+            </div>
+
+            <div class="pseudo-box">
+                <h2>:focus</h2>
+                <input class="focus-input" type="text" placeholder="Click or Tab">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="button-section">
+
+        <h1>Button Transition</h1>
+
+        <button class="btn">Hover / Click Me</button>
+
+    </section>
+
+
+    <section class="form-section">
+
+        <h1>Input Focus Transition</h1>
+
+        <input type="text" class="input-box" placeholder="Enter Your Name">
+
+        <input type="email" class="input-box" placeholder="Enter Your Email">
+
+        <input type="password" class="input-box" placeholder="Enter Password">
+
+    </section>
 
 </body>
 </html>
