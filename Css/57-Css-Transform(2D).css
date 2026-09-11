@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    height: 280px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin-bottom: 50px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #667eea;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 3px solid black;
+    transition: transform 1s ease;
+}
+
+
+/* NONE */
+
+.none {
+    transform: none;
+}
+
+
+/* TRANSLATE */
+
+.translate:hover {
+    transform: translate(30px, 20px);
+}
+
+
+/* TRANSLATE X */
+
+.translate-x:hover {
+    transform: translateX(50px);
+}
+
+
+/* TRANSLATE Y */
+
+.translate-y:hover {
+    transform: translateY(40px);
+}
+
+
+/* ROTATE */
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+
+/* SCALE */
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+
+/* SCALE X */
+
+.scale-x:hover {
+    transform: scaleX(1.5);
+}
+
+
+/* SCALE Y */
+
+.scale-y:hover {
+    transform: scaleY(1.5);
+}
+
+
+/* SKEW */
+
+.skew:hover {
+    transform: skew(20deg, 10deg);
+}
+
+
+/* SKEW X */
+
+.skew-x:hover {
+    transform: skewX(25deg);
+}
+
+
+/* SKEW Y */
+
+.skew-y:hover {
+    transform: skewY(25deg);
+}
+
+
+/* MATRIX */
+
+.matrix:hover {
+    transform: matrix(1.2, 0.2, 0.2, 1.2, 20, 10);
+}
+
+
+/* TRANSFORM ORIGIN */
+
+.origin {
+    transform-origin: left center;
+}
+
+.origin:hover {
+    transform: rotate(45deg);
+}
+
+
+/* MULTIPLE TRANSFORM */
+
+.multiple:hover {
+    transform: translate(20px, -20px) rotate(30deg) scale(1.2);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+}
