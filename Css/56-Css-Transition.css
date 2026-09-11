@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.box {
+    height: 180px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: 1s;
+}
+
+.box h2 {
+    margin-bottom: 40px;
+}
+
+.box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+/* Transition Property */
+
+.property {
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+/* Transition Duration */
+
+.duration {
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+/* Ease */
+
+.ease {
+    transition: all 2s ease;
+}
+
+/* Linear */
+
+.linear {
+    transition: all 2s linear;
+}
+
+/* Ease In */
+
+.ease-in {
+    transition: all 2s ease-in;
+}
+
+/* Ease Out */
+
+.ease-out {
+    transition: all 2s ease-out;
+}
+
+/* Ease In Out */
+
+.ease-in-out {
+    transition: all 2s ease-in-out;
+}
+
+/* Transition Delay */
+
+.delay {
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+/* Multiple Properties */
+
+.multiple {
+    transition-property: background-color, color, border-radius, transform;
+    transition-duration: 1s;
+}
+
+.multiple:hover {
+    background-color: #764ba2;
+    color: white;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+/* Transform Transition */
+
+.transform {
+    transition: transform 1s;
+}
+
+.transform:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Transition All */
+
+.all {
+    transition: all 1s ease-in-out;
+}
+
+.all:hover {
+    background-color: #222;
+    color: white;
+    border-radius: 50px;
+    transform: translateY(-20px) scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
