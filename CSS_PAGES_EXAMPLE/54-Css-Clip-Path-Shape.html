@@ -1,0 +1,88 @@
+<!-- In this file we know about CSS clip-path path() function. -->
+
+<!-- CSS PATH VALUES:-
+
+1. M - Move To
+2. L - Line To
+3. H - Horizontal Line
+4. V - Vertical Line
+5. C - Cubic Bezier Curve
+6. S - Smooth Cubic Bezier Curve
+7. Q - Quadratic Bezier Curve
+8. T - Smooth Quadratic Bezier Curve
+9. A - Arc
+10. Z - Close Path
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Clip Path Shape</title>
+
+    <link rel="stylesheet" href="../Css/54-CSS-Clip-Path-Shape.css">
+
+</head>
+
+<body>
+
+    <h1>CSS CLIP-PATH PATH SHAPES</h1>
+
+    <div class="container">
+
+        <div class="shape line">
+            <h2>Line</h2>
+            <p>M + L + Z</p>
+        </div>
+
+        <div class="shape horizontal">
+            <h2>Horizontal</h2>
+            <p>M + H + V + Z</p>
+        </div>
+
+        <div class="shape curve">
+            <h2>Curve</h2>
+            <p>M + C + Z</p>
+        </div>
+
+        <div class="shape smooth-curve">
+            <h2>Smooth Curve</h2>
+            <p>M + C + S + Z</p>
+        </div>
+
+        <div class="shape quadratic">
+            <h2>Quadratic</h2>
+            <p>M + Q + Z</p>
+        </div>
+
+        <div class="shape smooth-quadratic">
+            <h2>Smooth Quadratic</h2>
+            <p>M + Q + T + Z</p>
+        </div>
+
+        <div class="shape arc">
+            <h2>Arc</h2>
+            <p>M + A + Z</p>
+        </div>
+
+        <div class="shape curve-close">
+            <h2>Curve + Close</h2>
+            <p>M + C + L + Z</p>
+        </div>
+
+        <div class="shape arc-close">
+            <h2>Arc + Close</h2>
+            <p>M + A + L + Z</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
