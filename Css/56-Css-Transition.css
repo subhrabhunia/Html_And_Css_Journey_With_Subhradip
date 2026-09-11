@@ -28,7 +28,6 @@ h1 {
     border-radius: 10px;
     padding: 25px;
     text-align: center;
-    transition: 1s;
 }
 
 .box h2 {
@@ -40,63 +39,126 @@ h1 {
     font-weight: bold;
 }
 
-.box:hover {
-    background-color: #667eea;
+
+/* BASIC TRANSITION */
+
+.basic {
+    transition: background-color 1s;
+}
+
+.basic:hover {
+    background-color: blue;
     color: white;
 }
 
-/* Transition Property */
+
+/* TRANSITION PROPERTY */
 
 .property {
     transition-property: background-color;
     transition-duration: 1s;
 }
 
-/* Transition Duration */
+.property:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* TRANSITION DURATION */
 
 .duration {
     transition-property: all;
     transition-duration: 3s;
 }
 
-/* Ease */
+.duration:hover {
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+}
+
+
+/* EASE */
 
 .ease {
     transition: all 2s ease;
 }
 
-/* Linear */
+.ease:hover {
+    transform: scale(1.1);
+    background-color: purple;
+    color: white;
+}
+
+
+/* LINEAR */
 
 .linear {
     transition: all 2s linear;
 }
 
-/* Ease In */
+.linear:hover {
+    transform: translateX(30px);
+    background-color: red;
+    color: white;
+}
+
+
+/* EASE IN */
 
 .ease-in {
     transition: all 2s ease-in;
 }
 
-/* Ease Out */
+.ease-in:hover {
+    transform: translateY(-30px);
+    background-color: green;
+    color: white;
+}
+
+
+/* EASE OUT */
 
 .ease-out {
     transition: all 2s ease-out;
 }
 
-/* Ease In Out */
+.ease-out:hover {
+    transform: translateY(30px);
+    background-color: orange;
+    color: white;
+}
+
+
+/* EASE IN OUT */
 
 .ease-in-out {
     transition: all 2s ease-in-out;
 }
 
-/* Transition Delay */
+.ease-in-out:hover {
+    transform: rotate(10deg);
+    background-color: purple;
+    color: white;
+}
+
+
+/* TRANSITION DELAY */
 
 .delay {
-    transition: all 1s;
+    transition: all 1s ease;
     transition-delay: 1s;
 }
 
-/* Multiple Properties */
+.delay:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* MULTIPLE PROPERTIES */
 
 .multiple {
     transition-property: background-color, color, border-radius, transform;
@@ -104,43 +166,203 @@ h1 {
 }
 
 .multiple:hover {
-    background-color: #764ba2;
+    background-color: blue;
     color: white;
     border-radius: 50%;
     transform: scale(1.1);
 }
 
-/* Transform Transition */
+
+/* TRANSFORM */
 
 .transform {
     transition: transform 1s;
 }
 
 .transform:hover {
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(360deg);
 }
 
-/* Transition All */
+
+/* TRANSITION ALL */
 
 .all {
     transition: all 1s ease-in-out;
 }
 
 .all:hover {
-    background-color: #222;
+    background-color: black;
     color: white;
     border-radius: 50px;
     transform: translateY(-20px) scale(1.05);
 }
 
+
+/* PSEUDO CLASS SECTION */
+
+.pseudo-section {
+    margin-top: 70px;
+}
+
+.pseudo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pseudo-box {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.pseudo-box h2 {
+    margin-bottom: 30px;
+}
+
+
+/* :HOVER */
+
+.hover-btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.hover-btn:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+
+/* :ACTIVE */
+
+.active-btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.active-btn:active {
+    background-color: red;
+    transform: scale(0.8);
+}
+
+
+/* :FOCUS */
+
+.focus-input {
+    padding: 15px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.focus-input:focus {
+    border-color: blue;
+    box-shadow: 0 0 10px gray;
+    transform: scale(1.05);
+}
+
+
+/* BUTTON SECTION */
+
+.button-section {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: blue;
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    background-color: red;
+    transform: scale(0.9);
+}
+
+.btn:focus {
+    outline: 4px solid orange;
+}
+
+
+/* FORM SECTION */
+
+.form-section {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.input-box {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.input-box:focus {
+    width: 400px;
+    border-color: blue;
+    background-color: lightyellow;
+    box-shadow: 0 0 10px gray;
+}
+
+
+/* RESPONSIVE */
+
 @media (max-width: 900px) {
-    .container {
+
+    .container,
+    .pseudo-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media (max-width: 600px) {
-    .container {
+
+    body {
+        padding: 15px;
+    }
+
+    .container,
+    .pseudo-container {
         grid-template-columns: 1fr;
     }
+
+    .input-box {
+        width: 90%;
+    }
+
+    .input-box:focus {
+        width: 100%;
+    }
+
 }
