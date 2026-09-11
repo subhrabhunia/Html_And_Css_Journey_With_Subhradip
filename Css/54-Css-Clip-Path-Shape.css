@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.shape {
+    width: 250px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: #3498db;
+}
+
+.shape h2 {
+    margin-bottom: 10px;
+}
+
+.shape p {
+    font-size: 16px;
+}
+
+
+/* M = Move To
+   L = Line To
+   Z = Close */
+
+.line {
+    clip-path: path(
+        "M 20 20 L 230 20 L 125 180 Z"
+    );
+}
+
+
+/* M = Move
+   H = Horizontal
+   V = Vertical
+   Z = Close */
+
+.horizontal {
+    background-color: #2ecc71;
+
+    clip-path: path(
+        "M 20 20 H 230 V 180 H 20 Z"
+    );
+}
+
+
+/* C = Cubic Bezier Curve */
+
+.curve {
+    background-color: #9b59b6;
+
+    clip-path: path(
+        "M 20 100 C 70 0 180 0 230 100 L 230 180 L 20 180 Z"
+    );
+}
+
+
+/* C = Cubic Curve
+   S = Smooth Cubic Curve */
+
+.smooth-curve {
+    background-color: #e67e22;
+
+    clip-path: path(
+        "M 20 120 C 60 20 100 20 125 100 S 190 180 230 80 L 230 180 L 20 180 Z"
+    );
+}
+
+
+/* Q = Quadratic Bezier Curve */
+
+.quadratic {
+    background-color: #e74c3c;
+
+    clip-path: path(
+        "M 20 100 Q 125 0 230 100 L 230 180 L 20 180 Z"
+    );
+}
+
+
+/* Q = Quadratic Curve
+   T = Smooth Quadratic Curve */
+
+.smooth-quadratic {
+    background-color: #1abc9c;
+
+    clip-path: path(
+        "M 20 100 Q 70 0 125 100 T 230 100 L 230 180 L 20 180 Z"
+    );
+}
+
+
+/* A = Arc */
+
+.arc {
+    background-color: #34495e;
+
+    clip-path: path(
+        "M 20 100 A 105 80 0 0 1 230 100 L 230 180 L 20 180 Z"
+    );
+}
+
+
+/* Curve + Line + Close */
+
+.curve-close {
+    background-color: #8e44ad;
+
+    clip-path: path(
+        "M 20 150 C 70 20 180 20 230 150 L 230 180 L 20 180 Z"
+    );
+}
+
+
+/* Arc + Line + Close */
+
+.arc-close {
+    background-color: #c0392b;
+
+    clip-path: path(
+        "M 20 120 A 105 100 0 0 1 230 120 L 230 180 L 20 180 Z"
+    );
+}
