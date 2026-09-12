@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin-bottom: 40px;
+}
+
+.scene {
+    width: 180px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #667eea;
+    color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: transform 1s ease;
+}
+
+
+/* TRANSLATE 3D */
+
+.translate3d:hover {
+    transform: translate3d(30px, 20px, 50px);
+}
+
+
+/* TRANSLATE Z */
+
+.translate-z:hover {
+    transform: translateZ(80px);
+}
+
+
+/* ROTATE X */
+
+.rotate-x:hover {
+    transform: rotateX(60deg);
+}
+
+
+/* ROTATE Y */
+
+.rotate-y:hover {
+    transform: rotateY(60deg);
+}
+
+
+/* ROTATE Z */
+
+.rotate-z:hover {
+    transform: rotateZ(45deg);
+}
+
+
+/* SCALE 3D */
+
+.scale3d:hover {
+    transform: scale3d(1.3, 1.3, 1.3);
+}
+
+
+/* SCALE Z */
+
+.scale-z:hover {
+    transform: scaleZ(2);
+}
+
+
+/* PERSPECTIVE */
+
+.perspective {
+    perspective: 200px;
+}
+
+.perspective-box:hover {
+    transform: rotateY(60deg);
+}
+
+
+/* MATRIX 3D */
+
+.matrix3d:hover {
+    transform: matrix3d(
+        1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        30, 20, 50, 1
+    );
+}
+
+
+/* MULTIPLE 3D TRANSFORM */
+
+.multiple:hover {
+    transform:
+        translate3d(20px, -10px, 40px)
+        rotateX(30deg)
+        rotateY(30deg)
+        scale3d(1.1, 1.1, 1.1);
+}
+
+
+/* TRANSFORM STYLE */
+
+.preserve {
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.style-box:hover {
+    transform: rotateY(60deg) translateZ(40px);
+}
+
+
+/* BACKFACE VISIBILITY */
+
+.backface {
+    backface-visibility: hidden;
+}
+
+.backface:hover {
+    transform: rotateY(180deg);
+}
+
+
+/* 3D CUBE */
+
+.cube-section {
+    margin-top: 100px;
+}
+
+.cube-scene {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    perspective: 600px;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(30deg);
+    transition: transform 2s;
+}
+
+.cube:hover {
+    transform: rotateX(360deg) rotateY(360deg);
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    background-color: #667eea;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* FRONT */
+
+.front {
+    transform: translateZ(100px);
+}
+
+
+/* BACK */
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+
+/* RIGHT */
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+
+/* LEFT */
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+
+/* TOP */
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+
+/* BOTTOM */
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+}
