@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Perspective</title>
+    <link rel="stylesheet" href="../Css/59-CSS-Perspective.css">
+</head>
+<body>
+
+    <!--
+    CSS perspective is used to create a 3D depth effect. It controls how far the viewer appears to be from the 3D object.
+    CSS PERSPECTIVE
+
+    1. perspective
+    2. perspective-origin
+    3. perspective()
+    4. transform
+    5. transform-style
+    6. translateZ()
+    7. rotateX()
+    8. rotateY()
+
+    PERSPECTIVE VALUES
+
+    1. 100px
+    2. 200px
+    3. 300px
+    4. 500px
+    5. 800px
+    6. 1000px
+
+    PERSPECTIVE ORIGIN
+
+    1. center
+    2. top
+    3. bottom
+    4. left
+    5. right
+    6. top left
+    7. top right
+    8. bottom left
+    9. bottom right
+    -->
+
+    <h1>CSS Perspective</h1>
+
+
+    <section>
+
+        <h2>Different Perspective Values</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>100px</h3>
+
+                <div class="scene perspective-100">
+                    <div class="box rotate-y">
+                        100px
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3>200px</h3>
+
+                <div class="scene perspective-200">
+                    <div class="box rotate-y">
+                        200px
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3>300px</h3>
+
+                <div class="scene perspective-300">
+                    <div class="box rotate-y">
+                        300px
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3>500px</h3>
+
+                <div class="scene perspective-500">
+                    <div class="box rotate-y">
+                        500px
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3>800px</h3>
+
+                <div class="scene perspective-800">
+                    <div class="box rotate-y">
+                        800px
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3>1000px</h3>
+
+                <div class="scene perspective-1000">
+                    <div class="box rotate-y">
+                        1000px
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Perspective with Rotate X</h2>
+
+        <div class="rotate-container">
+
+            <div class="scene perspective-500">
+                <div class="box rotate-x">
+                    ROTATE X
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Perspective with Translate Z</h2>
+
+        <div class="translate-container">
+
+            <div class="scene perspective-500">
+                <div class="box translate-z">
+                    TRANSLATE Z
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Perspective Origin</h2>
+
+        <div class="origin-container">
+
+            <div class="origin-card">
+
+                <h3>Center</h3>
+
+                <div class="scene origin-center">
+                    <div class="box origin-box">
+                        CENTER
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="origin-card">
+
+                <h3>Top Left</h3>
+
+                <div class="scene origin-top-left">
+                    <div class="box origin-box">
+                        TOP LEFT
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="origin-card">
+
+                <h3>Bottom Right</h3>
+
+                <div class="scene origin-bottom-right">
+                    <div class="box origin-box">
+                        BOTTOM RIGHT
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Perspective Function</h2>
+
+        <div class="function-box">
+
+            <div class="box perspective-function">
+                PERSPECTIVE()
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>3D Card</h2>
+
+        <div class="card-scene">
+
+            <div class="flip-card">
+
+                <div class="card-front">
+                    FRONT
+                </div>
+
+                <div class="card-back">
+                    BACK
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
