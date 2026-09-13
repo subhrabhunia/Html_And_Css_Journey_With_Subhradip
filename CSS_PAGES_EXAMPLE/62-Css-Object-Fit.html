@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>62 CSS Object Fit</title>
+
+    <link rel="stylesheet" href="../Css/62-CSS-Object-Fit.css">
+</head>
+
+<body>
+
+    <!--
+    CSS Object Fit
+
+    object-fit:
+    fill
+    contain
+    cover
+    none
+    scale-down
+    initial
+    inherit
+    unset
+    revert
+    revert-layer
+
+    object-position:
+    left
+    center
+    right
+    top
+    bottom
+    top left
+    top right
+    bottom left
+    bottom right
+    50% 50%
+    100% 0%
+    0% 100%
+    20px 30px
+    -->
+
+    <header>
+        <h1>CSS Object-Fit</h1>
+        <p>62 - CSS Object-Fit and Object-Position</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. object-fit: fill</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="fill">
+            </div>
+
+            <p>Image stretches to fill the complete container.</p>
+        </section>
+
+
+        <section>
+            <h2>2. object-fit: contain</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="contain">
+            </div>
+
+            <p>Complete image is visible inside the container.</p>
+        </section>
+
+
+        <section>
+            <h2>3. object-fit: cover</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="cover">
+            </div>
+
+            <p>Image completely covers the container. Some parts may be cropped.</p>
+        </section>
+
+
+        <section>
+            <h2>4. object-fit: none</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="none">
+            </div>
+
+            <p>Image keeps its original size.</p>
+        </section>
+
+
+        <section>
+            <h2>5. object-fit: scale-down</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="scale-down">
+            </div>
+
+            <p>Uses the smaller size between none and contain.</p>
+        </section>
+
+
+        <section>
+            <h2>6. object-fit: initial</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="initial">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>7. object-fit: inherit</h2>
+
+            <div class="inherit-parent">
+                <div class="image-box">
+                    <img src="../Assest/Images/Image1.JPG" class="inherit">
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>8. object-fit: unset</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="unset">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>9. object-fit: revert</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="revert">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>10. object-fit: revert-layer</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="revert-layer">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>11. object-position: left</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-left">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>12. object-position: center</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-center">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>13. object-position: right</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-right">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>14. object-position: top</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-top">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>15. object-position: bottom</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-bottom">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>16. object-position: top left</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-top-left">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>17. object-position: top right</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-top-right">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>18. object-position: bottom left</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-bottom-left">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>19. object-position: bottom right</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-bottom-right">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>20. object-position: 50% 50%</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-percentage">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>21. object-position: 100% 0%</h2>
+
+            <div class="image-box">
+                <img src="../Assest/Images/Image1.JPG" class="position-custom">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Object-Fit Comparison</h2>
+
+            <div class="comparison">
+
+                <div>
+                    <h3>Fill</h3>
+                    <img src="../Assest/Images/Image1.JPG" class="fill">
+                </div>
+
+                <div>
+                    <h3>Contain</h3>
+                    <img src="../Assest/Images/Image1.JPG" class="contain">
+                </div>
+
+                <div>
+                    <h3>Cover</h3>
+                    <img src="../Assest/Images/Image1.JPG" class="cover">
+                </div>
+
+                <div>
+                    <h3>None</h3>
+                    <img src="../Assest/Images/Image1.JPG" class="none">
+                </div>
+
+                <div>
+                    <h3>Scale Down</h3>
+                    <img src="../Assest/Images/Image1.JPG" class="scale-down">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CSS Object-Fit and Object-Position Practice</p>
+    </footer>
+
+</body>
+</html>
+
