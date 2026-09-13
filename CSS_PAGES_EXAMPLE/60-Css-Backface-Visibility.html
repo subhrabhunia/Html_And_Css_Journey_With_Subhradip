@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backface Visibility</title>
+    <link rel="stylesheet" href="../Css/60-CSS-Backface-Visibility.css">
+</head>
+<body>
+
+    <!--
+    CSS backface-visibility controls whether the back side of a 3D-transformed element is visible or hidden.
+
+    CSS BACKFACE-VISIBILITY
+
+    1. visible
+    2. hidden
+    3. initial
+    4. inherit
+    5. unset
+    6. revert
+    7. revert-layer
+
+    COMMON USE
+
+    1. 3D Rotation
+    2. Card Flip
+    3. Front and Back Face
+    4. 3D UI Effects
+
+    3D CUBE
+
+    1. Front
+    2. Back
+    3. Right
+    4. Left
+    5. Top
+    6. Bottom
+    -->
+
+    <h1>CSS Backface Visibility</h1>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Visible</h2>
+
+            <div class="scene">
+                <div class="box visible">
+                    VISIBLE
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Hidden</h2>
+
+            <div class="scene">
+                <div class="box hidden">
+                    HIDDEN
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Initial</h2>
+
+            <div class="scene">
+                <div class="box initial">
+                    INITIAL
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Inherit</h2>
+
+            <div class="scene parent-inherit">
+                <div class="box inherit">
+                    INHERIT
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Unset</h2>
+
+            <div class="scene">
+                <div class="box unset">
+                    UNSET
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Revert</h2>
+
+            <div class="scene">
+                <div class="box revert">
+                    REVERT
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section class="flip-section">
+
+        <h1>3D Card Flip</h1>
+
+        <div class="flip-scene">
+
+            <div class="flip-card">
+
+                <div class="front">
+                    FRONT
+                </div>
+
+                <div class="back">
+                    BACK
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="comparison">
+
+        <h1>Visible vs Hidden</h1>
+
+        <div class="comparison-container">
+
+            <div class="comparison-box">
+
+                <h2>Visible</h2>
+
+                <div class="scene">
+                    <div class="demo visible-demo">
+                        FRONT
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="comparison-box">
+
+                <h2>Hidden</h2>
+
+                <div class="scene">
+                    <div class="demo hidden-demo">
+                        FRONT
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 3D CUBE -->
+
+    <section class="cube-section">
+
+        <h1>3D Front & Back Cube</h1>
+
+        <div class="cube-scene">
+
+            <div class="cube">
+
+                <div class="cube-face cube-front">
+                    FRONT
+                </div>
+
+                <div class="cube-face cube-back">
+                    BACK
+                </div>
+
+                <div class="cube-face cube-right">
+                    RIGHT
+                </div>
+
+                <div class="cube-face cube-left">
+                    LEFT
+                </div>
+
+                <div class="cube-face cube-top">
+                    TOP
+                </div>
+
+                <div class="cube-face cube-bottom">
+                    BOTTOM
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="cube-text">
+            Hover over the cube
+        </p>
+
+    </section>
+
+</body>
+</html>
