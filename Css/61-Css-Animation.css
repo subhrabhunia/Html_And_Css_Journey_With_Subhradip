@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.box {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+/* 1. animation-name */
+
+.name-box {
+    animation-name: moveRight;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 2. animation-duration */
+
+.duration-box {
+    animation-name: durationMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes durationMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 3. animation-delay */
+
+.delay-box {
+    animation-name: delayMove;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes delayMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 4. animation-iteration-count */
+
+.iteration-box {
+    animation-name: iterationMove;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes iterationMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 5. infinite */
+
+.infinite-box {
+    animation-name: infiniteMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes infiniteMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 6. normal */
+
+.normal-box {
+    animation-name: normalAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes normalAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 7. reverse */
+
+.reverse-box {
+    animation-name: reverseAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes reverseAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 8. alternate */
+
+.alternate-box {
+    animation-name: alternateAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes alternateAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 9. alternate-reverse */
+
+.alternate-reverse-box {
+    animation-name: alternateReverseAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes alternateReverseAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 10. timing functions */
+
+.timing-container {
+    width: 100%;
+}
+
+.timing {
+    margin-bottom: 25px;
+}
+
+.timing span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.timing-box {
+    width: 70px;
+    height: 40px;
+    background-color: #e74c3c;
+    border-radius: 5px;
+    animation-name: timingMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.ease {
+    animation-timing-function: ease;
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.ease-in {
+    animation-timing-function: ease-in;
+}
+
+.ease-out {
+    animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes timingMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(700px);
+    }
+}
+
+
+/* 11. forwards */
+
+.forwards-box {
+    animation-name: forwardsAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes forwardsAnimation {
+    from {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+
+    to {
+        transform: translateX(300px);
+        background-color: #2ecc71;
+    }
+}
+
+
+/* 12. backwards */
+
+.backwards-box {
+    animation-name: backwardsAnimation;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes backwardsAnimation {
+    from {
+        transform: translateX(0);
+        background-color: #e74c3c;
+    }
+
+    to {
+        transform: translateX(300px);
+        background-color: #9b59b6;
+    }
+}
+
+
+/* 13. both */
+
+.both-box {
+    animation-name: bothAnimation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes bothAnimation {
+    from {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+
+    to {
+        transform: translateX(300px);
+        background-color: #f39c12;
+    }
+}
+
+
+/* 14. animation-play-state */
+
+.paused-box {
+    animation-name: pausedAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.paused-box:hover {
+    animation-play-state: running;
+}
+
+@keyframes pausedAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
+/* 15. animation shorthand */
+
+.shorthand-box {
+    animation: shorthandAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes shorthandAnimation {
+    from {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(300px) rotate(360deg);
+    }
+}
+
+
+/* 16. @keyframes */
+
+.keyframe-box {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8e44ad;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+
+    0% {
+        transform: translateX(0);
+        background-color: #8e44ad;
+    }
+
+    25% {
+        transform: translateX(200px);
+        background-color: #3498db;
+    }
+
+    50% {
+        transform: translateX(400px);
+        background-color: #2ecc71;
+    }
+
+    75% {
+        transform: translateX(200px);
+        background-color: #f39c12;
+    }
+
+    100% {
+        transform: translateX(0);
+        background-color: #e74c3c;
+    }
+}
+
+
+/* 17. Moving Ball */
+
+.ball-area {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+
+    animation: ballMove 3s ease-in-out infinite alternate;
+}
+
+@keyframes ballMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(800px);
+    }
+}
+
+
+/* 18. Loading Animation */
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ddd;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 19. Pulse */
+
+.pulse {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+
+    animation: pulseAnimation 1.5s infinite;
+}
+
+@keyframes pulseAnimation {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* 20. Rotate */
+
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 10px;
+
+    animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 21. Scale */
+
+.scale-box {
+    width: 150px;
+    height: 100px;
+    background-color: #f39c12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+
+    animation: scaleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+
+/* 22. Multiple Animation */
+
+.multiple-box {
+    width: 180px;
+    height: 100px;
+    background-color: #16a085;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+
+    animation:
+        multipleMove 3s ease-in-out infinite alternate,
+        multipleRotate 3s linear infinite;
+}
+
+@keyframes multipleMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(400px);
+    }
+}
+
+@keyframes multipleRotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .timing-box {
+        animation-name: mobileTimingMove;
+    }
+
+    .ball {
+        animation-name: mobileBallMove;
+    }
+}
+
+@keyframes mobileTimingMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(250px);
+    }
+}
+
+@keyframes mobileBallMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(250px);
+    }
+}
