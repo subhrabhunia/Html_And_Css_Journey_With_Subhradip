@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>63 CSS User Select</title>
+
+    <link rel="stylesheet" href="../Css/63-User-Select.css">
+</head>
+
+<body>
+
+    <!--
+    CSS User Select
+
+    user-select:
+    auto
+    none
+    text
+    all
+    contain
+    initial
+    inherit
+    unset
+    revert
+    revert-layer
+    -->
+
+    <header>
+        <h1>CSS User Select</h1>
+        <p>63 - CSS User-Select Property</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. user-select: auto</h2>
+
+            <p class="auto">
+                This is normal text. You can select and copy this text.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>2. user-select: none</h2>
+
+            <p class="none">
+                You cannot select or highlight this text.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>3. user-select: text</h2>
+
+            <p class="text">
+                This text can be selected normally.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>4. user-select: all</h2>
+
+            <p class="all">
+                Click this text and the complete text will be selected.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>5. user-select: contain</h2>
+
+            <p class="contain">
+                This text demonstrates the contain value.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>6. user-select: initial</h2>
+
+            <p class="initial">
+                This text uses the initial value.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>7. user-select: inherit</h2>
+
+            <div class="inherit-parent">
+                <p class="inherit">
+                    This text inherits user-select from its parent.
+                </p>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>8. user-select: unset</h2>
+
+            <p class="unset">
+                This text uses the unset value.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>9. user-select: revert</h2>
+
+            <p class="revert">
+                This text uses the revert value.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>10. user-select: revert-layer</h2>
+
+            <p class="revert-layer">
+                This text uses the revert-layer value.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>11. User Select on Button</h2>
+
+            <button class="button">
+                Select Me
+            </button>
+
+            <p>
+                Try selecting the button text.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>12. User Select: None on UI</h2>
+
+            <div class="ui-box">
+                <span>+</span>
+                <span>Counter</span>
+                <span>-</span>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>13. User Select: All on Code</h2>
+
+            <div class="code-box">
+                <code>
+                    console.log("Hello World");
+                </code>
+            </div>
+
+            <p>
+                Click the code to select the complete code.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>14. User Select Comparison</h2>
+
+            <div class="comparison">
+
+                <div class="card auto">
+                    <h3>Auto</h3>
+                    <p>You can select this text.</p>
+                </div>
+
+                <div class="card none">
+                    <h3>None</h3>
+                    <p>You cannot select this text.</p>
+                </div>
+
+                <div class="card all">
+                    <h3>All</h3>
+                    <p>Click to select everything.</p>
+                </div>
+
+                <div class="card text">
+                    <h3>Text</h3>
+                    <p>Normal text selection.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CSS User-Select Practice</p>
+    </footer>
+
+</body>
+</html>
+
