@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Decoration Break</title>
+    <link rel="stylesheet" href="../Css/64-Box-Decoration-Break.css">
+</head>
+<body>
+
+    <!--
+    CSS BOX DECORATION BREAK
+
+    1. box-decoration-break: slice
+    2. box-decoration-break: clone
+
+    GLOBAL VALUES
+
+    3. initial
+    4. inherit
+    5. unset
+    6. revert
+    7. revert-layer
+    -->
+
+    <h1>CSS Box Decoration Break</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Slice</h2>
+            <div class="scene">
+                <span class="box slice">
+                    Box Decoration Break Slice Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Clone</h2>
+            <div class="scene">
+                <span class="box clone">
+                    Box Decoration Break Clone Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Initial</h2>
+            <div class="scene">
+                <span class="box initial">
+                    Box Decoration Break Initial Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Inherit</h2>
+            <div class="scene parent">
+                <span class="box inherit">
+                    Box Decoration Break Inherit Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Unset</h2>
+            <div class="scene">
+                <span class="box unset">
+                    Box Decoration Break Unset Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Revert</h2>
+            <div class="scene">
+                <span class="box revert">
+                    Box Decoration Break Revert Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Revert Layer</h2>
+            <div class="scene">
+                <span class="box revert-layer">
+                    Box Decoration Break Revert Layer Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Slice Border</h2>
+            <div class="scene">
+                <span class="box slice-border">
+                    Slice Border Decoration Example
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Clone Border</h2>
+            <div class="scene">
+                <span class="box clone-border">
+                    Clone Border Decoration Example
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="demo-section">
+
+        <h1>Box Decoration Break Demo</h1>
+
+        <div class="demo">
+
+            <div class="demo-card">
+                <h2>Slice</h2>
+
+                <div class="text-box">
+                    <span class="demo-box demo-slice">
+                        This is a practical example of box-decoration-break
+                        slice. The decoration is treated as one continuous
+                        decoration across fragmented lines.
+                    </span>
+                </div>
+            </div>
+
+            <div class="demo-card">
+                <h2>Clone</h2>
+
+                <div class="text-box">
+                    <span class="demo-box demo-clone">
+                        This is a practical example of box-decoration-break
+                        clone. Each fragmented line receives its own
+                        padding, border and background decoration.
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
