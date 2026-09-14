@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+
+/* 1. user-select: auto */
+
+.auto {
+    user-select: auto;
+}
+
+
+/* 2. user-select: none */
+
+.none {
+    user-select: none;
+}
+
+
+/* 3. user-select: text */
+
+.text {
+    user-select: text;
+}
+
+
+/* 4. user-select: all */
+
+.all {
+    user-select: all;
+}
+
+
+/* 5. user-select: contain */
+
+.contain {
+    user-select: contain;
+}
+
+
+/* 6. user-select: initial */
+
+.initial {
+    user-select: initial;
+}
+
+
+/* 7. user-select: inherit */
+
+.inherit-parent {
+    user-select: none;
+}
+
+.inherit {
+    user-select: inherit;
+}
+
+
+/* 8. user-select: unset */
+
+.unset {
+    user-select: unset;
+}
+
+
+/* 9. user-select: revert */
+
+.revert {
+    user-select: revert;
+}
+
+
+/* 10. user-select: revert-layer */
+
+.revert-layer {
+    user-select: revert-layer;
+}
+
+
+/* 11. Button */
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* 12. UI */
+
+.ui-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.ui-box span {
+    cursor: pointer;
+}
+
+
+/* 13. Code */
+
+.code-box {
+    width: 100%;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    user-select: all;
+    cursor: pointer;
+}
+
+
+/* 14. Comparison */
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card.auto {
+    user-select: auto;
+}
+
+.card.none {
+    user-select: none;
+}
+
+.card.all {
+    user-select: all;
+}
+
+.card.text {
+    user-select: text;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .comparison {
+        grid-template-columns: 1fr;
+    }
+}
