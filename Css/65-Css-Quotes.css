@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card p {
+    width: 100%;
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* Double Quotes */
+
+.double {
+    quotes: '"' '"';
+}
+
+.double span::before {
+    content: open-quote;
+}
+
+.double span::after {
+    content: close-quote;
+}
+
+
+/* Single Quotes */
+
+.single {
+    quotes: "'" "'";
+}
+
+.single span::before {
+    content: open-quote;
+}
+
+.single span::after {
+    content: close-quote;
+}
+
+
+/* Guillemets */
+
+.guillemets {
+    quotes: "«" "»";
+}
+
+.guillemets span::before {
+    content: open-quote;
+}
+
+.guillemets span::after {
+    content: close-quote;
+}
+
+
+/* German Quotes */
+
+.german {
+    quotes: "„" "“";
+}
+
+.german span::before {
+    content: open-quote;
+}
+
+.german span::after {
+    content: close-quote;
+}
+
+
+/* Curly Double Quotes */
+
+.curly-double {
+    quotes: "“" "”";
+}
+
+.curly-double span::before {
+    content: open-quote;
+}
+
+.curly-double span::after {
+    content: close-quote;
+}
+
+
+/* Curly Single Quotes */
+
+.curly-single {
+    quotes: "‘" "’";
+}
+
+.curly-single span::before {
+    content: open-quote;
+}
+
+.curly-single span::after {
+    content: close-quote;
+}
+
+
+/* Open Quote */
+
+.open {
+    quotes: "«" "»";
+}
+
+.open span::before {
+    content: open-quote;
+}
+
+
+/* Close Quote */
+
+.close {
+    quotes: "«" "»";
+}
+
+.close span::after {
+    content: close-quote;
+}
+
+
+/* No Open Quote */
+
+.no-open {
+    quotes: "«" "»";
+}
+
+.no-open span::before {
+    content: no-open-quote;
+}
+
+.no-open span::after {
+    content: close-quote;
+}
+
+
+/* No Close Quote */
+
+.no-close {
+    quotes: "«" "»";
+}
+
+.no-close span::before {
+    content: open-quote;
+}
+
+.no-close span::after {
+    content: no-close-quote;
+}
+
+
+/* Nested Quotes */
+
+.nested {
+    quotes: "“" "”" "‘" "’";
+}
+
+.nested span::before {
+    content: open-quote;
+}
+
+.nested span::after {
+    content: close-quote;
+}
+
+
+/* Custom Quotes */
+
+.custom {
+    quotes: "<<" ">>";
+}
+
+.custom span::before {
+    content: open-quote;
+}
+
+.custom span::after {
+    content: close-quote;
+}
+
+
+/* Demo Section */
+
+.demo-section {
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.demo-section h1 {
+    margin-bottom: 40px;
+}
+
+.demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.demo-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.demo-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    line-height: 2;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Simple Quote */
+
+.quote-one {
+    quotes: "“" "”";
+}
+
+.quote-one span::before {
+    content: open-quote;
+}
+
+.quote-one span::after {
+    content: close-quote;
+}
+
+
+/* Nested Quote */
+
+.quote-two {
+    quotes: "“" "”" "‘" "’";
+}
+
+.quote-two > span::before {
+    content: open-quote;
+}
+
+.quote-two > span::after {
+    content: close-quote;
+}
+
+.quote-two span span::before {
+    content: open-quote;
+}
+
+.quote-two span span::after {
+    content: close-quote;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .demo {
+        grid-template-columns: 1fr;
+    }
+
+}
