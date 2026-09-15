@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Simple and Combinator Selectors</title>
+    <link rel="stylesheet" href="../Css/67-Css-Simple&Combinator-Selector.css">
+</head>
+<body>
+
+    <!--
+    CSS SIMPLE SELECTORS
+
+    1. Element Selector
+    2. ID Selector
+    3. Class Selector
+    4. Universal Selector
+    5. Grouping Selector
+
+    CSS COMBINATOR SELECTORS
+
+    6. Descendant Selector
+    7. Child Selector
+    8. Adjacent Sibling Selector
+    9. General Sibling Selector
+    -->
+
+    <h1>CSS Simple & Combinator Selectors</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Element Selector</h2>
+
+            <div class="element-example">
+                <p>Element Selector</p>
+                <p>HTML Element</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>ID Selector</h2>
+
+            <div class="id-example">
+                <p id="special">ID Selector</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>Class Selector</h2>
+
+            <div class="class-example">
+                <p class="highlight">Class Selector</p>
+                <p class="highlight">Same Class</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>Universal Selector</h2>
+
+            <div class="universal-example">
+                <p>Universal Selector</p>
+                <span>Applies to all elements</span>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>Grouping Selector</h2>
+
+            <div class="group-example">
+                <h3>Grouping Heading</h3>
+                <p>Grouping Paragraph</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>Descendant Selector</h2>
+
+            <div class="descendant-example">
+                <p>Descendant Paragraph</p>
+
+                <div>
+                    <p>Nested Paragraph</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>Child Selector</h2>
+
+            <div class="child-example">
+                <p>Direct Child</p>
+
+                <div>
+                    <p>Nested Child</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>Adjacent Sibling</h2>
+
+            <div class="adjacent-example">
+                <h3>Heading</h3>
+                <p>Adjacent Sibling</p>
+                <p>Another Paragraph</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h2>General Sibling</h2>
+
+            <div class="general-example">
+                <h3>Heading</h3>
+                <p>General Sibling One</p>
+                <p>General Sibling Two</p>
+                <span>General Sibling Span</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="demo-section">
+
+        <h1>Selector Demo</h1>
+
+        <div class="demo">
+
+            <div class="demo-card">
+                <h2>Simple Selectors</h2>
+
+                <div class="simple-demo">
+                    <h3>Element Selector</h3>
+                    <p id="demo-id">ID Selector</p>
+                    <p class="demo-class">Class Selector</p>
+                    <span>Universal Selector</span>
+                </div>
+            </div>
+
+
+            <div class="demo-card">
+                <h2>Combinator Selectors</h2>
+
+                <div class="combinator-demo">
+                    <h3>Parent Heading</h3>
+                    <p>Child Paragraph</p>
+
+                    <div>
+                        <p>Descendant Paragraph</p>
+                    </div>
+
+                    <p>Sibling Paragraph</p>
+                    <p>General Sibling</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
