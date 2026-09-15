@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card p,
+.card span {
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/* Element Selector */
+
+.element-example p {
+    color: blue;
+    background-color: #e0eaff;
+}
+
+
+/* ID Selector */
+
+#special {
+    color: red;
+    background-color: #ffe0e0;
+    font-weight: bold;
+}
+
+
+/* Class Selector */
+
+.highlight {
+    color: green;
+    background-color: #e0ffe5;
+    font-weight: bold;
+}
+
+
+/* Universal Selector */
+
+.universal-example * {
+    border: 2px solid purple;
+}
+
+
+/* Grouping Selector */
+
+.group-example h3,
+.group-example p {
+    color: #8e44ad;
+    background-color: #f0e0ff;
+}
+
+
+/* Descendant Selector */
+
+.descendant-example p {
+    color: #d35400;
+    background-color: #ffe8d6;
+}
+
+
+/* Child Selector */
+
+.child-example > p {
+    color: #16a085;
+    background-color: #d9f5ef;
+}
+
+
+/* Adjacent Sibling Selector */
+
+.adjacent-example h3 + p {
+    color: white;
+    background-color: #2980b9;
+}
+
+
+/* General Sibling Selector */
+
+.general-example h3 ~ p {
+    color: white;
+    background-color: #c0392b;
+}
+
+
+/* Demo Section */
+
+.demo-section {
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.demo-section h1 {
+    margin-bottom: 40px;
+}
+
+.demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.demo-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.demo-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Simple Selector Demo */
+
+.simple-demo h3 {
+    color: blue;
+}
+
+#demo-id {
+    color: red;
+}
+
+.demo-class {
+    color: green;
+}
+
+.simple-demo span {
+    color: purple;
+}
+
+
+/* Combinator Demo */
+
+.combinator-demo > p {
+    background-color: #d9f5ef;
+}
+
+.combinator-demo h3 + p {
+    background-color: #d6eaff;
+}
+
+.combinator-demo h3 ~ p {
+    border-left: 5px solid #c0392b;
+}
+
+.combinator-demo div p {
+    background-color: #ffe8d6;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .demo {
+        grid-template-columns: 1fr;
+    }
+
+}
