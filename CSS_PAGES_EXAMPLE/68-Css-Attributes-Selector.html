@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selector</title>
+    <link rel="stylesheet" href="../Css/68-CSS-Attributes-Selector.css">
+</head>
+<body>
+
+    <!--
+    CSS ATTRIBUTE SELECTORS
+
+    1. [attribute]
+    2. [attribute="value"]
+    3. [attribute~="value"]
+    4. [attribute|="value"]
+    5. [attribute^="value"]
+    6. [attribute$="value"]
+    7. [attribute*="value"]
+
+    ATTRIBUTE SELECTOR OPERATORS
+
+    8. =   Exact Value
+    9. ~=  Contains Word
+    10. |= Starts With Exact Value
+    11. ^= Starts With
+    12. $= Ends With
+    13. *= Contains
+    -->
+
+    <h1>CSS Attribute Selectors</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>[attribute]</h2>
+
+            <input type="text" placeholder="Text Input">
+            <input type="email" placeholder="Email Input">
+            <input type="password" placeholder="Password Input">
+        </div>
+
+
+        <div class="card">
+            <h2>[attribute="value"]</h2>
+
+            <input type="text" placeholder="Exact Value">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Exact Value">
+        </div>
+
+
+        <div class="card">
+            <h2>[attribute~="value"]</h2>
+
+            <p class="box web developer">Web Developer</p>
+            <p class="box web designer">Web Designer</p>
+            <p class="box developer">Developer</p>
+        </div>
+
+
+        <div class="card">
+            <h2>[attribute|="value"]</h2>
+
+            <p lang="en">English</p>
+            <p lang="en-US">English US</p>
+            <p lang="fr">French</p>
+        </div>
+
+
+        <div class="card">
+            <h2>[attribute^="value"]</h2>
+
+            <a href="https://www.google.com">Google</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="http://example.com">Example</a>
+        </div>
+
+
+        <div class="card">
+            <h2>[attribute$="value"]</h2>
+
+            <a href="document.pdf">PDF File</a>
+            <a href="image.jpg">JPG Image</a>
+            <a href="notes.pdf">PDF Notes</a>
+        </div>
+
+
+        <div class="card">
+            <h2>[attribute*="value"]</h2>
+
+            <a href="https://www.google.com">Google Website</a>
+            <a href="https://www.youtube.com">YouTube Website</a>
+            <a href="https://www.github.com">GitHub Website</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Exact Value =</h2>
+
+            <button type="submit">Submit</button>
+            <button type="button">Button</button>
+        </div>
+
+
+        <div class="card">
+            <h2>Contains Word ~=</h2>
+
+            <p class="student active">Student Active</p>
+            <p class="student">Student</p>
+            <p class="teacher active">Teacher Active</p>
+        </div>
+
+
+        <div class="card">
+            <h2>Starts With |=</h2>
+
+            <p lang="en">English</p>
+            <p lang="en-US">English US</p>
+            <p lang="en-GB">English UK</p>
+        </div>
+
+
+        <div class="card">
+            <h2>Starts With ^=</h2>
+
+            <a href="https://google.com">HTTPS Link</a>
+            <a href="http://example.com">HTTP Link</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Ends With $=</h2>
+
+            <a href="file.pdf">PDF Document</a>
+            <a href="photo.jpg">JPG Photo</a>
+        </div>
+
+    </div>
+
+
+    <section class="demo-section">
+
+        <h1>Attribute Selector Demo</h1>
+
+        <div class="demo">
+
+            <div class="demo-card">
+                <h2>Form Attributes</h2>
+
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="number" placeholder="Age">
+            </div>
+
+
+            <div class="demo-card">
+                <h2>Link Attributes</h2>
+
+                <a href="https://www.google.com">Google</a>
+                <a href="https://www.youtube.com">YouTube</a>
+                <a href="document.pdf">PDF File</a>
+                <a href="image.jpg">JPG Image</a>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
