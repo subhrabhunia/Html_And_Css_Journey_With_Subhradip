@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #3498db;
+    --green: #2ecc71;
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --purple: #9b59b6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="number"] {
+    width: 100%;
+    padding: 10px;
+}
+
+.card label {
+    display: block;
+    margin: 8px 0;
+}
+
+
+/* 1. :hover */
+
+.hover-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+}
+
+.hover-btn:hover {
+    background-color: #2c3e50;
+}
+
+
+/* 2. :active */
+
+.active-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--green);
+    color: white;
+}
+
+.active-btn:active {
+    background-color: var(--red);
+}
+
+
+/* 3. :focus */
+
+.focus-input:focus {
+    outline: 3px solid var(--blue);
+    background-color: #eaf6ff;
+}
+
+
+/* 4. :focus-visible */
+
+.focus-visible-btn:focus-visible {
+    outline: 4px solid var(--orange);
+}
+
+
+/* 5. :focus-within */
+
+.focus-within-box:focus-within {
+    background-color: #eaf6ff;
+    border: 3px solid var(--blue);
+}
+
+
+/* 6. :link */
+
+.link-example:link {
+    color: var(--blue);
+}
+
+
+/* 7. :visited */
+
+.visited-example:visited {
+    color: var(--purple);
+}
+
+
+/* 8. :first-child */
+
+.first-child-example p:first-child {
+    background-color: #dff0ff;
+    padding: 10px;
+}
+
+
+/* 9. :last-child */
+
+.last-child-example p:last-child {
+    background-color: #ffe0e0;
+    padding: 10px;
+}
+
+
+/* 10. :nth-child() */
+
+.nth-child-example p:nth-child(2) {
+    background-color: #e0ffe5;
+    padding: 10px;
+}
+
+
+/* 11. :nth-last-child() */
+
+.nth-last-child-example p:nth-last-child(2) {
+    background-color: #fff0d5;
+    padding: 10px;
+}
+
+
+/* 12. :only-child */
+
+.only-child-example p:only-child {
+    background-color: #eadcf5;
+    padding: 10px;
+}
+
+
+/* 13. :first-of-type */
+
+.type-example p:first-of-type {
+    background-color: #dff0ff;
+    padding: 10px;
+}
+
+
+/* 14. :last-of-type */
+
+.last-type-example p:last-of-type {
+    background-color: #ffe0e0;
+    padding: 10px;
+}
+
+
+/* 15. :nth-of-type() */
+
+.nth-type-example p:nth-of-type(2) {
+    background-color: #e0ffe5;
+    padding: 10px;
+}
+
+
+/* 16. :nth-last-of-type() */
+
+.nth-last-type-example p:nth-last-of-type(2) {
+    background-color: #fff0d5;
+    padding: 10px;
+}
+
+
+/* 17. :only-of-type */
+
+.only-type-example h3:only-of-type {
+    background-color: #eadcf5;
+    padding: 10px;
+}
+
+
+/* 18. :enabled */
+
+.card input:enabled {
+    border: 3px solid var(--green);
+}
+
+
+/* 19. :disabled */
+
+.card input:disabled {
+    background-color: #dddddd;
+    border: 3px solid #777777;
+}
+
+
+/* 20. :checked */
+
+.card input[type="checkbox"]:checked {
+    accent-color: var(--green);
+}
+
+
+/* 21. :indeterminate */
+
+.indeterminate:indeterminate {
+    accent-color: var(--orange);
+}
+
+
+/* 22. :default */
+
+.card input:default {
+    accent-color: var(--blue);
+}
+
+
+/* 23. :required */
+
+.card input:required {
+    border-color: var(--orange);
+}
+
+
+/* 24. :optional */
+
+.card input:optional {
+    border-color: var(--blue);
+}
+
+
+/* 25. :valid */
+
+.card input:valid {
+    border-color: var(--green);
+}
+
+
+/* 26. :invalid */
+
+.card input:invalid {
+    border-color: var(--red);
+}
+
+
+/* 27. :in-range */
+
+.card input:in-range {
+    border: 3px solid var(--green);
+}
+
+
+/* 28. :out-of-range */
+
+.card input:out-of-range {
+    border: 3px solid var(--red);
+}
+
+
+/* 29. :read-only */
+
+.card input:read-only {
+    background-color: #eeeeee;
+}
+
+
+/* 30. :read-write */
+
+.card input:read-write {
+    background-color: white;
+}
+
+
+/* 31. :placeholder-shown */
+
+.placeholder-input:placeholder-shown {
+    background-color: #eaf6ff;
+}
+
+
+/* 32. :user-valid */
+
+.card input:user-valid {
+    border-color: var(--green);
+}
+
+
+/* 33. :user-invalid */
+
+.card input:user-invalid {
+    border-color: var(--red);
+}
+
+
+/* 34. :empty */
+
+.empty-box:empty {
+    height: 50px;
+    background-color: var(--purple);
+}
+
+
+/* 35. :root */
+
+:root .root-example {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+
+/* 36. :target */
+
+#target-box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #dddddd;
+}
+
+#target-box:target {
+    background-color: var(--orange);
+    color: white;
+}
+
+
+/* 37. :not() */
+
+.not-example p:not(.exclude) {
+    background-color: #dff0ff;
+    padding: 10px;
+}
+
+
+/* 38. :is() */
+
+.is-example :is(h3, p) {
+    background-color: #e0ffe5;
+    padding: 10px;
+}
+
+
+/* 39. :where() */
+
+.where-example :where(h3, p) {
+    background-color: #fff0d5;
+    padding: 10px;
+}
+
+
+/* 40. :has() */
+
+.has-example:has(p) {
+    background-color: #eadcf5;
+    padding: 15px;
+}
+
+
+/* 41. :lang() */
+
+p:lang(en) {
+    color: var(--blue);
+}
+
+
+/* 42. :dir() */
+
+.direction-example:dir(rtl) {
+    background-color: #ffe0e0;
+    padding: 10px;
+}
+
+
+/* 43. :any-link */
+
+.card a:any-link {
+    text-decoration: none;
+}
+
+
+/* 44. :local-link */
+
+.local-link-example:local-link {
+    color: var(--green);
+}
+
+
+/* 45. :fullscreen */
+
+.fullscreen-example:fullscreen {
+    background-color: var(--blue);
+    color: white;
+}
+
+
+/* 46. :modal */
+
+dialog:modal {
+    border: 5px solid var(--blue);
+    padding: 30px;
+    margin: auto;
+}
+
+
+/* 47. :picture-in-picture */
+
+.pip-video:picture-in-picture {
+    border: 5px solid var(--purple);
+}
+
+
+/* 48. :defined */
+
+.custom-element:defined {
+    color: var(--green);
+}
+
+
+/* 49. :scope */
+
+.scope-example:scope {
+    border: 3px solid var(--blue);
+}
+
+
+/* 50. :open */
+
+details:open {
+    background-color: #eaf6ff;
+    padding: 15px;
+}
+
+
+/* Demo Section */
+
+.demo-section {
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.demo-section h1 {
+    margin-bottom: 40px;
+}
+
+.demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.demo-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.demo-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.demo-card input[type="text"],
+.demo-card input[type="email"] {
+    display: block;
+
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 2px solid #999;
+}
+
+.demo-card input:focus {
+    outline: none;
+    border-color: var(--blue);
+}
+
+.demo-card input:valid {
+    border-color: var(--green);
+}
+
+.demo-card input:invalid {
+    border-color: var(--red);
+}
+
+.demo-card input:placeholder-shown {
+    background-color: #f5faff;
+}
+
+.demo-card label {
+    margin: 15px 0;
+}
+
+.demo-card button {
+    padding: 12px 25px;
+
+    border: none;
+    background-color: var(--blue);
+    color: white;
+}
+
+.demo-card button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Child Demo */
+
+.demo-list {
+    list-style: none;
+}
+
+.demo-list li {
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #eeeeee;
+}
+
+.demo-list li:first-child {
+    background-color: var(--blue);
+    color: white;
+}
+
+.demo-list li:last-child {
+    background-color: var(--red);
+    color: white;
+}
+
+.demo-list li:nth-child(3) {
+    background-color: var(--green);
+    color: white;
+}
+
+.demo-list li:nth-child(even) {
+    border-left: 5px solid var(--orange);
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .demo {
+        grid-template-columns: 1fr;
+    }
+
+}
