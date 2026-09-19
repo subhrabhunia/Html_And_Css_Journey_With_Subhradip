@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Class</title>
+    <link rel="stylesheet" href="../Css/69-Pseudo-Class.css">
+</head>
+<body>
+
+    <!--
+    CSS PSEUDO-CLASS
+
+    USER ACTION
+
+    1. :hover
+    2. :active
+    3. :focus
+    4. :focus-visible
+    5. :focus-within
+
+    LINK
+
+    6. :link
+    7. :visited
+
+    CHILD
+
+    8. :first-child
+    9. :last-child
+    10. :nth-child()
+    11. :nth-last-child()
+    12. :only-child
+
+    TYPE
+
+    13. :first-of-type
+    14. :last-of-type
+    15. :nth-of-type()
+    16. :nth-last-of-type()
+    17. :only-of-type
+
+    FORM
+
+    18. :enabled
+    19. :disabled
+    20. :checked
+    21. :indeterminate
+    22. :default
+    23. :required
+    24. :optional
+    25. :valid
+    26. :invalid
+    27. :in-range
+    28. :out-of-range
+    29. :read-only
+    30. :read-write
+    31. :placeholder-shown
+    32. :user-valid
+    33. :user-invalid
+
+    OTHER
+
+    34. :empty
+    35. :root
+    36. :target
+    37. :not()
+    38. :is()
+    39. :where()
+    40. :has()
+    41. :lang()
+    42. :dir()
+    43. :any-link
+    44. :local-link
+    45. :fullscreen
+    46. :modal
+    47. :picture-in-picture
+    48. :defined
+    49. :scope
+    50. :open
+    -->
+
+    <h1>CSS Pseudo-Class</h1>
+
+    <div class="container">
+
+        <!-- 1. hover -->
+
+        <div class="card">
+            <h2>:hover</h2>
+
+            <button class="hover-btn">
+                Hover Me
+            </button>
+        </div>
+
+
+        <!-- 2. active -->
+
+        <div class="card">
+            <h2>:active</h2>
+
+            <button class="active-btn">
+                Click Me
+            </button>
+        </div>
+
+
+        <!-- 3. focus -->
+
+        <div class="card">
+            <h2>:focus</h2>
+
+            <input
+                class="focus-input"
+                type="text"
+                placeholder="Click Here">
+        </div>
+
+
+        <!-- 4. focus-visible -->
+
+        <div class="card">
+            <h2>:focus-visible</h2>
+
+            <button class="focus-visible-btn">
+                Focus Me
+            </button>
+        </div>
+
+
+        <!-- 5. focus-within -->
+
+        <div class="card focus-within-box">
+            <h2>:focus-within</h2>
+
+            <input
+                type="text"
+                placeholder="Focus Inside">
+        </div>
+
+
+        <!-- 6. link -->
+
+        <div class="card">
+            <h2>:link</h2>
+
+            <a class="link-example"
+               href="https://www.example.com">
+                Unvisited Link
+            </a>
+        </div>
+
+
+        <!-- 7. visited -->
+
+        <div class="card">
+            <h2>:visited</h2>
+
+            <a class="visited-example"
+               href="https://www.google.com">
+                Visit Google
+            </a>
+        </div>
+
+
+        <!-- 8. first-child -->
+
+        <div class="card">
+            <h2>:first-child</h2>
+
+            <div class="first-child-example">
+                <p>First Child</p>
+                <p>Second Child</p>
+                <p>Third Child</p>
+            </div>
+        </div>
+
+
+        <!-- 9. last-child -->
+
+        <div class="card">
+            <h2>:last-child</h2>
+
+            <div class="last-child-example">
+                <p>First Child</p>
+                <p>Second Child</p>
+                <p>Last Child</p>
+            </div>
+        </div>
+
+
+        <!-- 10. nth-child -->
+
+        <div class="card">
+            <h2>:nth-child()</h2>
+
+            <div class="nth-child-example">
+                <p>Child 1</p>
+                <p>Child 2</p>
+                <p>Child 3</p>
+                <p>Child 4</p>
+            </div>
+        </div>
+
+
+        <!-- 11. nth-last-child -->
+
+        <div class="card">
+            <h2>:nth-last-child()</h2>
+
+            <div class="nth-last-child-example">
+                <p>Child 1</p>
+                <p>Child 2</p>
+                <p>Child 3</p>
+                <p>Child 4</p>
+            </div>
+        </div>
+
+
+        <!-- 12. only-child -->
+
+        <div class="card">
+            <h2>:only-child</h2>
+
+            <div class="only-child-example">
+                <p>Only Child</p>
+            </div>
+        </div>
+
+
+        <!-- 13. first-of-type -->
+
+        <div class="card">
+            <h2>:first-of-type</h2>
+
+            <div class="type-example">
+                <h3>Heading</h3>
+                <p>First Paragraph</p>
+                <p>Second Paragraph</p>
+            </div>
+        </div>
+
+
+        <!-- 14. last-of-type -->
+
+        <div class="card">
+            <h2>:last-of-type</h2>
+
+            <div class="last-type-example">
+                <p>First Paragraph</p>
+                <p>Last Paragraph</p>
+                <h3>Heading</h3>
+            </div>
+        </div>
+
+
+        <!-- 15. nth-of-type -->
+
+        <div class="card">
+            <h2>:nth-of-type()</h2>
+
+            <div class="nth-type-example">
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+            </div>
+        </div>
+
+
+        <!-- 16. nth-last-of-type -->
+
+        <div class="card">
+            <h2>:nth-last-of-type()</h2>
+
+            <div class="nth-last-type-example">
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+            </div>
+        </div>
+
+
+        <!-- 17. only-of-type -->
+
+        <div class="card">
+            <h2>:only-of-type</h2>
+
+            <div class="only-type-example">
+                <h3>Only Heading</h3>
+                <p>Paragraph</p>
+            </div>
+        </div>
+
+
+        <!-- 18. enabled -->
+
+        <div class="card">
+            <h2>:enabled</h2>
+
+            <input
+                type="text"
+                value="Enabled Input">
+        </div>
+
+
+        <!-- 19. disabled -->
+
+        <div class="card">
+            <h2>:disabled</h2>
+
+            <input
+                type="text"
+                value="Disabled Input"
+                disabled>
+        </div>
+
+
+        <!-- 20. checked -->
+
+        <div class="card">
+            <h2>:checked</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    checked>
+                Checked
+            </label>
+        </div>
+
+
+        <!-- 21. indeterminate -->
+
+        <div class="card">
+            <h2>:indeterminate</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    class="indeterminate">
+                Checkbox
+            </label>
+        </div>
+
+
+        <!-- 22. default -->
+
+        <div class="card">
+            <h2>:default</h2>
+
+            <label>
+                <input
+                    type="radio"
+                    name="gender"
+                    checked>
+                Default Radio
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="gender">
+                Other Radio
+            </label>
+        </div>
+
+
+        <!-- 23. required -->
+
+        <div class="card">
+            <h2>:required</h2>
+
+            <input
+                type="text"
+                placeholder="Required"
+                required>
+        </div>
+
+
+        <!-- 24. optional -->
+
+        <div class="card">
+            <h2>:optional</h2>
+
+            <input
+                type="text"
+                placeholder="Optional">
+        </div>
+
+
+        <!-- 25. valid -->
+
+        <div class="card">
+            <h2>:valid</h2>
+
+            <input
+                type="email"
+                value="student@gmail.com">
+        </div>
+
+
+        <!-- 26. invalid -->
+
+        <div class="card">
+            <h2>:invalid</h2>
+
+            <input
+                type="email"
+                value="invalid-email">
+        </div>
+
+
+        <!-- 27. in-range -->
+
+        <div class="card">
+            <h2>:in-range</h2>
+
+            <input
+                type="number"
+                min="1"
+                max="10"
+                value="5">
+        </div>
+
+
+        <!-- 28. out-of-range -->
+
+        <div class="card">
+            <h2>:out-of-range</h2>
+
+            <input
+                type="number"
+                min="1"
+                max="10"
+                value="20">
+        </div>
+
+
+        <!-- 29. read-only -->
+
+        <div class="card">
+            <h2>:read-only</h2>
+
+            <input
+                type="text"
+                value="Read Only"
+                readonly>
+        </div>
+
+
+        <!-- 30. read-write -->
+
+        <div class="card">
+            <h2>:read-write</h2>
+
+            <input
+                type="text"
+                value="Read Write">
+        </div>
+
+
+        <!-- 31. placeholder-shown -->
+
+        <div class="card">
+            <h2>:placeholder-shown</h2>
+
+            <input
+                class="placeholder-input"
+                type="text"
+                placeholder="Type Something">
+        </div>
+
+
+        <!-- 32. user-valid -->
+
+        <div class="card">
+            <h2>:user-valid</h2>
+
+            <input
+                type="email"
+                placeholder="Enter Valid Email">
+        </div>
+
+
+        <!-- 33. user-invalid -->
+
+        <div class="card">
+            <h2>:user-invalid</h2>
+
+            <input
+                type="email"
+                placeholder="Enter Invalid Email">
+        </div>
+
+
+        <!-- 34. empty -->
+
+        <div class="card">
+            <h2>:empty</h2>
+
+            <div class="empty-box"></div>
+        </div>
+
+
+        <!-- 35. root -->
+
+        <div class="card">
+            <h2>:root</h2>
+
+            <p class="root-example">
+                Root Selector
+            </p>
+        </div>
+
+
+        <!-- 36. target -->
+
+        <div class="card">
+            <h2>:target</h2>
+
+            <a href="#target-box">
+                Go To Target
+            </a>
+
+            <div id="target-box">
+                Target Element
+            </div>
+        </div>
+
+
+        <!-- 37. not -->
+
+        <div class="card">
+            <h2>:not()</h2>
+
+            <div class="not-example">
+                <p>Normal Paragraph</p>
+                <p class="exclude">Excluded</p>
+                <p>Normal Paragraph</p>
+            </div>
+        </div>
+
+
+        <!-- 38. is -->
+
+        <div class="card">
+            <h2>:is()</h2>
+
+            <div class="is-example">
+                <h3>Heading</h3>
+                <p>Paragraph</p>
+            </div>
+        </div>
+
+
+        <!-- 39. where -->
+
+        <div class="card">
+            <h2>:where()</h2>
+
+            <div class="where-example">
+                <h3>Heading</h3>
+                <p>Paragraph</p>
+            </div>
+        </div>
+
+
+        <!-- 40. has -->
+
+        <div class="card">
+            <h2>:has()</h2>
+
+            <div class="has-example">
+                <p>Parent contains paragraph</p>
+            </div>
+        </div>
+
+
+        <!-- 41. lang -->
+
+        <div class="card">
+            <h2>:lang()</h2>
+
+            <p lang="en">
+                English Text
+            </p>
+        </div>
+
+
+        <!-- 42. dir -->
+
+        <div class="card">
+            <h2>:dir()</h2>
+
+            <p dir="rtl" class="direction-example">
+                Right To Left Text
+            </p>
+        </div>
+
+
+        <!-- 43. any-link -->
+
+        <div class="card">
+            <h2>:any-link</h2>
+
+            <a href="https://www.google.com">
+                Any Link
+            </a>
+        </div>
+
+
+        <!-- 44. local-link -->
+
+        <div class="card">
+            <h2>:local-link</h2>
+
+            <a href="https://www.example.com">
+                Local Link Example
+            </a>
+        </div>
+
+
+        <!-- 45. fullscreen -->
+
+        <div class="card fullscreen-example">
+            <h2>:fullscreen</h2>
+
+            <p>
+                This section changes when fullscreen.
+            </p>
+        </div>
+
+
+        <!-- 46. modal -->
+
+        <div class="card">
+            <h2>:modal</h2>
+
+            <button onclick="document.getElementById('myDialog').showModal()">
+                Open Dialog
+            </button>
+
+            <dialog id="myDialog">
+                <p>Modal Dialog</p>
+
+                <button onclick="this.parentElement.close()">
+                    Close
+                </button>
+            </dialog>
+        </div>
+
+
+        <!-- 47. picture-in-picture -->
+
+        <div class="card">
+            <h2>:picture-in-picture</h2>
+
+            <video
+                class="pip-video"
+                controls
+                width="100%">
+                <source src="../Assest/Video/video.mp4">
+            </video>
+        </div>
+
+
+        <!-- 48. defined -->
+
+        <div class="card">
+            <h2>:defined</h2>
+
+            <p>
+                Custom elements can use :defined.
+            </p>
+        </div>
+
+
+        <!-- 49. scope -->
+
+        <div class="card scope-example">
+            <h2>:scope</h2>
+
+            <p>
+                Scope Example
+            </p>
+        </div>
+
+
+        <!-- 50. open -->
+
+        <div class="card">
+            <h2>:open</h2>
+
+            <details>
+                <summary>
+                    Open Details
+                </summary>
+
+                <p>
+                    This content is visible when details
+                    is opened.
+                </p>
+            </details>
+        </div>
+
+    </div>
+
+
+    <section class="demo-section">
+
+        <h1>Pseudo-Class Demo</h1>
+
+        <div class="demo">
+
+            <div class="demo-card">
+
+                <h2>Form Pseudo-Classes</h2>
+
+                <input
+                    type="text"
+                    placeholder="Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    required>
+
+                <label>
+                    <input type="checkbox">
+                    Accept Terms
+                </label>
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </div>
+
+
+            <div class="demo-card">
+
+                <h2>Child Pseudo-Classes</h2>
+
+                <ul class="demo-list">
+
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                    <li>Fourth Item</li>
+                    <li>Last Item</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
