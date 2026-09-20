@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f2f2f2;
+
+    color: #222;
+
+    padding: 30px;
+}
+
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+h2 {
+    margin-bottom: 15px;
+}
+
+
+.container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    min-height: 190px;
+}
+
+
+/* =====================================================
+   1. BASIC attr()
+   ===================================================== */
+
+.basic-attr::after {
+
+    content: attr(data-name);
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: blue;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   2. attr() WITH title
+   ===================================================== */
+
+.title-attr::after {
+
+    content: " [" attr(title) "]";
+
+    color: purple;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   3. DATA ATTRIBUTE
+   ===================================================== */
+
+.student::before {
+
+    content: "Name: " attr(data-name);
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: blue;
+}
+
+
+.student::after {
+
+    content:
+        "Course: " attr(data-course)
+        " | Year: " attr(data-year);
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: green;
+}
+
+
+/* =====================================================
+   4. attr() WITH ::before
+   ===================================================== */
+
+.before-attr::before {
+
+    content: attr(data-label) ": ";
+
+    color: red;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   5. attr() WITH ::after
+   ===================================================== */
+
+.after-attr::after {
+
+    content: " | Course: " attr(data-course);
+
+    color: blue;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   6. attr() WITH href
+   ===================================================== */
+
+.link-example::after {
+
+    content: " (" attr(href) ")";
+
+    color: gray;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   7. attr() WITH alt
+   ===================================================== */
+
+.image-example {
+
+    width: 150px;
+
+    height: 120px;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   8. CUSTOM TOOLTIP
+   ===================================================== */
+
+.tooltip {
+
+    position: relative;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: black;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+.tooltip::after {
+
+    content: attr(data-tooltip);
+
+    position: absolute;
+
+    bottom: 130%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: max-content;
+
+    max-width: 220px;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 13px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+
+.tooltip:hover::after {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =====================================================
+   9. FALLBACK VALUE
+   ===================================================== */
+
+.fallback-example::after {
+
+    content: attr(data-label, "Default Label");
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: red;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   10. ATTRIBUTE TYPE
+   ===================================================== */
+
+.price::after {
+
+    content: attr(data-price type(<number>));
+
+    margin-left: 10px;
+
+    color: green;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   11. MULTIPLE ATTRIBUTES
+   ===================================================== */
+
+.profile::before {
+
+    content:
+        "Name: " attr(data-name)
+        " | Role: " attr(data-role)
+        " | Location: " attr(data-location);
+
+    display: block;
+
+    line-height: 1.8;
+
+    color: blue;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   12. FORM ATTRIBUTE
+   ===================================================== */
+
+.input-example {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #aaa;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+.input-example::placeholder {
+
+    color: purple;
+
+    font-style: italic;
+}
+
+
+/* =====================================================
+   LARGE DEMO
+   ===================================================== */
+
+.large-demo {
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+
+.product {
+
+    padding: 25px;
+
+    border: 2px solid #333;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.product::before {
+
+    content:
+        "Product: " attr(data-name);
+
+    display: block;
+
+    color: blue;
+
+    margin-bottom: 10px;
+}
+
+
+.product::after {
+
+    content:
+        "Brand: " attr(data-brand)
+        " | Price: ₹" attr(data-price);
+
+    display: block;
+
+    margin-top: 10px;
+
+    color: green;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   LINK DEMO
+   ===================================================== */
+
+.links-demo {
+
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+}
+
+
+.links-demo a {
+
+    display: block;
+
+    margin: 15px 0;
+
+    color: blue;
+
+    text-decoration: none;
+}
+
+
+.links-demo a::after {
+
+    content: " → " attr(href);
+
+    color: gray;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+    .container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
