@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Attribute Function</title>
+
+    <link rel="stylesheet" href="../Css/71-CSS-Attribute-Function.css">
+</head>
+
+<body>
+
+    <!--
+    CSS ATTRIBUTE FUNCTION
+
+    1. attr()
+    2. attr(attribute)
+    3. attr(attribute type(<type>))
+    4. attr(attribute type(<type>) fallback)
+    5. attr(attribute, fallback)
+
+    COMMON USES
+
+    1. content
+    2. tooltip
+    3. data attributes
+    4. links
+    5. labels
+    6. counters / custom information
+    -->
+
+
+    <h1>CSS Attribute Function</h1>
+
+
+    <div class="container">
+
+
+        <!-- 1. Basic attr() -->
+
+        <section class="card">
+
+            <h2>1. Basic attr()</h2>
+
+            <p class="basic-attr" data-name="Subhradip">
+                Hover over this text
+            </p>
+
+        </section>
+
+
+        <!-- 2. attr() with title -->
+
+        <section class="card">
+
+            <h2>2. attr() with title</h2>
+
+            <p class="title-attr" title="CSS Attribute Function">
+
+                Hover over this paragraph
+
+            </p>
+
+        </section>
+
+
+        <!-- 3. Data Attribute -->
+
+        <section class="card">
+
+            <h2>3. Data Attribute</h2>
+
+            <div
+                class="student"
+                data-name="Subhradip"
+                data-course="BCA"
+                data-year="3rd Year">
+
+                Student Information
+
+            </div>
+
+        </section>
+
+
+        <!-- 4. attr() in ::before -->
+
+        <section class="card">
+
+            <h2>4. attr() with ::before</h2>
+
+            <p
+                class="before-attr"
+                data-label="Student Name">
+
+                Subhradip Bhunia
+
+            </p>
+
+        </section>
+
+
+        <!-- 5. attr() in ::after -->
+
+        <section class="card">
+
+            <h2>5. attr() with ::after</h2>
+
+            <p
+                class="after-attr"
+                data-course="BCA">
+
+                Subhradip Bhunia
+
+            </p>
+
+        </section>
+
+
+        <!-- 6. Link Attribute -->
+
+        <section class="card">
+
+            <h2>6. attr() with href</h2>
+
+            <a
+                class="link-example"
+                href="https://www.google.com"
+                target="_blank">
+
+                Google
+
+            </a>
+
+        </section>
+
+
+        <!-- 7. Image Attribute -->
+
+        <section class="card">
+
+            <h2>7. attr() with alt</h2>
+
+            <img
+                class="image-example"
+                src="../Assest/Images/Image1.JPG"
+                alt="My Image">
+
+        </section>
+
+
+        <!-- 8. Custom Tooltip -->
+
+        <section class="card">
+
+            <h2>8. Custom Tooltip</h2>
+
+            <button
+                class="tooltip"
+                data-tooltip="This is a CSS tooltip">
+
+                Hover Me
+
+            </button>
+
+        </section>
+
+
+        <!-- 9. attr() with fallback -->
+
+        <section class="card">
+
+            <h2>9. Fallback Value</h2>
+
+            <p class="fallback-example">
+                This element does not have a data-label attribute.
+            </p>
+
+        </section>
+
+
+        <!-- 10. Attribute Type -->
+
+        <section class="card">
+
+            <h2>10. Attribute Type</h2>
+
+            <div
+                class="price"
+                data-price="500">
+
+                Product Price
+
+            </div>
+
+        </section>
+
+
+        <!-- 11. Multiple Attributes -->
+
+        <section class="card">
+
+            <h2>11. Multiple Attributes</h2>
+
+            <div
+                class="profile"
+                data-name="Subhradip"
+                data-role="Web Developer"
+                data-location="Kolkata">
+
+                Profile
+
+            </div>
+
+        </section>
+
+
+        <!-- 12. Form Attribute -->
+
+        <section class="card">
+
+            <h2>12. Form Attribute</h2>
+
+            <input
+                type="text"
+                class="input-example"
+                placeholder="Enter your name">
+
+        </section>
+
+
+    </div>
+
+
+    <!-- ==========================================
+         ATTRIBUTE FUNCTION DEMO
+         ========================================== -->
+
+
+    <section class="large-demo">
+
+        <h2>Attribute Function Demo</h2>
+
+        <div
+            class="product"
+            data-name="Laptop"
+            data-price="55000"
+            data-brand="Dell">
+
+            Product Information
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         LINK LIST
+         ========================================== -->
+
+
+    <section class="links-demo">
+
+        <h2>Link Attribute Function</h2>
+
+        <a
+            href="https://www.google.com"
+            target="_blank">
+
+            Google
+
+        </a>
+
+        <a
+            href="https://www.github.com"
+            target="_blank">
+
+            GitHub
+
+        </a>
+
+        <a
+            href="https://www.linkedin.com"
+            target="_blank">
+
+            LinkedIn
+
+        </a>
+
+    </section>
+
+
+</body>
+
+</html>
