@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Nth Of Syntax</title>
+
+    <link rel="stylesheet" href="../Css/72-nth-of-syntax.css">
+</head>
+
+<body>
+
+    <!--
+    CSS NTH-OF SYNTAX
+
+    1. :nth-of-type()
+    2. :nth-of-type(1)
+    3. :nth-of-type(2)
+    4. :nth-of-type(odd)
+    5. :nth-of-type(even)
+    6. :nth-of-type(2n)
+    7. :nth-of-type(2n+1)
+    8. :nth-of-type(3n)
+    9. :nth-of-type(3n+1)
+    10. :nth-of-type(3n+2)
+    11. :nth-of-type(n)
+    12. :nth-of-type(-n+3)
+
+    RELATED SYNTAX
+
+    13. :nth-last-of-type()
+    14. :first-of-type
+    15. :last-of-type
+    16. :only-of-type
+
+    FORMULA
+
+    :nth-of-type(an+b)
+
+    a = cycle / step
+    n = counter
+    b = offset
+    -->
+
+
+    <h1>CSS :nth-of-type() Syntax</h1>
+
+
+    <div class="container">
+
+
+        <!-- 1. nth-of-type -->
+
+        <section class="card">
+
+            <h2>1. :nth-of-type()</h2>
+
+            <div class="type-demo">
+
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+                <p>Paragraph 4</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2. First -->
+
+        <section class="card">
+
+            <h2>2. :nth-of-type(1)</h2>
+
+            <div class="first-demo">
+
+                <p>First Paragraph</p>
+                <p>Second Paragraph</p>
+                <p>Third Paragraph</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3. Second -->
+
+        <section class="card">
+
+            <h2>3. :nth-of-type(2)</h2>
+
+            <div class="second-demo">
+
+                <p>First Paragraph</p>
+                <p>Second Paragraph</p>
+                <p>Third Paragraph</p>
+                <p>Fourth Paragraph</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4. Odd -->
+
+        <section class="card">
+
+            <h2>4. :nth-of-type(odd)</h2>
+
+            <ul class="odd-demo">
+
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 5. Even -->
+
+        <section class="card">
+
+            <h2>5. :nth-of-type(even)</h2>
+
+            <ul class="even-demo">
+
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 6. 2n -->
+
+        <section class="card">
+
+            <h2>6. :nth-of-type(2n)</h2>
+
+            <div class="two-n-demo">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+                <p>Item 5</p>
+                <p>Item 6</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7. 2n+1 -->
+
+        <section class="card">
+
+            <h2>7. :nth-of-type(2n+1)</h2>
+
+            <div class="two-n-one-demo">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+                <p>Item 5</p>
+                <p>Item 6</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8. 3n -->
+
+        <section class="card">
+
+            <h2>8. :nth-of-type(3n)</h2>
+
+            <div class="three-n-demo">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+                <p>Item 5</p>
+                <p>Item 6</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9. 3n+1 -->
+
+        <section class="card">
+
+            <h2>9. :nth-of-type(3n+1)</h2>
+
+            <div class="three-n-one-demo">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+                <p>Item 5</p>
+                <p>Item 6</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10. 3n+2 -->
+
+        <section class="card">
+
+            <h2>10. :nth-of-type(3n+2)</h2>
+
+            <div class="three-n-two-demo">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+                <p>Item 5</p>
+                <p>Item 6</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 11. n -->
+
+        <section class="card">
+
+            <h2>11. :nth-of-type(n)</h2>
+
+            <div class="n-demo">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 12. -n+3 -->
+
+        <section class="card">
+
+            <h2>12. :nth-of-type(-n+3)</h2>
+
+            <div class="negative-n-demo">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+                <p>Item 5</p>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         NTH LAST OF TYPE
+         ===================================================== -->
+
+
+    <section class="large-demo">
+
+        <h2>13. :nth-last-of-type()</h2>
+
+        <div class="last-type-demo">
+
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FIRST OF TYPE
+         ===================================================== -->
+
+
+    <section class="large-demo">
+
+        <h2>14. :first-of-type</h2>
+
+        <div class="first-type-demo">
+
+            <h3>Heading</h3>
+
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+
+            <h3>Another Heading</h3>
+
+            <p>Paragraph 3</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LAST OF TYPE
+         ===================================================== -->
+
+
+    <section class="large-demo">
+
+        <h2>15. :last-of-type</h2>
+
+        <div class="last-of-type-demo">
+
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ONLY OF TYPE
+         ===================================================== -->
+
+
+    <section class="large-demo">
+
+        <h2>16. :only-of-type</h2>
+
+        <div class="only-type-demo">
+
+            <div>
+                Only Div Element
+            </div>
+
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TABLE DEMO
+         ===================================================== -->
+
+
+    <section class="table-demo">
+
+        <h2>Practical Example</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Rahul</td>
+                    <td>BCA</td>
+                    <td>80</td>
+                </tr>
+
+                <tr>
+                    <td>Amit</td>
+                    <td>BCA</td>
+                    <td>75</td>
+                </tr>
+
+                <tr>
+                    <td>Priya</td>
+                    <td>BCA</td>
+                    <td>90</td>
+                </tr>
+
+                <tr>
+                    <td>Neha</td>
+                    <td>BCA</td>
+                    <td>85</td>
+                </tr>
+
+                <tr>
+                    <td>Arjun</td>
+                    <td>BCA</td>
+                    <td>70</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+</body>
+
+</html>
