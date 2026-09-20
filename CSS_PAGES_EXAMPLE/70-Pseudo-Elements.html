@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Pseudo Elements</title>
+
+    <link rel="stylesheet" href="../Css/70-Pseudo-Elements.css">
+</head>
+
+<body>
+
+    <!--
+    CSS PSEUDO-ELEMENTS
+
+    1. ::before
+    2. ::after
+    3. ::first-letter
+    4. ::first-line
+    5. ::selection
+    6. ::marker
+    7. ::placeholder
+    8. ::file-selector-button
+    9. ::backdrop
+    10. ::cue
+    11. ::part()
+    12. ::slotted()
+    13. ::details-content
+
+    COMMON PSEUDO-ELEMENTS
+    ::before
+    ::after
+    ::first-letter
+    ::first-line
+    ::selection
+    ::marker
+    ::placeholder
+    ::file-selector-button
+    -->
+
+    <h1>CSS Pseudo-Elements</h1>
+
+    <div class="container">
+
+        <!-- 1. ::before -->
+        <section class="card">
+            <h2>1. ::before</h2>
+
+            <p class="before-example">
+                This text uses the before pseudo-element.
+            </p>
+        </section>
+
+
+        <!-- 2. ::after -->
+        <section class="card">
+            <h2>2. ::after</h2>
+
+            <p class="after-example">
+                This text uses the after pseudo-element.
+            </p>
+        </section>
+
+
+        <!-- 3. ::first-letter -->
+        <section class="card">
+            <h2>3. ::first-letter</h2>
+
+            <p class="first-letter-example">
+                Pseudo-elements allow you to style a specific part of an element.
+            </p>
+        </section>
+
+
+        <!-- 4. ::first-line -->
+        <section class="card">
+            <h2>4. ::first-line</h2>
+
+            <p class="first-line-example">
+                This is the first line of this paragraph. The first line will
+                have a different style from the remaining lines of the paragraph.
+            </p>
+        </section>
+
+
+        <!-- 5. ::selection -->
+        <section class="card">
+            <h2>5. ::selection</h2>
+
+            <p class="selection-example">
+                Select this text with your mouse to see the selection effect.
+            </p>
+        </section>
+
+
+        <!-- 6. ::marker -->
+        <section class="card">
+            <h2>6. ::marker</h2>
+
+            <ul class="marker-example">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+
+        <!-- 7. ::placeholder -->
+        <section class="card">
+            <h2>7. ::placeholder</h2>
+
+            <input
+                type="text"
+                class="placeholder-example"
+                placeholder="Enter your name">
+        </section>
+
+
+        <!-- 8. ::file-selector-button -->
+        <section class="card">
+            <h2>8. ::file-selector-button</h2>
+
+            <input
+                type="file"
+                class="file-example">
+        </section>
+
+
+        <!-- 9. ::backdrop -->
+        <section class="card">
+            <h2>9. ::backdrop</h2>
+
+            <button onclick="document.getElementById('myDialog').showModal()">
+                Open Dialog
+            </button>
+
+            <dialog id="myDialog">
+                <h3>Dialog Box</h3>
+
+                <p>
+                    The area behind this dialog is styled using
+                    <b>::backdrop</b>.
+                </p>
+
+                <button onclick="document.getElementById('myDialog').close()">
+                    Close
+                </button>
+            </dialog>
+        </section>
+
+
+        <!-- 10. ::cue -->
+        <section class="card">
+            <h2>10. ::cue</h2>
+
+            <p class="info">
+                The <b>::cue</b> pseudo-element is used to style
+                WebVTT subtitles or captions in video.
+            </p>
+
+            <video controls width="300">
+                <source src="../Assest/Video/video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+
+        <!-- 11. ::part() -->
+        <section class="card">
+            <h2>11. ::part()</h2>
+
+            <my-card></my-card>
+
+            <p class="info">
+                Used with Web Components Shadow DOM.
+            </p>
+        </section>
+
+
+        <!-- 12. ::slotted() -->
+        <section class="card">
+            <h2>12. ::slotted()</h2>
+
+            <my-box>
+                <span>Slotted Content</span>
+            </my-box>
+
+            <p class="info">
+                Used to style elements placed inside a Web Component slot.
+            </p>
+        </section>
+
+
+        <!-- 13. ::details-content -->
+        <section class="card">
+            <h2>13. ::details-content</h2>
+
+            <details>
+                <summary>Click to open</summary>
+
+                <p>
+                    This content belongs to the details element.
+                </p>
+            </details>
+
+            <p class="info">
+                <b>::details-content</b> can style the expandable content
+                in browsers that support this newer pseudo-element.
+            </p>
+        </section>
+
+    </div>
+
+
+    <!-- FIRST LETTER + FIRST LINE -->
+    <section class="large-demo">
+
+        <h2>First Letter & First Line</h2>
+
+        <p class="article">
+            CSS pseudo-elements are special keywords that allow us to style
+            specific parts of an HTML element. They are useful for adding
+            decorative content, styling text, changing selection colors,
+            customizing markers and modifying form controls.
+        </p>
+
+    </section>
+
+
+    <!-- BEFORE + AFTER -->
+    <section class="quote-box">
+
+        <p class="quote">
+            Learning CSS makes web pages beautiful and interactive.
+        </p>
+
+    </section>
+
+
+    <!-- LIST MARKER -->
+    <section class="list-demo">
+
+        <h2>Custom List Marker</h2>
+
+        <ul>
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+            <li>Database</li>
+            <li>Full Stack Development</li>
+        </ul>
+
+    </section>
+
+
+    <!-- FILE INPUT -->
+    <section class="file-demo">
+
+        <h2>File Upload</h2>
+
+        <input type="file">
+
+    </section>
+
+
+    <script>
+
+        // Shadow DOM example for ::part()
+
+        class MyCard extends HTMLElement {
+
+            constructor() {
+
+                super();
+
+                const shadow = this.attachShadow({
+                    mode: "open"
+                });
+
+                shadow.innerHTML = `
+                    <div part="box">
+                        <h3 part="title">Shadow DOM Card</h3>
+                        <p>This card uses ::part().</p>
+                    </div>
+                `;
+            }
+        }
+
+        customElements.define("my-card", MyCard);
+
+
+        // Shadow DOM example for ::slotted()
+
+        class MyBox extends HTMLElement {
+
+            constructor() {
+
+                super();
+
+                const shadow = this.attachShadow({
+                    mode: "open"
+                });
+
+                shadow.innerHTML = `
+                    <div class="box">
+                        <slot></slot>
+                    </div>
+                `;
+            }
+        }
+
+        customElements.define("my-box", MyBox);
+
+    </script>
+
+</body>
+
+</html>
