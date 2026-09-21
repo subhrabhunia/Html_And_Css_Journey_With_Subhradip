@@ -1,0 +1,285 @@
+<!--
+=========================================================
+75-CSS-@Import-Rule
+=========================================================
+
+CSS @import Rule
+
+1. Basic @import
+2. Import CSS File
+3. Import Google Font
+4. Import Multiple CSS Files
+5. @import with media query
+6. @import screen
+7. @import print
+8. @import with supports()
+9. @import URL
+10. @import Order
+11. Imported CSS Variables
+12. Imported Utility Classes
+13. Practical Example
+
+Syntax:
+
+@import url("filename.css");
+
+or
+
+@import "filename.css";
+
+or
+
+@import url("filename.css") screen;
+
+or
+
+@import url("filename.css") print;
+
+or
+
+@import url("filename.css") supports(display: grid);
+
+IMPORTANT:
+@import rules should appear before other normal CSS rules
+(except @charset and certain CSS layer-related rules).
+=========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>75 CSS @Import Rule</title>
+
+    <link rel="stylesheet" href="../Css/75-CSS-@Import-Rule.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>CSS @Import Rule</h1>
+        <p>Importing one CSS file into another CSS file</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Basic @import -->
+        <section class="card">
+            <h2>1. Basic @import</h2>
+
+            <p>
+                The <b>@import</b> rule is used to import
+                another CSS file.
+            </p>
+
+            <div class="code-box">
+                @import url("reset.css");
+            </div>
+        </section>
+
+
+        <!-- Import CSS File -->
+        <section class="card imported-demo">
+            <h2>2. Import CSS File</h2>
+
+            <p>
+                External CSS files can be imported into
+                the main CSS file.
+            </p>
+
+            <div class="import-box">
+                This style can come from an imported CSS file.
+            </div>
+        </section>
+
+
+        <!-- Multiple CSS Files -->
+        <section class="card">
+            <h2>3. Multiple CSS Files</h2>
+
+            <p>
+                More than one CSS file can be imported.
+            </p>
+
+            <div class="file-list">
+                <div>reset.css</div>
+                <div>colors.css</div>
+                <div>buttons.css</div>
+                <div>layout.css</div>
+            </div>
+        </section>
+
+
+        <!-- Google Font -->
+        <section class="card font-demo">
+            <h2>4. Import Google Font</h2>
+
+            <p>
+                Google Fonts can also be imported using
+                the <b>@import</b> rule.
+            </p>
+
+            <h3>Imported Font Example</h3>
+
+            <div class="code-box">
+                @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+            </div>
+        </section>
+
+
+        <!-- Media Query -->
+        <section class="card">
+            <h2>5. @import with Media Query</h2>
+
+            <p>
+                CSS can be imported only when a particular
+                media condition is satisfied.
+            </p>
+
+            <div class="media-box">
+                Screen Media
+            </div>
+
+            <div class="code-box">
+                @import url("screen.css") screen;
+            </div>
+        </section>
+
+
+        <!-- Print -->
+        <section class="card">
+            <h2>6. @import print</h2>
+
+            <p>
+                A CSS file can be imported specifically
+                for printing.
+            </p>
+
+            <div class="print-box">
+                Print Style Example
+            </div>
+
+            <div class="code-box">
+                @import url("print.css") print;
+            </div>
+        </section>
+
+
+        <!-- Supports -->
+        <section class="card">
+            <h2>7. @import with supports()</h2>
+
+            <p>
+                CSS can be imported when the browser
+                supports a particular CSS feature.
+            </p>
+
+            <div class="support-box">
+                CSS Feature Support
+            </div>
+
+            <div class="code-box">
+                @import url("grid.css")
+                supports(display: grid);
+            </div>
+        </section>
+
+
+        <!-- URL -->
+        <section class="card">
+            <h2>8. @import URL</h2>
+
+            <p>
+                The <b>url()</b> function can specify
+                the location of the CSS file.
+            </p>
+
+            <div class="url-box">
+                External CSS Resource
+            </div>
+
+            <div class="code-box">
+                @import url("style.css");
+            </div>
+        </section>
+
+
+        <!-- Order -->
+        <section class="card">
+            <h2>9. @import Order</h2>
+
+            <p>
+                Imported CSS should normally be placed
+                before the other CSS rules.
+            </p>
+
+            <div class="order-box">
+                Import → Variables → Components → Layout
+            </div>
+        </section>
+
+
+        <!-- Variables -->
+        <section class="card">
+            <h2>10. Imported CSS Variables</h2>
+
+            <p>
+                An imported stylesheet can contain
+                CSS custom properties.
+            </p>
+
+            <div class="variable-box">
+                CSS Variable Example
+            </div>
+        </section>
+
+
+        <!-- Utility -->
+        <section class="card">
+            <h2>11. Imported Utility Classes</h2>
+
+            <p class="text-center">
+                Utility classes can be defined in another
+                CSS file and imported.
+            </p>
+
+            <div class="utility-box">
+                Utility Class Example
+            </div>
+        </section>
+
+
+        <!-- Practical Example -->
+        <section class="card practical">
+            <h2>12. Practical Website Example</h2>
+
+            <div class="website-demo">
+
+                <div class="website-header">
+                    <h3>My Website</h3>
+                </div>
+
+                <div class="website-content">
+                    <h2>Welcome to My Website</h2>
+
+                    <p>
+                        The main CSS file can import different
+                        CSS files for different parts of a website.
+                    </p>
+
+                    <button>Learn More</button>
+                </div>
+
+                <div class="website-footer">
+                    <p>© 2026 My Website</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
