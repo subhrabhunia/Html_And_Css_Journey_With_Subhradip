@@ -1,0 +1,681 @@
+/*
+=========================================================
+76-CSS-Icon-Fonts.css
+=========================================================
+
+CSS Icon Fonts
+
+Main topics:
+
+1. Font Awesome
+2. Icon Size
+3. Icon Color
+4. Icon Spacing
+5. Icons with Text
+6. Icons in Buttons
+7. Navigation Icons
+8. Brand Icons
+9. Social Media Icons
+10. Icon Cards
+11. Google Material Icons
+12. Practical Icon Design
+
+=========================================================
+*/
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.header h1 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   CONTAINER
+   ===================================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        2,
+        1fr
+    );
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   CARD
+   ===================================================== */
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #ddd;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.card h2 {
+    color: #5b4bb7;
+
+    margin-bottom: 20px;
+}
+
+
+.card p {
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   1. BASIC ICONS
+   ===================================================== */
+
+.icon-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.icon-row i {
+    font-size: 35px;
+}
+
+
+/* =====================================================
+   2. ICON SIZE
+   ===================================================== */
+
+.size-demo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.small-icon {
+    font-size: 20px;
+}
+
+
+.medium-icon {
+    font-size: 35px;
+}
+
+
+.large-icon {
+    font-size: 50px;
+}
+
+
+.extra-large-icon {
+    font-size: 70px;
+}
+
+
+/* =====================================================
+   3. ICON COLORS
+   ===================================================== */
+
+.red-icon {
+    color: red;
+}
+
+
+.yellow-icon {
+    color: #f5b400;
+}
+
+
+.green-icon {
+    color: green;
+}
+
+
+.blue-icon {
+    color: #1976d2;
+}
+
+
+.purple-icon {
+    color: purple;
+}
+
+
+/* =====================================================
+   4. ICON SPACING
+   ===================================================== */
+
+.spacing-demo {
+    text-align: center;
+}
+
+
+.spacing-demo i {
+    font-size: 35px;
+
+    margin: 0 15px;
+
+    color: #764ba2;
+}
+
+
+/* =====================================================
+   5. ICON WITH TEXT
+   ===================================================== */
+
+.text-icon {
+    max-width: 350px;
+
+    margin: auto;
+}
+
+
+.text-icon p {
+    background: #f4f1ff;
+
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.text-icon i {
+    color: #667eea;
+
+    width: 30px;
+
+    margin-right: 8px;
+}
+
+
+/* =====================================================
+   6. ICON BUTTONS
+   ===================================================== */
+
+.button-demo {
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+
+.button-demo button {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.button-demo i {
+    margin-right: 8px;
+}
+
+
+.primary-button {
+    background: #1976d2;
+}
+
+
+.success-button {
+    background: #2e7d32;
+}
+
+
+.danger-button {
+    background: #d32f2f;
+}
+
+
+/* =====================================================
+   7. NAVIGATION
+   ===================================================== */
+
+.navigation {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.navigation a {
+    text-decoration: none;
+
+    color: #333;
+
+    background: #f1f1f1;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.navigation i {
+    color: #667eea;
+
+    margin-right: 6px;
+}
+
+
+/* =====================================================
+   8. BRAND ICONS
+   ===================================================== */
+
+.brand-icons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+
+.brand-icons i {
+    font-size: 40px;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   9. SOCIAL ICONS
+   ===================================================== */
+
+.social-icons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f0f0f0;
+
+    color: #555;
+
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   10. SERVICE CARDS
+   ===================================================== */
+
+.service-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.service {
+    background: #f7f7f7;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border: 1px solid #ddd;
+}
+
+
+.service > i {
+    font-size: 40px;
+
+    color: #667eea;
+
+    margin-bottom: 15px;
+}
+
+
+.service h3 {
+    margin-bottom: 8px;
+}
+
+
+.service p {
+    color: #666;
+}
+
+
+/* =====================================================
+   11. MATERIAL ICONS
+   ===================================================== */
+
+.material-icons-demo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.material-icons-demo .material-icons {
+    font-size: 40px;
+
+    color: #667eea;
+}
+
+
+/* =====================================================
+   12. MATERIAL ICONS WITH TEXT
+   ===================================================== */
+
+.material-text {
+    max-width: 350px;
+
+    margin: auto;
+}
+
+
+.material-text p {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: #f5f5f5;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+}
+
+
+.material-text .material-icons {
+    color: #764ba2;
+}
+
+
+/* =====================================================
+   PRACTICAL PROFILE
+   ===================================================== */
+
+.practical {
+    grid-column: 1 / -1;
+}
+
+
+.profile {
+    max-width: 550px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: #fafafa;
+
+    border: 1px solid #ddd;
+
+    border-radius: 20px;
+}
+
+
+.profile-icon {
+    width: 100px;
+
+    height: 100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #667eea;
+
+    color: white;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+.profile > h2 {
+    color: #333;
+
+    margin-bottom: 5px;
+}
+
+
+.profile > p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   PROFILE INFORMATION
+   ===================================================== */
+
+.profile-info {
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+
+.profile-info p {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.profile-info i {
+    width: 25px;
+
+    color: #667eea;
+
+    margin-right: 8px;
+}
+
+
+/* =====================================================
+   PROFILE SOCIAL
+   ===================================================== */
+
+.profile-social {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.profile-social i {
+    font-size: 30px;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .practical {
+        grid-column: auto;
+    }
+
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .size-demo {
+        gap: 15px;
+    }
+
+
+    .extra-large-icon {
+        font-size: 55px;
+    }
+
+
+    .navigation {
+        flex-direction: column;
+    }
+
+
+    .navigation a {
+        text-align: center;
+    }
+
+}
