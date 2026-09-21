@@ -1,0 +1,782 @@
+/*
+=========================================================
+78-CSS-Display-Flow-Root.css
+=========================================================
+
+CSS display: flow-root
+
+Syntax:
+
+display: flow-root;
+
+Main concept:
+
+display: flow-root creates a new
+Block Formatting Context (BFC).
+
+=========================================================
+*/
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.header h1 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   CONTAINER
+   ===================================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   CARD
+   ===================================================== */
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #ddd;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.card h2 {
+    color: #5b4bb7;
+
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   1. BASIC FLOW ROOT
+   ===================================================== */
+
+.basic-flow {
+    display: flow-root;
+
+    background: #f0edff;
+
+    border: 2px solid #667eea;
+
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+
+.basic-flow p {
+    margin: 0;
+
+    color: #5b4bb7;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   2. FLOW ROOT WITH FLOAT
+   ===================================================== */
+
+.float-flow {
+    display: flow-root;
+
+    background: #f7f7f7;
+
+    border: 2px solid #ddd;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+.float-box {
+    float: left;
+
+    width: 100px;
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #667eea;
+
+    color: white;
+
+    font-weight: bold;
+
+    margin-right: 20px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   3. FLOAT CONTAINMENT
+   ===================================================== */
+
+.contain-float {
+    display: flow-root;
+
+    background: #f5f1ff;
+
+    border: 2px solid #764ba2;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+.left-float {
+    float: left;
+
+    width: 80px;
+
+    height: 80px;
+
+    background: #667eea;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.right-float {
+    float: right;
+
+    width: 80px;
+
+    height: 80px;
+
+    background: #764ba2;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.contain-float p {
+    clear: both;
+
+    padding-top: 15px;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   4. IMAGE WITH FLOW ROOT
+   ===================================================== */
+
+.image-flow {
+    display: flow-root;
+
+    padding: 20px;
+
+    background: #fafafa;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+}
+
+
+.image-placeholder {
+    float: left;
+
+    width: 130px;
+
+    height: 100px;
+
+    margin-right: 20px;
+
+    margin-bottom: 10px;
+
+    background: #667eea;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   5. MULTIPLE FLOATS
+   ===================================================== */
+
+.multiple-floats {
+    display: flow-root;
+
+    padding: 20px;
+
+    background: #f8f8f8;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+}
+
+
+.float-one,
+.float-two,
+.float-three {
+    float: left;
+
+    width: 65px;
+
+    height: 65px;
+
+    margin-right: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+
+.float-one {
+    background: #667eea;
+}
+
+
+.float-two {
+    background: #764ba2;
+}
+
+
+.float-three {
+    background: #5b4bb7;
+}
+
+
+.multiple-floats p {
+    clear: both;
+
+    padding-top: 20px;
+
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   6. NORMAL BLOCK VS FLOW ROOT
+   ===================================================== */
+
+.comparison {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.normal-block,
+.flow-root-block {
+    padding: 20px;
+
+    border-radius: 10px;
+
+    min-height: 170px;
+}
+
+
+.normal-block {
+    background: #fff3cd;
+
+    border: 2px solid #e0a800;
+}
+
+
+.flow-root-block {
+    display: flow-root;
+
+    background: #e8f5e9;
+
+    border: 2px solid #2e7d32;
+}
+
+
+.normal-block h3,
+.flow-root-block h3 {
+    margin-bottom: 15px;
+}
+
+
+.small-float {
+    float: left;
+
+    width: 70px;
+
+    height: 70px;
+
+    margin-right: 15px;
+
+    background: #667eea;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   7. PROFILE CARD
+   ===================================================== */
+
+.profile-card {
+    display: flow-root;
+
+    padding: 20px;
+
+    background: #f8f8f8;
+
+    border: 2px solid #ddd;
+
+    border-radius: 12px;
+}
+
+
+.avatar {
+    float: left;
+
+    width: 80px;
+
+    height: 80px;
+
+    margin-right: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #667eea;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.profile-details h3 {
+    padding-top: 8px;
+
+    margin-bottom: 5px;
+
+    color: #333;
+}
+
+
+.profile-details p {
+    color: #666;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   8. NAVIGATION
+   ===================================================== */
+
+.nav-flow {
+    display: flow-root;
+
+    background: #222;
+
+    padding: 18px;
+
+    border-radius: 10px;
+}
+
+
+.nav-logo {
+    float: left;
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.nav-links {
+    float: right;
+}
+
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 18px;
+
+    padding: 8px;
+}
+
+
+.nav-links a:hover {
+    color: #c7b9ff;
+}
+
+
+/* =====================================================
+   9. PRACTICAL ARTICLE
+   ===================================================== */
+
+.practical {
+    grid-column: 1 / -1;
+}
+
+
+.article {
+    display: flow-root;
+
+    background: #fafafa;
+
+    border: 1px solid #ddd;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+
+.article-image {
+    float: left;
+
+    width: 180px;
+
+    height: 130px;
+
+    margin-right: 25px;
+
+    margin-bottom: 15px;
+
+    background: #667eea;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+
+.article h2 {
+    color: #333;
+
+    margin-bottom: 12px;
+}
+
+
+.article p {
+    color: #555;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   10. DASHBOARD
+   ===================================================== */
+
+.dashboard {
+    display: flow-root;
+
+    padding: 25px;
+
+    background: #f8f8f8;
+
+    border: 2px solid #ddd;
+
+    border-radius: 12px;
+}
+
+
+.dashboard-icon {
+    float: left;
+
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 20px;
+
+    background: #2e7d32;
+
+    color: white;
+
+    border-radius: 50%;
+}
+
+
+.dashboard-icon i {
+    font-style: normal;
+
+    font-size: 28px;
+}
+
+
+.dashboard-value {
+    float: right;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #2e7d32;
+}
+
+
+.dashboard-info {
+    overflow: hidden;
+}
+
+
+.dashboard-info h3 {
+    margin-bottom: 5px;
+
+    color: #333;
+}
+
+
+.dashboard-info p {
+    color: #666;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .practical {
+        grid-column: auto;
+    }
+
+
+    .comparison {
+        grid-template-columns: 1fr;
+    }
+
+
+    .nav-logo,
+    .nav-links {
+        float: none;
+
+        text-align: center;
+    }
+
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+
+    .nav-links a {
+        display: inline-block;
+
+        margin: 5px;
+    }
+
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 94%;
+    }
+
+
+    .card {
+        padding: 18px;
+    }
+
+
+    .article-image {
+        float: none;
+
+        width: 100%;
+
+        margin-right: 0;
+    }
+
+
+    .dashboard-icon {
+        float: none;
+
+        margin: 0 auto 15px;
+    }
+
+
+    .dashboard-value {
+        float: none;
+
+        text-align: center;
+
+        margin-top: 15px;
+    }
+
+}
