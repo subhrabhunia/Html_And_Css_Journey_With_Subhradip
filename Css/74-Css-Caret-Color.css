@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f2f2f2;
+
+    color: #222;
+
+    padding: 30px;
+}
+
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+h2 {
+    margin-bottom: 15px;
+}
+
+
+.container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    min-height: 180px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #aaa;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input:focus,
+textarea:focus {
+    border-color: #333;
+}
+
+
+/* =====================================================
+   1. DEFAULT
+   ===================================================== */
+
+.default-caret {
+    caret-color: auto;
+}
+
+
+/* =====================================================
+   2. RED
+   ===================================================== */
+
+.red-caret {
+    caret-color: red;
+}
+
+
+/* =====================================================
+   3. BLUE
+   ===================================================== */
+
+.blue-caret {
+    caret-color: blue;
+}
+
+
+/* =====================================================
+   4. GREEN
+   ===================================================== */
+
+.green-caret {
+    caret-color: green;
+}
+
+
+/* =====================================================
+   5. PURPLE
+   ===================================================== */
+
+.purple-caret {
+    caret-color: purple;
+}
+
+
+/* =====================================================
+   6. ORANGE
+   ===================================================== */
+
+.orange-caret {
+    caret-color: orange;
+}
+
+
+/* =====================================================
+   7. TRANSPARENT
+   ===================================================== */
+
+.transparent-caret {
+    caret-color: transparent;
+}
+
+
+/* =====================================================
+   8. CURRENT COLOR
+   ===================================================== */
+
+.current-caret {
+    color: darkblue;
+
+    caret-color: currentColor;
+}
+
+
+/* =====================================================
+   9. TEXTAREA
+   ===================================================== */
+
+.textarea-caret {
+    min-height: 120px;
+
+    resize: vertical;
+
+    caret-color: crimson;
+}
+
+
+/* =====================================================
+   10. CONTENTEDITABLE
+   ===================================================== */
+
+.editable-caret {
+    min-height: 100px;
+
+    padding: 15px;
+
+    border: 2px solid #aaa;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    color: darkgreen;
+
+    caret-color: darkgreen;
+}
+
+
+.editable-caret:focus {
+    border-color: darkgreen;
+}
+
+
+/* =====================================================
+   11. INITIAL
+   ===================================================== */
+
+.initial-caret {
+    caret-color: initial;
+}
+
+
+/* =====================================================
+   12. INHERIT
+   ===================================================== */
+
+.inherit-parent {
+    color: purple;
+
+    caret-color: purple;
+}
+
+
+.inherit-caret {
+    caret-color: inherit;
+}
+
+
+/* =====================================================
+   PRACTICAL FORM
+   ===================================================== */
+
+.form-demo {
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+}
+
+
+.form-demo form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.form-demo label {
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+.form-demo input,
+.form-demo textarea {
+    caret-color: blue;
+}
+
+
+.form-demo textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+.form-demo button {
+    width: 120px;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: black;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+}
