@@ -1,0 +1,507 @@
+<!--
+=========================================================
+77-CSS-Scrollbar-Styling
+=========================================================
+
+CSS Scrollbar Styling
+
+1. scrollbar-width
+2. scrollbar-color
+3. ::-webkit-scrollbar
+4. ::-webkit-scrollbar-track
+5. ::-webkit-scrollbar-thumb
+6. ::-webkit-scrollbar-thumb:hover
+7. ::-webkit-scrollbar-button
+8. ::-webkit-scrollbar-corner
+9. Vertical Scrollbar
+10. Horizontal Scrollbar
+11. Custom Container Scrollbar
+12. Thin Scrollbar
+13. Custom Scrollbar Color
+14. Rounded Scrollbar
+15. Practical Website Example
+
+Important Properties:
+
+scrollbar-width:
+    auto
+    thin
+    none
+
+scrollbar-color:
+    thumb-color track-color
+
+WebKit pseudo-elements:
+
+::-webkit-scrollbar
+::-webkit-scrollbar-track
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-button
+::-webkit-scrollbar-corner
+
+=========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>77 CSS Scrollbar Styling</title>
+
+    <link
+        rel="stylesheet"
+        href="../Css/77-CSS-Scrollbar-Styling.css">
+
+</head>
+
+<body>
+
+
+    <!-- =================================================
+         HEADER
+         ================================================= -->
+
+    <header class="header">
+
+        <h1>CSS Scrollbar Styling</h1>
+
+        <p>
+            Customize the appearance of scrollbars
+        </p>
+
+    </header>
+
+
+    <!-- =================================================
+         MAIN CONTAINER
+         ================================================= -->
+
+    <main class="container">
+
+
+        <!-- =================================================
+             1. DEFAULT SCROLLBAR
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>1. Default Scrollbar</h2>
+
+            <p>
+                This is the normal browser scrollbar.
+            </p>
+
+            <div class="scroll-box default-scroll">
+
+                <p>Scroll Down</p>
+
+                <p>Content Line 1</p>
+                <p>Content Line 2</p>
+                <p>Content Line 3</p>
+                <p>Content Line 4</p>
+                <p>Content Line 5</p>
+                <p>Content Line 6</p>
+                <p>Content Line 7</p>
+                <p>Content Line 8</p>
+                <p>Content Line 9</p>
+                <p>Content Line 10</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             2. SCROLLBAR WIDTH
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>2. scrollbar-width</h2>
+
+            <p>
+                The scrollbar-width property controls
+                the width of the scrollbar.
+            </p>
+
+            <div class="scroll-box thin-scroll">
+
+                <p>Thin Scrollbar</p>
+
+                <p>Content 1</p>
+                <p>Content 2</p>
+                <p>Content 3</p>
+                <p>Content 4</p>
+                <p>Content 5</p>
+                <p>Content 6</p>
+                <p>Content 7</p>
+                <p>Content 8</p>
+                <p>Content 9</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             3. SCROLLBAR COLOR
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>3. scrollbar-color</h2>
+
+            <p>
+                scrollbar-color changes the thumb
+                and track colors.
+            </p>
+
+            <div class="scroll-box color-scroll">
+
+                <p>Custom Scrollbar Colors</p>
+
+                <p>Content 1</p>
+                <p>Content 2</p>
+                <p>Content 3</p>
+                <p>Content 4</p>
+                <p>Content 5</p>
+                <p>Content 6</p>
+                <p>Content 7</p>
+                <p>Content 8</p>
+                <p>Content 9</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             4. WEBKIT SCROLLBAR
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>4. ::-webkit-scrollbar</h2>
+
+            <p>
+                This pseudo-element can be used to
+                customize scrollbars in WebKit/Blink
+                based browsers.
+            </p>
+
+            <div class="scroll-box webkit-scroll">
+
+                <p>Custom WebKit Scrollbar</p>
+
+                <p>Content 1</p>
+                <p>Content 2</p>
+                <p>Content 3</p>
+                <p>Content 4</p>
+                <p>Content 5</p>
+                <p>Content 6</p>
+                <p>Content 7</p>
+                <p>Content 8</p>
+                <p>Content 9</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             5. SCROLLBAR TRACK
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>5. ::-webkit-scrollbar-track</h2>
+
+            <p>
+                The track is the background area
+                of the scrollbar.
+            </p>
+
+            <div class="scroll-box track-scroll">
+
+                <p>Track Styling Example</p>
+
+                <p>Content 1</p>
+                <p>Content 2</p>
+                <p>Content 3</p>
+                <p>Content 4</p>
+                <p>Content 5</p>
+                <p>Content 6</p>
+                <p>Content 7</p>
+                <p>Content 8</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             6. SCROLLBAR THUMB
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>6. ::-webkit-scrollbar-thumb</h2>
+
+            <p>
+                The thumb is the draggable part
+                of the scrollbar.
+            </p>
+
+            <div class="scroll-box thumb-scroll">
+
+                <p>Thumb Styling Example</p>
+
+                <p>Content 1</p>
+                <p>Content 2</p>
+                <p>Content 3</p>
+                <p>Content 4</p>
+                <p>Content 5</p>
+                <p>Content 6</p>
+                <p>Content 7</p>
+                <p>Content 8</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             7. THUMB HOVER
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>7. Thumb Hover</h2>
+
+            <p>
+                The thumb color can change when
+                the mouse pointer moves over it.
+            </p>
+
+            <div class="scroll-box hover-scroll">
+
+                <p>Hover over the scrollbar thumb.</p>
+
+                <p>Content 1</p>
+                <p>Content 2</p>
+                <p>Content 3</p>
+                <p>Content 4</p>
+                <p>Content 5</p>
+                <p>Content 6</p>
+                <p>Content 7</p>
+                <p>Content 8</p>
+                <p>Content 9</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             8. ROUNDED SCROLLBAR
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>8. Rounded Scrollbar</h2>
+
+            <p>
+                border-radius can make the scrollbar
+                thumb rounded.
+            </p>
+
+            <div class="scroll-box rounded-scroll">
+
+                <p>Rounded Scrollbar</p>
+
+                <p>Content 1</p>
+                <p>Content 2</p>
+                <p>Content 3</p>
+                <p>Content 4</p>
+                <p>Content 5</p>
+                <p>Content 6</p>
+                <p>Content 7</p>
+                <p>Content 8</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             9. HORIZONTAL SCROLLBAR
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>9. Horizontal Scrollbar</h2>
+
+            <p>
+                A scrollbar can also be displayed
+                horizontally.
+            </p>
+
+            <div class="horizontal-scroll">
+
+                <div class="wide-content">
+
+                    HTML &nbsp;&nbsp;
+                    CSS &nbsp;&nbsp;
+                    JavaScript &nbsp;&nbsp;
+                    Python &nbsp;&nbsp;
+                    Java &nbsp;&nbsp;
+                    React &nbsp;&nbsp;
+                    Node.js &nbsp;&nbsp;
+                    MongoDB &nbsp;&nbsp;
+                    MySQL &nbsp;&nbsp;
+                    GitHub
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             10. SCROLLBAR CORNER
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>10. ::-webkit-scrollbar-corner</h2>
+
+            <p>
+                The corner appears when both
+                horizontal and vertical scrollbars exist.
+            </p>
+
+            <div class="both-scroll">
+
+                <div class="large-content">
+
+                    <h3>Large Content Area</h3>
+
+                    <p>
+                        This area is larger than its container.
+                    </p>
+
+                    <p>
+                        Scroll vertically and horizontally
+                        to see the scrollbar corner.
+                    </p>
+
+                    <p>
+                        HTML CSS JavaScript Python React
+                        Node Express MongoDB MySQL
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             11. PRACTICAL WEBSITE
+             ================================================= -->
+
+        <section class="card practical">
+
+            <h2>11. Practical Website Example</h2>
+
+            <div class="website">
+
+                <aside class="sidebar">
+
+                    <h3>Dashboard</h3>
+
+                    <a href="#">Home</a>
+
+                    <a href="#">Profile</a>
+
+                    <a href="#">Projects</a>
+
+                    <a href="#">Skills</a>
+
+                    <a href="#">Education</a>
+
+                    <a href="#">Contact</a>
+
+                    <a href="#">Settings</a>
+
+                    <a href="#">Logout</a>
+
+                </aside>
+
+
+                <div class="dashboard-content">
+
+                    <h2>My Dashboard</h2>
+
+                    <p>
+                        This is a practical example of
+                        a custom scrollbar inside a website.
+                    </p>
+
+                    <div class="dashboard-card">
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            HTML, CSS, JavaScript,
+                            React, Node.js and MongoDB.
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-card">
+
+                        <h3>Projects</h3>
+
+                        <p>
+                            Portfolio Website,
+                            Voting System and
+                            Smart Farmer System.
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-card">
+
+                        <h3>Learning</h3>
+
+                        <p>
+                            Currently learning
+                            advanced CSS and JavaScript.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
