@@ -1,0 +1,530 @@
+/*
+=========================================================
+75-CSS-@Import-Rule.css
+=========================================================
+
+CSS @import Rule
+
+The @import rule is used to import another CSS file.
+
+Examples:
+
+@import url("reset.css");
+
+@import "colors.css";
+
+@import url("screen.css") screen;
+
+@import url("print.css") print;
+
+@import url("grid.css") supports(display: grid);
+
+IMPORTANT:
+@import rules must come before normal CSS rules.
+
+=========================================================
+*/
+
+
+/* =====================================================
+   IMPORT EXAMPLES
+   ===================================================== */
+
+
+/*
+Basic @import
+
+Example:
+
+@import url("reset.css");
+*/
+
+
+/*
+Multiple CSS Files
+
+Example:
+
+@import url("reset.css");
+@import url("colors.css");
+@import url("buttons.css");
+*/
+
+
+/*
+Media Query Import
+
+Example:
+
+@import url("screen.css") screen;
+*/
+
+
+/*
+Print Import
+
+Example:
+
+@import url("print.css") print;
+*/
+
+
+/*
+Supports Import
+
+Example:
+
+@import url("grid.css") supports(display: grid);
+*/
+
+
+/* =====================================================
+   GENERAL STYLE
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   CONTAINER
+   ===================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* =====================================================
+   CARD
+   ===================================================== */
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #5b4bb7;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CODE BOX
+   ===================================================== */
+
+.code-box {
+    background: #1e1e1e;
+    color: #00ff88;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    font-family: monospace;
+    font-size: 14px;
+
+    overflow-x: auto;
+}
+
+
+/* =====================================================
+   BASIC IMPORT DEMO
+   ===================================================== */
+
+.imported-demo {
+    border-left: 6px solid #667eea;
+}
+
+.import-box {
+    background: #667eea;
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MULTIPLE FILES
+   ===================================================== */
+
+.file-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.file-list div {
+    background: #f0edff;
+    border: 2px solid #764ba2;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   GOOGLE FONT
+   ===================================================== */
+
+.font-demo h3 {
+    margin: 20px 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+    color: #764ba2;
+}
+
+
+/* =====================================================
+   MEDIA IMPORT
+   ===================================================== */
+
+.media-box {
+    background: #dff6ff;
+
+    border: 2px solid #0099cc;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   PRINT IMPORT
+   ===================================================== */
+
+.print-box {
+    background: #fff3cd;
+
+    border: 2px solid #ffc107;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   SUPPORTS IMPORT
+   ===================================================== */
+
+.support-box {
+    display: grid;
+    place-items: center;
+
+    min-height: 100px;
+
+    background: #e8f5e9;
+
+    border: 2px solid #2e7d32;
+
+    border-radius: 10px;
+
+    color: #2e7d32;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   URL IMPORT
+   ===================================================== */
+
+.url-box {
+    background: #fce4ec;
+
+    border: 2px solid #e91e63;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    color: #ad1457;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   IMPORT ORDER
+   ===================================================== */
+
+.order-box {
+    background: linear-gradient(
+        90deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   CSS VARIABLE IMPORT EXAMPLE
+   ===================================================== */
+
+.variable-box {
+    --import-color: #764ba2;
+
+    color: var(--import-color);
+
+    background: #f5f0ff;
+
+    border: 2px solid var(--import-color);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   UTILITY CLASS EXAMPLE
+   ===================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.utility-box {
+    padding: 20px;
+
+    background: #e3f2fd;
+
+    border: 2px solid #1976d2;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: #1976d2;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   PRACTICAL WEBSITE
+   ===================================================== */
+
+.practical {
+    grid-column: 1 / -1;
+}
+
+.website-demo {
+    overflow: hidden;
+
+    border: 2px solid #ddd;
+
+    border-radius: 12px;
+
+    background: white;
+}
+
+
+/* Website Header */
+
+.website-header {
+    background: #667eea;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.website-header h3 {
+    font-size: 28px;
+}
+
+
+/* Website Content */
+
+.website-content {
+    padding: 40px;
+
+    text-align: center;
+}
+
+.website-content h2 {
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+.website-content p {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* Website Button */
+
+.website-content button {
+    background: #764ba2;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Website Footer */
+
+.website-footer {
+    background: #222;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.website-footer p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .practical {
+        grid-column: auto;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .file-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   PRINT EXAMPLE
+   ===================================================== */
+
+@media print {
+
+    .header {
+        background: white;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid black;
+    }
+
+    .code-box {
+        background: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+}
