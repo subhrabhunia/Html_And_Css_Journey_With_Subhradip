@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f2f2f2;
+
+    color: #222;
+
+    padding: 30px;
+}
+
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.card {
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+}
+
+
+.card p,
+.card > div:not(.chapter):not(.section) {
+    padding: 10px;
+
+    margin: 5px 0;
+
+    background: #eeeeee;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================================
+   1. BASIC COUNTER
+   ===================================================== */
+
+.basic-counter {
+    counter-reset: subject;
+}
+
+
+.basic-counter p::before {
+
+    counter-increment: subject;
+
+    content: counter(subject) ". ";
+
+    font-weight: bold;
+
+    color: blue;
+}
+
+
+/* =====================================================
+   2. counter-reset
+   ===================================================== */
+
+.reset-counter {
+
+    counter-reset: item 0;
+}
+
+
+.reset-counter p::before {
+
+    counter-increment: item;
+
+    content: "Item " counter(item) ": ";
+
+    font-weight: bold;
+
+    color: green;
+}
+
+
+/* =====================================================
+   3. counter-increment
+   ===================================================== */
+
+.increment-counter {
+
+    counter-reset: number;
+}
+
+
+.increment-counter div::before {
+
+    counter-increment: number;
+
+    content: counter(number) ". ";
+
+    font-weight: bold;
+
+    color: red;
+}
+
+
+/* =====================================================
+   4. counter()
+   ===================================================== */
+
+.counter-function {
+
+    counter-reset: lesson;
+}
+
+
+.counter-function p::before {
+
+    counter-increment: lesson;
+
+    content: counter(lesson) ". ";
+
+    color: purple;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   5. decimal-leading-zero
+   ===================================================== */
+
+.leading-zero {
+
+    counter-reset: lesson;
+}
+
+
+.leading-zero p::before {
+
+    counter-increment: lesson;
+
+    content: counter(lesson, decimal-leading-zero) ". ";
+
+    color: blue;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   6. lower-alpha
+   ===================================================== */
+
+.lower-alpha {
+
+    counter-reset: alphabet;
+}
+
+
+.lower-alpha p::before {
+
+    counter-increment: alphabet;
+
+    content: counter(alphabet, lower-alpha) ". ";
+
+    color: green;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   7. upper-alpha
+   ===================================================== */
+
+.upper-alpha {
+
+    counter-reset: alphabet;
+}
+
+
+.upper-alpha p::before {
+
+    counter-increment: alphabet;
+
+    content: counter(alphabet, upper-alpha) ". ";
+
+    color: orange;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   8. lower-roman
+   ===================================================== */
+
+.lower-roman {
+
+    counter-reset: chapter;
+}
+
+
+.lower-roman p::before {
+
+    counter-increment: chapter;
+
+    content: counter(chapter, lower-roman) ". ";
+
+    color: brown;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   9. upper-roman
+   ===================================================== */
+
+.upper-roman {
+
+    counter-reset: chapter;
+}
+
+
+.upper-roman p::before {
+
+    counter-increment: chapter;
+
+    content: counter(chapter, upper-roman) ". ";
+
+    color: darkblue;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   10. NESTED COUNTER
+   ===================================================== */
+
+.nested-counter {
+
+    counter-reset: chapter;
+}
+
+
+.nested-counter .chapter {
+
+    counter-increment: chapter;
+
+    counter-reset: topic;
+
+    margin-bottom: 20px;
+}
+
+
+.nested-counter h3::before {
+
+    content: counter(chapter) ". ";
+
+    color: blue;
+
+    font-weight: bold;
+}
+
+
+.nested-counter .chapter p {
+
+    counter-increment: topic;
+
+    margin-left: 25px;
+
+    padding: 8px;
+
+    background: #eeeeee;
+
+    border-radius: 5px;
+}
+
+
+.nested-counter .chapter p::before {
+
+    content:
+        counter(chapter) "."
+        counter(topic) " ";
+
+    color: green;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   11. counters()
+   ===================================================== */
+
+.counters-function {
+
+    counter-reset: section;
+}
+
+
+.counters-function .section {
+
+    counter-increment: section;
+
+    counter-reset: item;
+
+    margin-bottom: 20px;
+}
+
+
+.counters-function .section h3::before {
+
+    content: counter(section) ". ";
+
+    color: purple;
+
+    font-weight: bold;
+}
+
+
+.counters-function .section div {
+
+    counter-increment: item;
+
+    margin: 5px 0;
+
+    padding: 8px;
+
+    background: #eeeeee;
+}
+
+
+.counters-function .section div::before {
+
+    content:
+        counters(section, ".")
+        "."
+        counter(item)
+        " ";
+
+    color: red;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   12. AUTOMATIC HEADING NUMBER
+   ===================================================== */
+
+.heading-counter {
+
+    counter-reset: heading;
+}
+
+
+.heading-counter h3 {
+
+    counter-increment: heading;
+
+    margin: 12px 0;
+
+    padding: 10px;
+
+    background: #eeeeee;
+
+    border-radius: 5px;
+}
+
+
+.heading-counter h3::before {
+
+    content: "Chapter "
+        counter(heading)
+        ": ";
+
+    color: blue;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   13. TABLE ROW COUNTER
+   ===================================================== */
+
+.table-counter {
+
+    counter-reset: row;
+}
+
+
+.table-counter tbody tr {
+
+    counter-increment: row;
+}
+
+
+.table-counter tbody tr td:first-child::before {
+
+    content: counter(row) ". ";
+
+    color: red;
+
+    font-weight: bold;
+}
+
+
+.table-counter table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+.table-counter th,
+.table-counter td {
+
+    border: 1px solid #aaa;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+
+.table-counter th {
+
+    background: #333;
+
+    color: white;
+}
+
+
+/* =====================================================
+   14. CSS COUNTER LIST
+   ===================================================== */
+
+.list-counter {
+
+    counter-reset: course;
+}
+
+
+.list-counter li {
+
+    list-style: none;
+
+    counter-increment: course;
+
+    margin: 10px 0;
+
+    padding: 10px;
+
+    background: #eeeeee;
+
+    border-radius: 5px;
+}
+
+
+.list-counter li::before {
+
+    content: counter(course) ". ";
+
+    color: blue;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   15. counter-reset: none
+   ===================================================== */
+
+.counter-none {
+
+    counter-reset: none;
+}
+
+
+.counter-none p {
+
+    background: #eeeeee;
+
+    padding: 10px;
+
+    margin: 5px 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+}
