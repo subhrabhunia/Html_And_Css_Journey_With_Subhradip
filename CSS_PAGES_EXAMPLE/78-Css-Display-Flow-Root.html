@@ -1,0 +1,410 @@
+<!--
+=========================================================
+78-CSS-Display-Flow-Root
+=========================================================
+
+CSS display: flow-root
+
+1. display: flow-root
+2. Basic Flow Root
+3. Flow Root Container
+4. Flow Root with Float
+5. Float Containment
+6. Difference between normal block and flow-root
+7. Preventing Parent Collapse
+8. Flow Root with Image
+9. Flow Root with Multiple Floats
+10. Flow Root with Card
+11. Flow Root with Navigation
+12. Practical Layout Example
+
+Syntax:
+
+.element {
+    display: flow-root;
+}
+
+Important:
+
+display: flow-root creates a new Block Formatting Context (BFC).
+
+It helps:
+- contain floated children
+- prevent margin/float layout problems
+- create an independent formatting context
+
+=========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>78 CSS Display Flow Root</title>
+
+    <link
+        rel="stylesheet"
+        href="../Css/78-CSS-Display-Flow-Root.css">
+
+</head>
+
+<body>
+
+
+    <!-- =================================================
+         HEADER
+         ================================================= -->
+
+    <header class="header">
+
+        <h1>display: flow-root</h1>
+
+        <p>
+            Creating a new Block Formatting Context
+        </p>
+
+    </header>
+
+
+    <!-- =================================================
+         MAIN CONTAINER
+         ================================================= -->
+
+    <main class="container">
+
+
+        <!-- =================================================
+             1. BASIC FLOW ROOT
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>1. Basic Flow Root</h2>
+
+            <p>
+                The <b>flow-root</b> value creates a
+                new block formatting context.
+            </p>
+
+            <div class="basic-flow">
+
+                <p>
+                    This element uses
+                    <b>display: flow-root</b>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             2. FLOW ROOT WITH FLOAT
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>2. Flow Root with Float</h2>
+
+            <div class="float-flow">
+
+                <div class="float-box">
+                    Float
+                </div>
+
+                <p>
+                    This paragraph is inside a flow-root
+                    container. The floated element remains
+                    contained inside the parent.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             3. FLOAT CONTAINMENT
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>3. Float Containment</h2>
+
+            <div class="contain-float">
+
+                <div class="left-float">
+                    LEFT
+                </div>
+
+                <div class="right-float">
+                    RIGHT
+                </div>
+
+                <p>
+                    The parent uses display: flow-root,
+                    so it contains both floated children.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             4. IMAGE WITH FLOW ROOT
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>4. Flow Root with Image</h2>
+
+            <div class="image-flow">
+
+                <div class="image-placeholder">
+                    IMAGE
+                </div>
+
+                <p>
+                    An image or another element can be
+                    floated while the flow-root parent
+                    contains the float.
+                </p>
+
+                <p>
+                    The remaining text flows around the
+                    floated element.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             5. MULTIPLE FLOATS
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>5. Multiple Floats</h2>
+
+            <div class="multiple-floats">
+
+                <div class="float-one">
+                    1
+                </div>
+
+                <div class="float-two">
+                    2
+                </div>
+
+                <div class="float-three">
+                    3
+                </div>
+
+                <p>
+                    Multiple floated elements can be
+                    contained inside the same flow-root
+                    container.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             6. NORMAL BLOCK VS FLOW ROOT
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>6. Normal Block vs Flow Root</h2>
+
+            <div class="comparison">
+
+                <div class="normal-block">
+
+                    <h3>Normal Block</h3>
+
+                    <div class="small-float">
+                        Float
+                    </div>
+
+                    <p>
+                        Normal block formatting.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-root-block">
+
+                    <h3>Flow Root</h3>
+
+                    <div class="small-float">
+                        Float
+                    </div>
+
+                    <p>
+                        Creates a new formatting context.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             7. FLOW ROOT CARD
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>7. Flow Root Card</h2>
+
+            <div class="profile-card">
+
+                <div class="avatar">
+                    SB
+                </div>
+
+                <div class="profile-details">
+
+                    <h3>
+                        Web Developer
+                    </h3>
+
+                    <p>
+                        HTML, CSS, JavaScript and React
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             8. FLOW ROOT NAVIGATION
+             ================================================= -->
+
+        <section class="card">
+
+            <h2>8. Flow Root Navigation</h2>
+
+            <nav class="nav-flow">
+
+                <div class="nav-logo">
+                    MyWebsite
+                </div>
+
+                <div class="nav-links">
+
+                    <a href="#">Home</a>
+
+                    <a href="#">About</a>
+
+                    <a href="#">Projects</a>
+
+                    <a href="#">Contact</a>
+
+                </div>
+
+            </nav>
+
+        </section>
+
+
+        <!-- =================================================
+             9. PRACTICAL ARTICLE
+             ================================================= -->
+
+        <section class="card practical">
+
+            <h2>9. Practical Article Example</h2>
+
+            <article class="article">
+
+                <div class="article-image">
+                    PHOTO
+                </div>
+
+                <h2>
+                    Learning CSS
+                </h2>
+
+                <p>
+                    CSS is used to design and arrange
+                    elements on a webpage.
+                </p>
+
+                <p>
+                    The display: flow-root property can
+                    be useful when working with floated
+                    elements.
+                </p>
+
+                <p>
+                    It creates a new block formatting
+                    context and helps the parent contain
+                    its floated children.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- =================================================
+             10. PRACTICAL DASHBOARD
+             ================================================= -->
+
+        <section class="card practical">
+
+            <h2>10. Practical Dashboard Example</h2>
+
+            <div class="dashboard">
+
+                <div class="dashboard-icon">
+                    <i>✓</i>
+                </div>
+
+                <div class="dashboard-info">
+
+                    <h3>
+                        Project Completed
+                    </h3>
+
+                    <p>
+                        Your web development project
+                        has been completed successfully.
+                    </p>
+
+                </div>
+
+                <div class="dashboard-value">
+                    100%
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
