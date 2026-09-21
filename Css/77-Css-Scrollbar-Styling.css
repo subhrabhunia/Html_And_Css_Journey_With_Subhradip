@@ -1,0 +1,611 @@
+/*
+=========================================================
+77-CSS-Scrollbar-Styling.css
+=========================================================
+
+CSS Scrollbar Styling
+
+Main properties:
+
+scrollbar-width
+scrollbar-color
+
+WebKit pseudo-elements:
+
+::-webkit-scrollbar
+::-webkit-scrollbar-track
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-button
+::-webkit-scrollbar-corner
+
+=========================================================
+*/
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.header h1 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+
+.container {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   CARD
+   ===================================================== */
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #ddd;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.card h2 {
+    color: #5b4bb7;
+
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   COMMON SCROLL BOX
+   ===================================================== */
+
+.scroll-box {
+    height: 180px;
+
+    overflow-y: auto;
+
+    padding: 20px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    background: #fafafa;
+}
+
+
+.scroll-box p {
+    padding: 8px;
+
+    margin-bottom: 5px;
+
+    background: white;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================================
+   1. DEFAULT SCROLLBAR
+   ===================================================== */
+
+.default-scroll {
+    scrollbar-width: auto;
+}
+
+
+/* =====================================================
+   2. THIN SCROLLBAR
+   ===================================================== */
+
+.thin-scroll {
+    scrollbar-width: thin;
+}
+
+
+/* =====================================================
+   3. SCROLLBAR COLOR
+   ===================================================== */
+
+.color-scroll {
+    scrollbar-color:
+        #667eea
+        #e5e7eb;
+}
+
+
+/* =====================================================
+   4. WEBKIT SCROLLBAR
+   ===================================================== */
+
+.webkit-scroll::-webkit-scrollbar {
+    width: 14px;
+}
+
+
+/* =====================================================
+   5. SCROLLBAR TRACK
+   ===================================================== */
+
+.track-scroll::-webkit-scrollbar {
+    width: 14px;
+}
+
+
+.track-scroll::-webkit-scrollbar-track {
+    background: #e8e8e8;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   6. SCROLLBAR THUMB
+   ===================================================== */
+
+.thumb-scroll::-webkit-scrollbar {
+    width: 14px;
+}
+
+
+.thumb-scroll::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+
+.thumb-scroll::-webkit-scrollbar-thumb {
+    background: #667eea;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   7. THUMB HOVER
+   ===================================================== */
+
+.hover-scroll::-webkit-scrollbar {
+    width: 14px;
+}
+
+
+.hover-scroll::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+
+.hover-scroll::-webkit-scrollbar-thumb {
+    background: #667eea;
+
+    border-radius: 10px;
+}
+
+
+.hover-scroll::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+
+/* =====================================================
+   8. ROUNDED SCROLLBAR
+   ===================================================== */
+
+.rounded-scroll::-webkit-scrollbar {
+    width: 16px;
+}
+
+
+.rounded-scroll::-webkit-scrollbar-track {
+    background: #eeeeee;
+
+    border-radius: 20px;
+}
+
+
+.rounded-scroll::-webkit-scrollbar-thumb {
+    background: #5b4bb7;
+
+    border-radius: 20px;
+
+    border: 3px solid #eeeeee;
+}
+
+
+/* =====================================================
+   9. HORIZONTAL SCROLLBAR
+   ===================================================== */
+
+.horizontal-scroll {
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    white-space: nowrap;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    background: #fafafa;
+}
+
+
+.wide-content {
+    min-width: 900px;
+
+    padding: 30px;
+
+    background: #667eea;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 14px;
+}
+
+
+.horizontal-scroll::-webkit-scrollbar-track {
+    background: #eeeeee;
+
+    border-radius: 10px;
+}
+
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #667eea;
+
+    border-radius: 10px;
+}
+
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+
+/* =====================================================
+   10. BOTH SCROLLBARS
+   ===================================================== */
+
+.both-scroll {
+    width: 100%;
+
+    height: 220px;
+
+    overflow: auto;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+}
+
+
+.large-content {
+    width: 850px;
+
+    height: 450px;
+
+    padding: 30px;
+
+    background: #f1edff;
+}
+
+
+.both-scroll::-webkit-scrollbar {
+    width: 14px;
+
+    height: 14px;
+}
+
+
+.both-scroll::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+
+.both-scroll::-webkit-scrollbar-thumb {
+    background: #667eea;
+
+    border-radius: 10px;
+}
+
+
+.both-scroll::-webkit-scrollbar-corner {
+    background: #764ba2;
+}
+
+
+/* =====================================================
+   SCROLLBAR BUTTON
+   ===================================================== */
+
+.both-scroll::-webkit-scrollbar-button {
+    background: #667eea;
+}
+
+
+/* =====================================================
+   11. PRACTICAL WEBSITE
+   ===================================================== */
+
+.practical {
+    grid-column: 1 / -1;
+}
+
+
+.website {
+    height: 450px;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: white;
+}
+
+
+/* =====================================================
+   SIDEBAR
+   ===================================================== */
+
+.sidebar {
+    padding: 25px;
+
+    background: #222;
+
+    color: white;
+
+    overflow-y: auto;
+}
+
+
+.sidebar h3 {
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+
+.sidebar a {
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px;
+
+    margin-bottom: 8px;
+
+    border-radius: 6px;
+
+    background: #333;
+}
+
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+.sidebar::-webkit-scrollbar-track {
+    background: #222;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #667eea;
+
+    border-radius: 10px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+
+/* =====================================================
+   DASHBOARD CONTENT
+   ===================================================== */
+
+.dashboard-content {
+    padding: 30px;
+
+    overflow-y: auto;
+}
+
+
+.dashboard-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+.dashboard-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+.dashboard-content::-webkit-scrollbar-thumb {
+    background: #667eea;
+
+    border-radius: 10px;
+}
+
+
+.dashboard-content::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+
+.dashboard-content h2 {
+    color: #5b4bb7;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   DASHBOARD CARDS
+   ===================================================== */
+
+.dashboard-card {
+    background: #f7f7f7;
+
+    border: 1px solid #ddd;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-top: 20px;
+}
+
+
+.dashboard-card h3 {
+    margin-bottom: 8px;
+
+    color: #333;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .practical {
+        grid-column: auto;
+    }
+
+
+    .website {
+        grid-template-columns: 1fr;
+
+        height: 600px;
+    }
+
+
+    .sidebar {
+        height: 180px;
+    }
+
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 94%;
+    }
+
+
+    .card {
+        padding: 18px;
+    }
+
+
+    .website {
+        height: 650px;
+    }
+
+}
