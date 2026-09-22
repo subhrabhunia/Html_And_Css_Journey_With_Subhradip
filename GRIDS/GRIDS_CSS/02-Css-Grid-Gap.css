@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+
+/* =====================================
+   COMMON GRID
+   ===================================== */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* =====================================
+   COMMON ITEM
+   ===================================== */
+
+.item {
+    min-height: 100px;
+
+    background: #667eea;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+
+/* =====================================
+   1. gap
+   ===================================== */
+
+.basic-gap {
+
+    gap: 20px;
+}
+
+
+/*
+    gap: 20px;
+
+    Means:
+
+    Row Gap    = 20px
+    Column Gap = 20px
+*/
+
+
+/* =====================================
+   2. row-gap
+   ===================================== */
+
+.row-gap {
+
+    row-gap: 40px;
+}
+
+
+/*
+    Only vertical gap
+*/
+
+
+/* =====================================
+   3. column-gap
+   ===================================== */
+
+.column-gap {
+
+    column-gap: 40px;
+}
+
+
+/*
+    Only horizontal gap
+*/
+
+
+/* =====================================
+   4. Different Row and Column Gap
+   ===================================== */
+
+.different-gap {
+
+    row-gap: 40px;
+
+    column-gap: 20px;
+}
+
+
+/*
+    row-gap    = 40px
+    column-gap = 20px
+*/
+
+
+/* =====================================
+   5. Large Gap
+   ===================================== */
+
+.large-gap {
+
+    gap: 40px;
+}
+
+
+/* =====================================
+   6. Practical Card Layout
+   ===================================== */
+
+.card-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+
+    padding: 30px;
+
+    background: #e8ecff;
+
+    border: 2px solid #667eea;
+
+    border-radius: 10px;
+
+    min-height: 150px;
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+    color: #333;
+
+    font-size: 24px;
+}
+
+.card p {
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   RESPONSIVE
+   ===================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .grid,
+    .card-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
