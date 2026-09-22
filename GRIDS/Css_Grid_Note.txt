@@ -1,0 +1,31 @@
+About CSS Grid :-
+1.Two dimensional grid system.
+2.CSS Grid Layout replaces float layout.
+3.Fast & Clean Code.
+4.No need of CSS frameworks.
+
+CSS Grid Properties:-
+. grid-template-rows
+. grid-template-columns
+. grid-template-areas
+. grid-template
+· grid-row-gap
+· grid-column-gap
+· grid-gap
+. justify-items
+· align-items
+. justify-content
+· align-content
+. grid-auto-rows
+. grid-auto-columns
+· grid-auto-flow
+· grid-row-start
+· grid-row-end
+· grid-row
+. grid-column-start
+. grid-column-end
+· grid-column
+· grid-area
+· justify-self
+· align-self
+· order
