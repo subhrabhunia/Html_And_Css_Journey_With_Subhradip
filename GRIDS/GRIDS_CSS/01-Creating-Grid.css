@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+
+/* =====================================
+   COMMON GRID
+   ===================================== */
+
+.grid {
+    display: grid;
+}
+
+.item {
+    background: #667eea;
+    color: white;
+
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border: 2px solid #4c5dcc;
+}
+
+
+/* =====================================
+   1. grid-template-columns
+   ===================================== */
+
+.columns-basic {
+    grid-template-columns: 200px 200px 200px;
+}
+
+
+/* =====================================
+   2. Equal Columns
+   ===================================== */
+
+.columns-fr {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* =====================================
+   3. Different Column Sizes
+   ===================================== */
+
+.columns-different {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+/* =====================================
+   4. repeat()
+   ===================================== */
+
+.columns-repeat {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* =====================================
+   5. grid-template-rows
+   ===================================== */
+
+.rows-basic {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 100px 150px 200px;
+}
+
+
+/* =====================================
+   6. Equal Rows
+   ===================================== */
+
+.rows-fr {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr;
+
+    height: 450px;
+}
+
+
+/* =====================================
+   7. Different Row Sizes
+   ===================================== */
+
+.rows-different {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 100px 200px 150px;
+}
+
+
+/* =====================================
+   8. repeat() with Rows
+   ===================================== */
+
+.rows-repeat {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: repeat(3, 100px);
+}
+
+
+/* =====================================
+   9. Columns + Rows Together
+   ===================================== */
+
+.complete-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: 100px 150px 200px;
+}
