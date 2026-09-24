@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.item {
+    padding: 25px;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   1. BASIC GRID AREA NAMING
+   ================================================== */
+
+.basic-area {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 200px 100px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.basic-area .header {
+    grid-area: header;
+}
+
+.basic-area .sidebar {
+    grid-area: sidebar;
+}
+
+.basic-area .main {
+    grid-area: main;
+}
+
+.basic-area .footer {
+    grid-area: footer;
+}
+
+
+/* ==================================================
+   2. HEADER AND MAIN AREA
+   ================================================== */
+
+.header-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 250px;
+
+    grid-template-areas:
+        "header"
+        "main";
+}
+
+.header-main .header {
+    grid-area: header;
+}
+
+.header-main .main {
+    grid-area: main;
+}
+
+
+/* ==================================================
+   3. SIDEBAR LAYOUT
+   ================================================== */
+
+.sidebar-layout {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 250px;
+
+    grid-template-areas:
+        "sidebar main";
+}
+
+.sidebar-layout .sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar-layout .main {
+    grid-area: main;
+}
+
+
+/* ==================================================
+   4. EMPTY GRID AREA USING DOT
+   ================================================== */
+
+.empty-area {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 200px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+}
+
+.empty-area .header {
+    grid-area: header;
+}
+
+.empty-area .sidebar {
+    grid-area: sidebar;
+}
+
+.empty-area .main {
+    grid-area: main;
+}
+
+
+/* ==================================================
+   5. PRACTICAL WEBSITE LAYOUT
+   ================================================== */
+
+.website-layout {
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 100px 300px 80px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    min-height: 480px;
+}
+
+.website-layout .header {
+    grid-area: header;
+}
+
+.website-layout .sidebar {
+    grid-area: sidebar;
+}
+
+.website-layout .main {
+    grid-area: main;
+}
+
+.website-layout .footer {
+    grid-area: footer;
+}
+
+
+/* ==================================================
+   6. FOUR GRID AREAS
+   ================================================== */
+
+.four-area {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 250px 100px;
+
+    grid-template-areas:
+        "header header header"
+        "sidebar main right"
+        "footer footer footer";
+}
+
+.four-area .header {
+    grid-area: header;
+}
+
+.four-area .sidebar {
+    grid-area: sidebar;
+}
+
+.four-area .main {
+    grid-area: main;
+}
+
+.four-area .right {
+    grid-area: right;
+}
+
+.four-area .footer {
+    grid-area: footer;
+}
+
+
+/* ==================================================
+   7. DASHBOARD
+   ================================================== */
+
+.dashboard {
+    grid-template-columns: 220px 1fr 250px;
+    grid-template-rows: 100px 300px 80px;
+
+    grid-template-areas:
+        "header header header"
+        "sidebar main right"
+        "footer footer footer";
+
+    min-height: 480px;
+}
+
+.dashboard .header {
+    grid-area: header;
+}
+
+.dashboard .sidebar {
+    grid-area: sidebar;
+}
+
+.dashboard .main {
+    grid-area: main;
+}
+
+.dashboard .right {
+    grid-area: right;
+}
+
+.dashboard .footer {
+    grid-area: footer;
+}
+
+
+/* ==================================================
+   RESPONSIVE DESIGN
+   ================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .website-layout,
+    .four-area,
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "right"
+            "footer";
+    }
+
+    .four-area .right,
+    .dashboard .right {
+        grid-area: right;
+    }
+}
