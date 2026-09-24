@@ -1,0 +1,219 @@
+<!--
+    CSS GRID - 05 GRID LINES NAMING
+
+    Topics Covered:
+
+    1. Grid Line Naming
+    2. Named Column Lines
+    3. Named Row Lines
+    4. [start]
+    5. [end]
+    6. grid-template-columns with Names
+    7. grid-template-rows with Names
+    8. grid-column using Line Names
+    9. grid-row using Line Names
+    10. Multiple Named Lines
+    11. Practical Grid Layout
+
+    Syntax:
+
+    grid-template-columns:
+        [line-name] 1fr [line-name] 1fr;
+
+    grid-template-rows:
+        [line-name] 100px [line-name] 100px;
+
+    Position:
+
+    grid-column: line-name / line-name;
+    grid-row: line-name / line-name;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>05 - CSS Grid Lines Naming</title>
+
+    <link rel="stylesheet"
+          href="../GRIDS_CSS/05-Css-Grid-Lines-Naming.css">
+
+</head>
+
+<body>
+
+    <h1>CSS Grid - Grid Lines Naming</h1>
+
+
+    <!-- =====================================
+         1. Named Column Lines
+         ===================================== -->
+
+    <section class="section">
+
+        <h2>1. Named Column Lines</h2>
+
+        <div class="grid named-columns">
+
+            <div class="item item-1">
+                Header
+            </div>
+
+            <div class="item">
+                Item 2
+            </div>
+
+            <div class="item">
+                Item 3
+            </div>
+
+            <div class="item">
+                Item 4
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         2. Named Row Lines
+         ===================================== -->
+
+    <section class="section">
+
+        <h2>2. Named Row Lines</h2>
+
+        <div class="grid named-rows">
+
+            <div class="item item-1">
+                Tall Item
+            </div>
+
+            <div class="item">
+                Item 2
+            </div>
+
+            <div class="item">
+                Item 3
+            </div>
+
+            <div class="item">
+                Item 4
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         3. Named Columns + Rows
+         ===================================== -->
+
+    <section class="section">
+
+        <h2>3. Named Columns + Rows</h2>
+
+        <div class="grid named-both">
+
+            <div class="item header-item">
+                Header
+            </div>
+
+            <div class="item sidebar-item">
+                Sidebar
+            </div>
+
+            <div class="item content-item">
+                Main Content
+            </div>
+
+            <div class="item footer-item">
+                Footer
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         4. Multiple Named Lines
+         ===================================== -->
+
+    <section class="section">
+
+        <h2>4. Multiple Named Lines</h2>
+
+        <div class="grid multiple-lines">
+
+            <div class="item item-1">
+                Item 1
+            </div>
+
+            <div class="item">
+                Item 2
+            </div>
+
+            <div class="item">
+                Item 3
+            </div>
+
+            <div class="item">
+                Item 4
+            </div>
+
+            <div class="item">
+                Item 5
+            </div>
+
+            <div class="item">
+                Item 6
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         5. Practical Website Layout
+         ===================================== -->
+
+    <section class="section">
+
+        <h2>5. Practical Website Layout</h2>
+
+        <div class="website-grid">
+
+            <header class="header">
+                Header
+            </header>
+
+            <aside class="sidebar">
+                Sidebar
+            </aside>
+
+            <main class="main-content">
+                Main Content
+            </main>
+
+            <footer class="footer">
+                Footer
+            </footer>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
