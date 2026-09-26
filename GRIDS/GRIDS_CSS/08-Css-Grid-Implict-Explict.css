@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.item {
+    padding: 25px;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   1. EXPLICIT GRID
+   ================================================== */
+
+.explicit-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   2. IMPLICIT ROWS
+   ================================================== */
+
+.implicit-rows {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   3. grid-auto-rows
+   ================================================== */
+
+.auto-rows {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: 120px;
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   4. IMPLICIT COLUMNS
+   ================================================== */
+
+.implicit-columns {
+    grid-template-rows: repeat(2, 100px);
+
+    grid-auto-flow: column;
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   5. grid-auto-columns
+   ================================================== */
+
+.auto-columns {
+    grid-template-rows: 100px;
+
+    grid-auto-flow: column;
+    grid-auto-columns: 150px;
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   6. grid-auto-flow: row
+   ================================================== */
+
+.flow-row {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-flow: row;
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   7. grid-auto-flow: column
+   ================================================== */
+
+.flow-column {
+    grid-template-rows: repeat(2, 100px);
+
+    grid-auto-flow: column;
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   8. grid-auto-flow: dense
+   ================================================== */
+
+.flow-dense {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+
+    grid-auto-flow: dense;
+
+    gap: 15px;
+}
+
+.flow-dense .wide {
+    grid-column: span 2;
+}
+
+.flow-dense .tall {
+    grid-row: span 2;
+}
+
+
+/* ==================================================
+   9. PRACTICAL CARD LAYOUT
+   ================================================== */
+
+.card-grid {
+    grid-template-columns:
+        repeat(3, minmax(180px, 1fr));
+
+    grid-auto-rows: 180px;
+
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid #333;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   RESPONSIVE DESIGN
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .card-grid {
+        grid-template-columns:
+            repeat(2, minmax(180px, 1fr));
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .explicit-grid,
+    .implicit-rows,
+    .auto-rows,
+    .flow-row,
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .implicit-columns,
+    .flow-column {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px;
+        grid-auto-flow: row;
+    }
+
+    .auto-columns {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 100px;
+        grid-auto-flow: row;
+    }
+}
