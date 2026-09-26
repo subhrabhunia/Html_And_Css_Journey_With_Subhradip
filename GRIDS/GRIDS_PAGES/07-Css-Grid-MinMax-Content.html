@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid MinMax Content</title>
+    <link rel="stylesheet" href="../GRIDS_CSS/07-Css-Grid-MinMax-Content.css">
+</head>
+<body>
+
+    <!--
+    CSS GRID MINMAX AND CONTENT
+
+    1. minmax() Function
+    2. minmax(min, max)
+    3. Fixed Minimum and Flexible Maximum
+    4. minmax(200px, 1fr)
+    5. minmax(150px, 300px)
+    6. minmax(100px, auto)
+    7. Content-Based Grid Sizing
+    8. auto
+    9. max-content
+    10. min-content
+    11. fit-content()
+    12. minmax() with repeat()
+    13. Responsive Grid
+    14. Practical Card Layout
+    -->
+
+    <h1>CSS Grid MinMax & Content</h1>
+
+
+    <!-- 1. Basic minmax() -->
+    <section class="section">
+        <h2>1. Basic minmax()</h2>
+
+        <div class="grid basic-minmax">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+
+    <!-- 2. Minimum and Maximum -->
+    <section class="section">
+        <h2>2. minmax(150px, 300px)</h2>
+
+        <div class="grid fixed-minmax">
+            <div class="item">Small Content</div>
+            <div class="item">Medium Content</div>
+            <div class="item">Large Content</div>
+        </div>
+    </section>
+
+
+    <!-- 3. minmax with fr -->
+    <section class="section">
+        <h2>3. minmax(200px, 1fr)</h2>
+
+        <div class="grid flexible-minmax">
+            <div class="item">Column 1</div>
+            <div class="item">Column 2</div>
+            <div class="item">Column 3</div>
+        </div>
+    </section>
+
+
+    <!-- 4. auto -->
+    <section class="section">
+        <h2>4. Content Size Using auto</h2>
+
+        <div class="grid auto-content">
+            <div class="item">Short</div>
+            <div class="item">This is a medium length content</div>
+            <div class="item">This is a longer content area</div>
+        </div>
+    </section>
+
+
+    <!-- 5. max-content -->
+    <section class="section">
+        <h2>5. max-content</h2>
+
+        <div class="grid max-content-example">
+            <div class="item">Name</div>
+            <div class="item">Student Registration Number</div>
+            <div class="item">Department</div>
+        </div>
+    </section>
+
+
+    <!-- 6. min-content -->
+    <section class="section">
+        <h2>6. min-content</h2>
+
+        <div class="grid min-content-example">
+            <div class="item">
+                Web Development
+            </div>
+
+            <div class="item">
+                Software Engineering
+            </div>
+
+            <div class="item">
+                Database Management System
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 7. fit-content -->
+    <section class="section">
+        <h2>7. fit-content()</h2>
+
+        <div class="grid fit-content-example">
+            <div class="item">Short</div>
+            <div class="item">Medium Content</div>
+            <div class="item">This is longer content</div>
+        </div>
+    </section>
+
+
+    <!-- 8. repeat + minmax -->
+    <section class="section">
+        <h2>8. repeat() + minmax()</h2>
+
+        <div class="grid repeat-minmax">
+            <div class="item">Card 1</div>
+            <div class="item">Card 2</div>
+            <div class="item">Card 3</div>
+            <div class="item">Card 4</div>
+            <div class="item">Card 5</div>
+            <div class="item">Card 6</div>
+        </div>
+    </section>
+
+
+    <!-- 9. Practical Card Layout -->
+    <section class="section">
+        <h2>9. Practical Responsive Card Layout</h2>
+
+        <div class="grid card-layout">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>
+                    Structure of web pages.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>
+                    Styling and layout of websites.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>
+                    Adds interaction and functionality.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>React</h3>
+                <p>
+                    JavaScript library for building interfaces.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Node.js</h3>
+                <p>
+                    JavaScript runtime for backend development.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>MongoDB</h3>
+                <p>
+                    NoSQL database for web applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 10. Dashboard -->
+    <section class="section">
+        <h2>10. Practical Dashboard</h2>
+
+        <div class="grid dashboard">
+
+            <div class="dashboard-item">
+                <h3>Users</h3>
+                <p>1,250</p>
+            </div>
+
+            <div class="dashboard-item">
+                <h3>Projects</h3>
+                <p>85</p>
+            </div>
+
+            <div class="dashboard-item">
+                <h3>Revenue</h3>
+                <p>₹85,000</p>
+            </div>
+
+            <div class="dashboard-item">
+                <h3>Messages</h3>
+                <p>245</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
