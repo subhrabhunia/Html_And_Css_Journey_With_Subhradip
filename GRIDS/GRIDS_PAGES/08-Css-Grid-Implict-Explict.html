@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Implicit and Explicit</title>
+    <link rel="stylesheet" href="../GRIDS_CSS/08-Css-Grid-Implict-Explict.css">
+</head>
+<body>
+
+    <!--
+    CSS GRID IMPLICIT AND EXPLICIT
+
+    1. Explicit Grid
+    2. Implicit Grid
+    3. grid-template-columns
+    4. grid-template-rows
+    5. grid-auto-columns
+    6. grid-auto-rows
+    7. grid-auto-flow
+    8. grid-auto-flow: row
+    9. grid-auto-flow: column
+    10. grid-auto-flow: dense
+    11. Explicit Rows
+    12. Explicit Columns
+    13. Automatically Created Rows
+    14. Automatically Created Columns
+    15. Practical Card Layout
+    -->
+
+
+    <h1>CSS Grid Implicit & Explicit</h1>
+
+
+    <!-- ==================================================
+         1. EXPLICIT GRID
+         ================================================== -->
+
+    <section class="section">
+        <h2>1. Explicit Grid</h2>
+
+        <div class="grid explicit-grid">
+
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         2. IMPLICIT ROWS
+         ================================================== -->
+
+    <section class="section">
+        <h2>2. Implicit Rows</h2>
+
+        <div class="grid implicit-rows">
+
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         3. IMPLICIT ROW SIZE
+         ================================================== -->
+
+    <section class="section">
+        <h2>3. grid-auto-rows</h2>
+
+        <div class="grid auto-rows">
+
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         4. IMPLICIT COLUMNS
+         ================================================== -->
+
+    <section class="section">
+        <h2>4. Implicit Columns</h2>
+
+        <div class="grid implicit-columns">
+
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         5. grid-auto-columns
+         ================================================== -->
+
+    <section class="section">
+        <h2>5. grid-auto-columns</h2>
+
+        <div class="grid auto-columns">
+
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         6. grid-auto-flow: row
+         ================================================== -->
+
+    <section class="section">
+        <h2>6. grid-auto-flow: row</h2>
+
+        <div class="grid flow-row">
+
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         7. grid-auto-flow: column
+         ================================================== -->
+
+    <section class="section">
+        <h2>7. grid-auto-flow: column</h2>
+
+        <div class="grid flow-column">
+
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         8. grid-auto-flow: dense
+         ================================================== -->
+
+    <section class="section">
+        <h2>8. grid-auto-flow: dense</h2>
+
+        <div class="grid flow-dense">
+
+            <div class="item wide">Wide Item</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item tall">Tall Item</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+         9. PRACTICAL CARD LAYOUT
+         ================================================== -->
+
+    <section class="section">
+        <h2>9. Practical Grid Card Layout</h2>
+
+        <div class="grid card-grid">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Structure of web pages.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Design and layout of websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Interactive web applications.</p>
+            </div>
+
+            <div class="card">
+                <h3>React</h3>
+                <p>Frontend user interfaces.</p>
+            </div>
+
+            <div class="card">
+                <h3>Node.js</h3>
+                <p>Backend JavaScript runtime.</p>
+            </div>
+
+            <div class="card">
+                <h3>MongoDB</h3>
+                <p>NoSQL database.</p>
+            </div>
+
+            <div class="card">
+                <h3>Express</h3>
+                <p>Backend web framework.</p>
+            </div>
+
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>Code hosting platform.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
