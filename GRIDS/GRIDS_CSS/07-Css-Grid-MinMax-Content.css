@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.item {
+    padding: 25px;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   1. BASIC minmax()
+   ================================================== */
+
+.basic-minmax {
+    grid-template-columns:
+        minmax(100px, 1fr)
+        minmax(100px, 1fr)
+        minmax(100px, 1fr);
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   2. minmax(150px, 300px)
+   ================================================== */
+
+.fixed-minmax {
+    grid-template-columns:
+        minmax(150px, 300px)
+        minmax(150px, 300px)
+        minmax(150px, 300px);
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   3. minmax(200px, 1fr)
+   ================================================== */
+
+.flexible-minmax {
+    grid-template-columns:
+        minmax(200px, 1fr)
+        minmax(200px, 1fr)
+        minmax(200px, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ==================================================
+   4. auto CONTENT
+   ================================================== */
+
+.auto-content {
+    grid-template-columns:
+        auto
+        auto
+        auto;
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   5. max-content
+   ================================================== */
+
+.max-content-example {
+    grid-template-columns:
+        max-content
+        max-content
+        max-content;
+
+    gap: 15px;
+}
+
+
+/* ==================================================
+   6. min-content
+   ================================================== */
+
+.min-content-example {
+    grid-template-columns:
+        min-content
+        min-content
+        min-content;
+
+    gap: 20px;
+}
+
+
+/* ==================================================
+   7. fit-content()
+   ================================================== */
+
+.fit-content-example {
+    grid-template-columns:
+        fit-content(150px)
+        fit-content(200px)
+        fit-content(250px);
+
+    gap: 20px;
+}
+
+
+/* ==================================================
+   8. repeat() + minmax()
+   ================================================== */
+
+.repeat-minmax {
+    grid-template-columns:
+        repeat(3, minmax(150px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* ==================================================
+   9. PRACTICAL CARD LAYOUT
+   ================================================== */
+
+.card-layout {
+    grid-template-columns:
+        repeat(3, minmax(200px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    border: 2px solid #333;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   10. DASHBOARD
+   ================================================== */
+
+.dashboard {
+    grid-template-columns:
+        repeat(4, minmax(150px, 1fr));
+
+    gap: 20px;
+}
+
+.dashboard-item {
+    border: 2px solid #333;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dashboard-item h3 {
+    margin-bottom: 15px;
+}
+
+.dashboard-item p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   RESPONSIVE DESIGN
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .card-layout {
+        grid-template-columns:
+            repeat(2, minmax(200px, 1fr));
+    }
+
+    .dashboard {
+        grid-template-columns:
+            repeat(2, minmax(150px, 1fr));
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .basic-minmax,
+    .fixed-minmax,
+    .flexible-minmax,
+    .auto-content,
+    .max-content-example,
+    .min-content-example,
+    .fit-content-example,
+    .repeat-minmax,
+    .card-layout,
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
