@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 180px;
+    gap: 15px;
+}
+
+.item {
+    padding: 15px;
+    border: 2px solid #333;
+    background-color: #e0e7ff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tall {
+    min-height: 100px;
+}
+
+
+/* ================================================
+   1. ALIGN-ITEMS: START
+   ================================================ */
+
+.align-start {
+    align-items: start;
+}
+
+
+/* ================================================
+   2. ALIGN-ITEMS: END
+   ================================================ */
+
+.align-end {
+    align-items: end;
+}
+
+
+/* ================================================
+   3. ALIGN-ITEMS: CENTER
+   ================================================ */
+
+.align-center {
+    align-items: center;
+}
+
+
+/* ================================================
+   4. ALIGN-ITEMS: STRETCH
+   ================================================ */
+
+.align-stretch {
+    align-items: stretch;
+}
+
+
+/* ================================================
+   5. ALIGN-ITEMS: NORMAL
+   ================================================ */
+
+.align-normal {
+    align-items: normal;
+}
+
+
+/* ================================================
+   6. ALIGN-ITEMS: BASELINE
+   ================================================ */
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.text-small {
+    font-size: 14px;
+}
+
+.text-large {
+    font-size: 28px;
+}
+
+.text-medium {
+    font-size: 20px;
+}
+
+
+/* ================================================
+   7. PRACTICAL CARD LAYOUT
+   ================================================ */
+
+.card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 220px;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #e0e7ff;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* ================================================
+   8. DASHBOARD
+   ================================================ */
+
+.dashboard {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 180px;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.dashboard-card {
+    border: 2px solid #333;
+    padding: 25px;
+    background-color: #e0e7ff;
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    margin-bottom: 20px;
+}
+
+.dashboard-card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* ================================================
+   RESPONSIVE DESIGN
+   ================================================ */
+
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+    }
+
+    .grid,
+    .card-grid,
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .align-start,
+    .align-end,
+    .align-center,
+    .align-stretch,
+    .align-normal,
+    .align-baseline {
+        grid-template-rows: 180px;
+    }
+}
